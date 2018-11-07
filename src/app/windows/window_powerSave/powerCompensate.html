@@ -1,0 +1,37 @@
+<div class="yx-appContainer powerCompensate">
+	<div class="tableArea">
+		<!--table表格-->
+		<div class="yx-table margin-top10">
+			<table class="yx-tableInfo">
+				<thead>
+					<tr>
+						<td title="日期">日期</td>
+						<td title="设备">设备</td>
+						<td title="补偿次数">补偿次数</td>
+						<td title="累计补偿时间(时)">累计补偿时间(时)</td>
+						<td title="累计补偿消耗(度)">累计补偿消耗(度)</td>
+						<td title="累计节约用电(度)">累计节约用电(度)</td>
+						<td title="降低设备损耗">降低设备损耗</td>
+					</tr>
+				</thead>
+				<tbody style="max-height: 260px;">
+					<tr ng-repeat="item in pageInfo">
+						<td title={{item.date}}>{{item.date}}</td>
+						<td title={{item.name}}>{{item.name}}</td>
+						<td title={{item.count}}>{{item.count}}</td>
+						<td title={{item.time}}>{{item.time}}</td>
+						<td title={{item.loss}}>{{item.loss}}</td>
+						<td title={{item.save}}>{{item.save}}</td>
+						<td title={{item.reduce}}>{{item.reduce}}</td>
+					</tr>
+				</tbody>
+			</table>
+			<div ng-hide="pageInfo.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+		</div>
+	</div>
+	<div class="chartArea">
+		<div id="chartBox1" style="height: 250px;"></div>
+		<div id="chartBox2" style="height: 250px;"></div>
+	</div>
+		
+</div>

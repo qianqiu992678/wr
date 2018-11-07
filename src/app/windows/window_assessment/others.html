@@ -1,0 +1,36 @@
+<div class="yx-appContainer assessment-others">
+	
+	<!--table表格-->
+	<div class="yx-table margin-top10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td title="设备名称">设备名称</td>
+					<td title="服役时长（月）">服役时长（月）</td>
+					<td title="预估寿命（月）">预估寿命（月）</td>
+					<td title="损耗程度(%)">损耗程度(%)</td>
+					<td title="是否需重点观察">是否需重点观察</td>
+					<td title="当前状态">当前状态</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in pageInfo.data">
+					<td title={{item.name}}>{{item.name}}</td>
+					<td title={{item.onlineTime}}>{{item.onlineTime}}</td>
+					<td title={{item.leftTime}}>{{item.leftTime}}</td>
+					<td title={{item.wearLevel}}>{{item.wearLevel}}</td>
+					<td title={{item.needAttention?'是':'否'}}
+						 ng-class="{'alarmItem':item.needAttention}">
+						 {{item.needAttention?'是':'否'}}
+					</td>
+					<td title={{item.currentStatus==1?'良好':item.currentStatus==2?'异常待检查':'故障待修'}}
+						ng-class="{'alarmItem':item.currentStatus==3,'warningItem':item.currentStatus==2,'successItem':item.currentStatus==1}">
+						{{item.currentStatus==1?'良好':item.currentStatus==2?'异常待检查':'故障待修'}}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="pageInfo.data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+	<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+</div>

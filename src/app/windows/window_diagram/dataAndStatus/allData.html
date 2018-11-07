@@ -1,0 +1,71 @@
+<div class="allData">
+	<!--table表格-->
+	<div class="yx-table margin-bottom10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr ui-sref='main.diagram.SJYZT.yaoxin({classname:"yaoce"})'>
+					<td title="组名">组名</td>
+					<td title="遥测名称">
+						遥测名称
+					</td>
+					<td title="当前值">
+						当前值
+					</td>
+				</tr>
+			</thead>
+			<tbody style="max-height: 600px;">
+				<tr ng-repeat="item in newCurrentData.yaoce" 
+					ng-class="{'itemA':item.name.includes('A相'),'itemC':item.name.includes('C相'),'itemB':item.name.includes('B相')}">
+					<!--ui-sref='main.diagram.SJYZT.fenzu({title:item.title,classname:"yaoce"})'-->
+					<td title={{item.title}}>{{item.title}}</td>
+					<td title={{item.name}}>{{item.name}}</td>
+					<td title={{item.value}}>{{item.value}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!--table表格-->
+	<div class="yx-table margin-bottom10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr ui-sref='main.diagram.SJYZT.yaoxin({classname:"yaoxin"})'>
+					<td title="组名">组名</td>
+					<td title="遥信名称">
+						遥信名称
+					</td>
+					<td title="当前状态">
+						当前状态
+					</td>
+				</tr>
+			</thead>
+			<tbody style="max-height: 600px;">
+				<tr ng-repeat="item in newCurrentData.yaoxin" ng-class="{'alarmItem':item.value==1}">
+					<!--ui-sref='main.diagram.SJYZT.fenzu({title:item.title,classname:"yaoxin"})'-->
+					<td title={{item.title}}>{{item.title}}</td>
+					<td title={{item.name}}>{{item.name}}</td>
+					<td title={{item.value}}>{{item.value}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!--table表格-->
+	<div class="yx-table margin-bottom10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr ui-sref='main.diagram.SJYZT.yaoxin({classname:"yaomai"})'>
+					<td title='组名'>组名</td>
+					<td title='遥脉名称'>遥脉名称</td>
+					<td title='当前状态'>当前状态</td>
+				</tr>
+			</thead>
+			<tbody style="max-height: 600px;">
+				<tr ng-repeat="item in newCurrentData.yaomai">
+					<!--ui-sref='main.diagram.SJYZT.fenzu({title:item.title,classname:"yaomai"})'-->
+					<td title={{item.title}} >{{item.title}}</td>
+					<td title={{item.name}}>{{item.name}}</td>
+					<td title={{item.value}}>{{item.value}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

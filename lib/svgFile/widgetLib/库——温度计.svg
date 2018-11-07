@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1920px" height="1080px" viewBox="0 0 1920 1080" enable-background="new 0 0 1920 1080" xml:space="preserve">
+<g id="wenduji_8_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;widget&quot;,&quot;Address&quot;:&quot;5&quot;,&quot;dz2&quot;:&quot;75&quot;,&quot;dz1&quot;:&quot;25&quot;}')">
+	<g>
+		<line id="zhuzhou_8_" fill="none" stroke="#000000" x1="149.837" y1="84.139" x2="149.837" y2="225.461"/>
+		
+			<text onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;aiText&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;5&quot;}')" transform="matrix(1.2036 0 0 1 242.6926 224.5857)" enable-background="new    " font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="5.5693">℃</text>
+		
+			<text onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;tempText&quot;}')" transform="matrix(1.2036 0 0 1 129.1438 87.3884)" enable-background="new    " font-family="'ArialMT'" font-size="5.5693">50</text>
+		
+			<text onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;tempText&quot;}')" transform="matrix(1.2036 0 0 1 128.5833 113.8425)" enable-background="new    " font-family="'ArialMT'" font-size="5.5693">40</text>
+		
+			<text onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;tempText&quot;}')" transform="matrix(1.2036 0 0 1 128.7004 138.905)" enable-background="new    " font-family="'ArialMT'" font-size="5.5693">30</text>
+		
+			<text onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;tempText&quot;}')" transform="matrix(1.2036 0 0 1 128.3508 170.0007)" enable-background="new    " font-family="'ArialMT'" font-size="5.5693">20</text>
+		
+			<text onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;tempText&quot;}')" transform="matrix(1.2036 0 0 1 127.2336 196.4558)" enable-background="new    " font-family="'ArialMT'" font-size="5.5693">10</text>
+		
+			<text onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;tempText&quot;}')" transform="matrix(1.2036 0 0 1 129.6731 223.8376)" enable-background="new    " font-family="'ArialMT'" font-size="5.5693">0</text>
+		<line id="zheng10_53_" fill="none" stroke="#000000" x1="150.193" y1="225.461" x2="157.018" y2="225.461"/>
+		<line id="zheng10_52_" fill="none" stroke="#000000" x1="150.193" y1="197.614" x2="157.018" y2="197.614"/>
+		<line id="zheng10_51_" fill="none" stroke="#000000" x1="150.193" y1="169.767" x2="157.018" y2="169.767"/>
+		<line id="zheng10_50_" fill="none" stroke="#000000" x1="150.193" y1="141.922" x2="157.018" y2="141.922"/>
+		<line id="zheng10_49_" fill="none" stroke="#000000" x1="149.634" y1="114.074" x2="156.458" y2="114.074"/>
+		<line id="zheng10_48_" fill="none" stroke="#000000" x1="149.634" y1="86.228" x2="156.458" y2="86.228"/>
+	</g>
+	<text transform="matrix(0.9538 0 0 1 113.262 61.5457)" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="8.4497">单位：℃</text>
+	<g id="温度计_8_">
+		
+			<rect x="194.489" y="86.228" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;widget&quot;,&quot;class&quot;:&quot;tempBox&quot;}')" fill="none" stroke="#000000" width="11.171" height="139.233"/>
+		
+			<rect x="194.489" y="226.063" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;widget&quot;,&quot;class&quot;:&quot;currentTemp&quot;}')" fill="#EB1D24" stroke="#000000" width="11.171" height="10.945"/>
+		<ellipse fill="#EB1D24" stroke="#000000" cx="200.5" cy="241.572" rx="19.094" ry="16.679"/>
+	</g>
+</g>
+</svg>

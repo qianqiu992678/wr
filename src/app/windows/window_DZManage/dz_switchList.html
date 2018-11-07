@@ -1,0 +1,43 @@
+<div class="yx-appContainer dz_switchList c2noFilter">
+	<!--table表格-->
+	<div class="yx-table margin-top10 DNZLCurrentTable">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td title="序号">序号</td>
+					<td title="开关量名称" ng-click="listSort('DigitalName',pageInfo.data)">
+						<span class="orderIndicate" ng-show="sortKey=='DigitalName'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>
+						开关量名称
+					</td>
+					<td title="是否投入" ng-click="listSort('FlagQD',pageInfo.data)">
+						<span class="orderIndicate" ng-show="sortKey=='FlagQD'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>
+						是否投入
+					</td>
+					<td title="操作">操作</td>
+				</tr>
+			</thead>
+			<tbody style="max-height: 615px;">
+				<tr ng-repeat="item in pageInfo.data" ng-class="{'dz-changeditem':item.changed}">
+					<td title={{$index+1}}>{{$index+1}}</td>
+					<td title={{item.DigitalName}}>{{item.DigitalName}}</td>
+					<td title={{item.FlagQD?'是':'否'}}>
+						<input type="checkbox" ng-model="item.FlagQD" />
+						{{item.FlagQD?'是':'否'}}
+					</td>
+					<td title='确认'>
+						<a class="hot-word" ng-click="dzSwitchItemConfirm(item)">确认</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="pageInfo.data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+	<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+</div>
+

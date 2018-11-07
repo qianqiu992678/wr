@@ -1,0 +1,74 @@
+<div>
+      <!-- navbar header -->
+<div class="app-header navbar">
+      <div class="navbar-header {{app.settings.navbarHeaderColor}}">
+        <button class="pull-right visible-xs dk" ui-toggle-class="show" data-target=".navbar-collapse">
+          <i class="glyphicon glyphicon-cog"></i>
+        </button>
+        <button class="pull-right visible-xs" ui-toggle-class="off-screen" data-target=".app-aside" ui-scroll-to="app">
+          <i class="glyphicon glyphicon-align-justify"></i>
+        </button>
+        <!-- brand -->
+        <a href="javascript:void(0);" class="navbar-brand text-lt">
+          <!--<i class="fa fa-btc"></i>-->
+          <img src="lib/xqc-frame/res/img/xinhao.png" alt="." width="125px" height= "70px">
+          <!--<span class="hidden-folded m-l-xs">{{app.name}}</span>-->
+        </a>
+        <!-- / brand -->
+      </div>
+      <!-- / navbar header -->
+
+      <!-- navbar collapse -->
+      <div class="collapse pos-rlt navbar-collapse {{app.settings.navbarCollapseColor}}">
+      	<!--        -->
+        <span class="app-header-txt1">油站列表</span>
+        <!-- buttons -->
+        <!--
+        <div class="nav navbar-nav hidden-xs">
+          <a href class="btn no-shadow navbar-btn text-white" ng-click="app.settings.asideFolded = !app.settings.asideFolded">
+            <i class="fa {{app.settings.asideFolded ? 'fa-indent' : 'fa-dedent'}} fa-fw"></i>
+          </a>
+        </div>-->
+        <!-- / buttons -->
+
+      </div>
+      <!-- / navbar collapse -->
+</div>
+
+
+<!-- 修改密码modal -->
+  <modal titlelabel="修改密码" visible="showModalPWedit">
+    <div class="PWedit-modal">
+      <form name="formEditPW" role="form" name="newPwd">
+      	<div style="font-size: 13px; text-indent: 110px;color: cornflowerblue;">6-16个字符，必须包含数字与字母</div>
+        <div class="form-group">
+          <label><span>*</span>原密码</label>
+          <input type="password" class="form-control" name="oldpwd" ng-model="PWedit.oldPassword" placeholder="请输入原密码." minlength="6" maxlength="20" />
+        </div>
+        <div class="form-group">
+          <label><span>*</span>新密码</label>
+          <input type="password" class="form-control" name="newpwd" ng-model="PWedit.newPassword" placeholder="请输入新密码." minlength="6" maxlength="20"  ng-pattern="/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,10}$/"/>
+        </div>
+        <div class="form-group">
+          <label><span>*</span>确认</label>		
+          <input type="password" class="form-control" name="CPW" ng-model="PWedit.confirmPassword" placeholder="重复密码输入." minlength="6" maxlength="20" ng-pattern="/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,10}$/"/>
+        </div>
+        <div class="form-group">
+                <div class="confirm-ctrl row">
+                  <button class="btn xxpbtn pull-left" type="button" ng-click="submitEditPW()" ng-disabled="!PWedit.oldPassword || !PWedit.newPassword || PWedit.newPassword!=PWedit.confirmPassword || PWedit.state">
+                    <span>确定</span> 
+                  </button>
+                  <button class="btn xxpbtn pull-right" type="button" data-dismiss="modal"> 取消 </button>
+                </div>
+                    <span class="errTip text-danger" ng-show="PWedit.newPassword!=PWedit.confirmPassword">密码不一致</span>
+                    <span class="errTip text-danger" ng-hide="PWedit.newPassword!=PWedit.confirmPassword" ng-bind="msg"></span>
+        </div>
+      </form>
+    </div>
+  </modal>
+<!-- / 修改密码modal -->
+
+</div>
+
+
+

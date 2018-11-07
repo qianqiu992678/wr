@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="station" xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<title>山东方瑞电力科技有限公司</title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-store">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="robots" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="lib/yx-frame/res/img/logo.jpg" type="image/x-icon">
+<!-- Loading Bootstrap -->
+<link href="lib/flat-ui/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="lib/css/animate.css" rel="stylesheet" type="text/css" />
+<link href="lib/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="lib/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+<link href="lib/angular/toaster.css" rel="stylesheet" type="text/css" />
+<!-- Loading Flat UI -->
+<link href="lib/flat-ui/css/flat-ui.css" rel="stylesheet" type="text/css" />
+
+<!-- Loading APP -->
+<link href="lib/yx-frame/res/css/font.css" rel="stylesheet" type="text/css" />
+<link href="lib/yx-frame/res/css/app.css" rel="stylesheet" type="text/css" />
+<!--引入字体图标-->
+<link rel="stylesheet" type="text/css" href="lib/yx-frame/res/fonts/yxiconfont/iconfont.css"/>
+
+<style type="text/css">
+.container {
+	width: 970px !important;
+}  
+@font-face {  
+ font-family: DigifaceWide;  
+ src: url("digifaw.ttf")
+}  
+</style>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[--if lt IE 9]>
+      <script src="lib/flat-ui/vendor/html5shiv.js"></script>
+      <script src="lib/flat-ui/vendor/respond.min.js"></script>
+    <![--endif]-->
+</head>
+<body class="station" data-ng-app="app" data-ng-controller="AppCtrl">
+	<div data-ui-view>
+	</div>
+	<!-- JQUERY -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/jquery/jquery.validate.min.js"></script>
+	<script src="lib/jquery/additional-methods.min.js"></script>
+	<script src="lib/flat-ui/js/vendor/video.js"></script>
+	<script src="lib/flat-ui/js/flat-ui.min.js"></script>
+	<script src="lib/filereader/FileSaver.js"></script>
+	<!--myDrag-->
+	<script src="lib/yx-frame/myJS/drag_scale.js"></script>
+	<!--jqueryUi-->
+    <link rel="stylesheet" href="lib/jqueryDateTimePicker/jquery-ui.min.css" />
+	<link rel="stylesheet" href="lib/jqueryDateTimePicker/jquery-ui-timepicker-addon.css" />
+    <script src="lib/jqueryDateTimePicker/jquery-ui.min.js"></script>
+    <script src="lib/jqueryDateTimePicker/jquery-ui-timepicker-addon.js"></script>
+    
+    <script src="lib/jquery/jquery.cookie.js"></script>
+    <!--<script src="lib/jquery/bean.js"></script>-->
+    <script src="lib/jquery/Tdrag.js"></script>
+	<!-- ANGULARJS -->
+	<script src="lib/angular/angular.js"></script>
+	<script src="lib/angular/toaster.js"></script>
+	<script src="lib/angular/ocLazyLoad.min.js"></script>
+	<script src="lib/angular/angular-animate.min.js"></script>
+	<script src="lib/angular/angular-sanitize.min.js"></script>
+	<script src="lib/angular/angular-resource.min.js"></script>
+	<script src="lib/angular/angular-ui-router.js"></script>
+	<script src="lib/angular/ngStorage.js"></script>
+	<script src="lib/angular/ui-load.js"></script>
+	<script src="lib/angular/ui-utils.min.js"></script>
+	<script src="lib/angular/paging.js"></script>
+    <script src="lib/angular/angular.datetime.js"></script>
+ 	<script src="lib/angular/angular-websocket.js"></script>
+
+	<!-- ng-file-upload -->
+	
+	<script src="lib/ng-file-upload/ng-file-upload-shim.min.js"></script>
+	<script src="lib/ng-file-upload/ng-file-upload.min.js"></script>
+
+	<!-- fullpage -->
+	<link rel="stylesheet" href="lib/angular-fullpage/jquery.fullPage.css">
+	<script src="lib/angular-fullpage/jquery.slimscroll.min.js"></script>
+	<script src="lib/angular-fullpage/jquery.fullPage.js"></script>
+	<script src="lib/angular-fullpage/angular-fullpage.min.js"></script>
+	<!-- APP -->
+	<script src="config.min.js"></script>
+	<script src="lib/yx-frame/main.min.js"></script>
+	<script src="src/app/config-router.min.js"></script>
+
+    <!--<script src="lib/flat-ui/js/bootstrap.min.js"></script>-->
+	<!--jSignature-->
+	<script src="lib/jSignature/jSignature.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/jSignature/flashcanvas.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!--highcharts-->
+	<script src="lib/highcharts/js/highstock.js"></script>
+	<link rel="stylesheet" href="lib/highcharts/css/highcharts.css" />
+	<!--<script src="lib/highcharts/js/modules/exporting.js"></script>-->
+	<script src="lib/highcharts/highcharts-zh_CN.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			Highcharts.setOptions({
+				global:{
+					useUTC:false
+				}
+			})
+		}
+	</script>
+	<!--tree-View-->
+	<script type="text/ng-template" id="/treeView.html">
+        <ul class="tree-view">
+           <li ng-repeat="item in treeData" ng-include="itemTemplateUrl || '/treeItem.html'" ></li>
+        </ul>
+  </script>
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=WwRWeUUKOpxuf4kn34xBtkdyPFPrNRpn"></script>-->
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<ul>
+	<li>
+		<h5 ng-click="testModal=!testModal">1,模态框</h5>
+		<!--models-->
+		<div class="yx-modal-wrap" ng-show="testModal">
+			<div class="yx-modal">
+				<div class="yx-smallModal">
+					<div class="yx-modal-top clearfix">
+						<span>提示</span>
+						<span class="close iconfont icon-guanbi" ng-click="testModal=false"></span>
+					</div>
+					<div class="yx-modal-content">
+						内容内容内容内容内容内容内容内容内容内容
+					</div>
+					<div class="yx-modal-footer">
+						<button class="yxBtn yxBtn-Active" type="button" ng-Disabled="submiting" ng-click="delProjectConfirm()">
+		                    <div ng-hide="submiting">确认</div>
+		                    <div ng-show="submiting">
+		                        <span class="fa fa-spin fa-spinner"></span> 请求中...
+		                    </div>
+		                </button>
+						<button class="yxBtn yxBtn-White" type="button" ng-Disabled="submiting" ng-click="delProjdectModal=false">
+		                    <div ng-hide="submiting">取消</div>
+		                    <div ng-show="submiting">
+		                        <span class="fa fa-spin fa-spinner"></span> 请求中 . . .
+		                    </div>
+		                </button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</li>
+	<li>
+		<h5>2,按钮</h5>
+		<button class="yxBtn yxBtn-White yxBtn-xs" ng-Disabled="submiting" ng-click="exportForm()">
+		    <div ng-hide="submiting">导出</div>
+		    <div ng-show="submiting">
+		        <span class="fa fa-spin fa-spinner"></span> 请求中...
+		    </div>
+		</button>
+		<button class="yxBtn yxBtn-Active yxBtn-xs" ng-Disabled="submiting" ng-click="exportForm()">
+		    <div ng-hide="submiting">导出</div>
+		    <div ng-show="submiting">
+		        <span class="fa fa-spin fa-spinner"></span> 请求中...
+		    </div>
+		</button>
+	</li>
+	<li>
+		<h5 ng-click="testTable=!testTable">3,表格</h5>
+		<!--table表格-->
+		<div class="yx-table margin-bottom10" ng-show="testTable">
+			<table class="yx-tableInfo">
+				<thead>
+					<tr>
+						<td>卡号</td>
+						<td>持卡人</td>
+						<td>交易时间</td>
+						<td>交易类型</td>
+						<td>金额</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</li>
+	<li>
+		<h5 ng-click="testPannel=!testPannel">4,面板</h5>
+		<!--面板-->
+		<div class="yx-appPanel margin-bottom10" ng-show="testPannel">
+			<div class="yx-appPanel-header">
+				<div class="panelIcon">
+					<span class="iconfont icon-liebiao"></span>
+				</div>
+				<div class="panelTitle">
+					<span>面板</span>
+				</div>
+			</div>
+			<div class="yx-appPanel-body">
+				面板内容区域
+			</div>
+			<div class="yx-appPanel-footer" ng-show="pageInfo.data.length>0">
+				<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+			</div>
+		</div>
+	</li>
+	<li>
+		<h5 ng-click="testFilter=!testFilter">5,筛选</h5>
+		<!--筛选-->
+		<div class="yx-appPanel yx-appFilter margin-bottom10" ng-show="testFilter">
+			<div class="yx-appPanel-header">
+				<div class="panelIcon">
+					<span class="iconfont icon-liebiao"></span>
+				</div>
+				<div class="panelTitle">
+					<span>筛选</span>
+				</div>
+				<i class="btn-show" ng-show="showFilter" ng-click="showFilter=false"></i>
+			</div>
+			<div class="yx-appPanel-body" ng-hide="showFilter">
+				<ul>
+					<li>
+						<form id="resetForm0">
+						<div class="inline">
+							<span>选择日期&nbsp;&nbsp;</span>
+							<input class="xqc-input width100 logminA" readonly
+								 ng-model="param.logmin"
+								dateread="param.logmin" 
+								ng-value="param.logmin | date :'yyyy-MM-dd'" 
+								required/>&nbsp;—&nbsp;
+							<input class="xqc-input width100 logmaxA" readonly
+								 ng-model="param.logmax"
+								dateread="param.logmax" 
+								ng-value="param.logmax | date :'yyyy-MM-dd'"
+								required/>
+							<button class="yxBtn yxBtn-Active" type="button" ng-click="getOrderDetail()" ng-Disabled="searching">
+		                        <div ng-hide="searching">查询</div>
+		                        <div ng-show="searching">
+		                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+		                        </div>
+		                    </button>
+							<button class="yxBtn yxBtn-White" ng-click="reset()" ng-Disabled="reseting">
+		                        <div ng-hide="reseting">重置</div>
+		                        <div ng-show="reseting">
+		                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+		                        </div>
+		                    </button>
+							<button class="yxBtn yxBtn-White" ng-Disabled="submiting" ng-click="exportForm()">
+		                        <div ng-hide="submiting">导出报表</div>
+		                        <div ng-show="submiting">
+		                            <span class="fa fa-spin fa-spinner"></span> 请求中..
+		                        </di>
+		                    </button>
+						</div>
+						<div class="inline">
+							
+						</div>
+						</form>
+					</li>
+				</ul>
+			</div>
+			<div class="yx-appPanel-footer" ng-hide="showFilter">
+				<i class="btn-hide" ng-click="showFilter=true"></i>
+			</div>
+		</div>
+	</li>
+	<li>
+		<h5 ng-click="testEditPannel=!testEditPannel">6,编辑面板：</h5>
+		<!--编辑面板-->
+		<div class="yx-appPanel yx-appEditPanel margin-bottom10" ng-show="testEditPannel">
+			<div class="yx-appPanel-body no-top">
+				<table class="editTable">
+					<tr class="title">
+						<td colspan="2">基础信息</td>
+					</tr>
+					<tr>
+						<td>车主</td>
+						<td>name_</td>
+					</tr>
+					<tr>
+						<td>车牌号码</td>
+						<td>car_number</td>
+					</tr>
+					<tr>
+						<td>车辆类型</td>
+						<td>car_type</td>
+					</tr>
+					<tr>
+						<td class="textTop">*行驶证</td>
+						<td>
+							<img ng-repeat="pic in picList" ng-src="{{pic.path}}" style="margin-right: 10px" alt="err" width="83" height="83" />
+						</td>
+					</tr>
+					<tr>
+						<td>品牌名称</td>
+						<td>car_brand</td>
+					</tr>
+					<tr>
+						<td>第三者责任险</td>
+						<td>third_insurance_money</td>
+					</tr>
+					<tr>
+						<td>保险费生效时间</td>
+						<!--<td>{{resultData.insurance_start_date}} 至 {{resultData.insurance_end_date}}</td>-->
+						<td>resultData.insurance_end_date</td>
+					</tr>
+					<tr>
+						<td>年检日期</td>
+						<td>resultData.check_time</td>
+					</tr>
+					<tr class="title">
+						<td colspan="2">租赁信息</td>
+					</tr>
+					<tr>
+						<td>租赁价格</td>
+						<td>resultData.company_rent_price</td>
+					</tr>
+					<tr>
+						<td>租赁时间</td>
+						<td>resultData.company_rent_end</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</li>
+</ul>

@@ -1,0 +1,181 @@
+<!-- toaster directive -->
+
+<!-- / toaster directive -->
+<!--手启动录波确认模态框-->
+<div class="yx-modal-wrap luboStartModal" ng-show="modals.luboStartModal">
+	<div class="yx-modal">
+		<div class="yx-smallModal">
+			<div class="yx-modal-top clearfix">
+				<span>提示</span>
+				<span class="close iconfont icon-guanbi" 
+					ng-click="modals.luboStartModal=false;modalCloseFun()"></span>
+			</div>
+			<div class="yx-modal-content">
+				确定启动录波？
+			</div>
+			<div class="yx-modal-footer">
+				<button class="yxBtn yxBtn-Active" type="button" 
+					ng-Disabled="submiting" ng-click="recordStartConfirm()">
+                    <div ng-hide="submiting">确认</div>
+                    <div ng-show="submiting">
+                        <span class="fa fa-spin fa-spinner"></span> 请求中...
+                    </div>
+                </button>
+				<button class="yxBtn yxBtn-White" type="button" 
+					ng-Disabled="submiting" ng-click="modals.luboStartModal=false;modalCloseFun()">
+                    <div ng-hide="submiting">取消</div>
+                    <div ng-show="submiting">
+                        <span class="fa fa-spin fa-spinner"></span> 请求中 . . .
+                    </div>
+                </button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--用户登录-->
+<div class="yx-modal-wrap systemLoginModal" ng-show="modals.systemLoginModal">
+	<div class="yx-modal">
+		<div class="yx-smallModal">
+			<div class="yx-modal-top clearfix">
+				<span>用户登录</span>
+				<span class="close iconfont icon-guanbi" 
+					ng-click="loginModalCloseFun()"></span>
+			</div>
+			<div class="yx-modal-content">
+				<form action="">
+					<ul>
+						<li>
+							<span>用户名：</span>
+							<input type="text" ng-model="login.username" 
+								ng-keydown="enterLogin($event)"/>
+						</li>
+						<li>
+							<span>密码：</span>
+							<input type="password" autocomplete="new-password" ng-model="login.password" 
+								ng-keydown="enterLogin($event)" />
+						</li>
+					</ul>
+				</form>
+					
+			</div>
+			<div class="yx-modal-footer">
+				<button class="yxBtn yxBtn-Active" type="button" ng-Disabled="submiting"
+					ng-click="loginConfirm(login.username,login.password)">
+                    <div ng-hide="submiting">确认</div>
+                    <div ng-show="submiting">
+                        <span class="fa fa-spin fa-spinner"></span> 请求中...
+                    </div>
+                </button>
+				<button class="yxBtn yxBtn-White" type="button" 
+					ng-Disabled="submiting" ng-click="loginModalCloseFun()">
+                    <div ng-hide="submiting">取消</div>
+                    <div ng-show="submiting">
+                        <span class="fa fa-spin fa-spinner"></span> 请求中 . . .
+                    </div>
+                </button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--用户注销-->
+<div class="yx-modal-wrap systemLogoutModal" ng-show="modals.systemLogoutModal">
+	<div class="yx-modal">
+		<div class="yx-smallModal">
+			<div class="yx-modal-top clearfix">
+				<span>退出登录</span>
+				<span class="close iconfont icon-guanbi" 
+					ng-click="modals.systemLogoutModal=false;modalCloseFun()"></span>
+			</div>
+			<div class="yx-modal-content">
+				退出登录
+			</div>
+			<div class="yx-modal-footer">
+				<button class="yxBtn yxBtn-Active" type="button" ng-Disabled="submiting"
+					ng-click="logoutConfirm()">
+                    <div ng-hide="submiting">确认</div>
+                    <div ng-show="submiting">
+                        <span class="fa fa-spin fa-spinner"></span> 请求中...
+                    </div>
+                </button>
+				<button class="yxBtn yxBtn-White" type="button" ng-Disabled="submiting" 
+					ng-click="modals.systemLogoutModal=false;modalCloseFun()">
+                    <div ng-hide="submiting">取消</div>
+                    <div ng-show="submiting">
+                        <span class="fa fa-spin fa-spinner"></span> 请求中 . . .
+                    </div>
+                </button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--更新系统刷新时间-->
+<div class="yx-modal-wrap refreshTimeModal" ng-show="modals.refreshTimeModal">
+	<div class="yx-modal">
+		<div class="yx-smallModal">
+			<div class="yx-modal-top clearfix">
+				<span>系统刷新时间设置</span>
+				<span class="close iconfont icon-guanbi" 
+					ng-click="modals.refreshTimeModal=false"></span>
+			</div>
+			<div class="yx-modal-content">
+				刷新时间:
+				<input class="refresh-time" type="text" ng-model="refreshTime" />
+				s
+				<button class="yxBtn yxBtn-Active yxBtn-xs" ng-Disabled="submiting" 
+					ng-click="refreshTimeEdit(refreshTime)">
+				    <div ng-hide="submiting">保存</div>
+				    <div ng-show="submiting">
+				        <span class="fa fa-spin fa-spinner"></span> 请求中...
+				    </div>
+				</button>
+			</div>
+			<div class="yx-modal-footer">
+			</div>
+		</div>
+	</div>
+</div>
+<!--刷新提示-->
+<div class="yx-modal-wrap refreshTipModal" ng-show="modals.refreshTipModal">
+	<div class="yx-modal">
+		<div class="yx-smallModal">
+			<div class="yx-modal-top clearfix">
+				<span>提示</span>
+				<span class="close iconfont icon-guanbi" 
+					ng-click="modals.refreshTipModal=false"></span>
+			</div>
+			<div class="yx-modal-content">
+				网络异常，部分数据可能无法显示，请刷新页面！
+			</div>
+		</div>
+	</div>
+</div>
+<!--定值修改请求中-->
+<div class="yx-modal-wrap refreshTipModal" ng-show="modals.dzSubmitingModal">
+	<div class="yx-modal">
+		<div class="yx-smallModal">
+			<div class="yx-modal-top clearfix">
+				<span>提示</span>
+			</div>
+			<div class="yx-modal-content">
+				定值修改，服务重启中...!
+			</div>
+		</div>
+	</div>
+</div>
+<!--文件上传中进度条-->
+<div class="yx-modal-wrap uploadingModal" ng-show="modals.uploadingModal">
+	<div class="yx-modal">
+		<div class="yx-smallModal">
+			<div class="yx-modal-top clearfix">
+				<span>文件上传中</span>
+			</div>
+			<div class="yx-modal-content">
+				<div class="uploading-barContainer">
+					<div class="uploading-backgroundBar"></div>
+					<div class="uploading-currentBar"></div>
+				</div>
+					
+			</div>
+		</div>
+	</div>
+</div>

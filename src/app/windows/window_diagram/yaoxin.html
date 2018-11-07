@@ -1,0 +1,59 @@
+<div class="yaoxin">
+	<div class="yx-table">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td  ng-click="listSort('title',classList)">
+						
+						<span class="orderIndicate" ng-show="sortKey=='title'">
+							<a ng-show="sortNum<0">↑</a>
+							<a ng-show="sortNum>0">↓</a>
+						</span>组名
+					</td>
+					<!--ng-click="listSort('name',classList)"-->
+					<td >
+						
+						<!--<span class="orderIndicate" ng-show="sortKey=='name'">
+							<a ng-show="sortNum<0">↑</a>
+							<a ng-show="sortNum>0">↓</a>
+						</span>-->
+						名称
+					</td>
+					<!--ng-click="listSort('value',classList)"-->
+					<td >
+						
+						<!--<span class="orderIndicate" ng-show="sortKey=='value'">
+							<a ng-show="sortNum<0">↑</a>
+							<a ng-show="sortNum>0">↓</a>
+						</span>-->
+						当前值
+					</td>
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div class="table-data">
+		<div class="yx-table" ng-repeat="item in classList">
+			<table class="yx-tableInfo">
+				<tbody>
+					<tr ng-class="{'active-title':item.show}">
+						<td colspan="3" ng-click="openItemRecord(item)">
+							{{item.title}}
+							<span class="fa fa-fw fa-angle-right" ng-hide="item.show"></span>
+							<span class="fa fa-fw fa-angle-down" ng-show="item.show"></span>
+						</td>
+					</tr><!-- ng-show="item.show"-->
+					<tr class="data-tbody" ng-repeat="i in item.data" ng-show="item.show">
+						<td>
+							<!--<span class="hot-word">{{i.title}}</span>-->
+						</td>
+						<td title={{i.name}}>{{i.name}}</td>
+						<td title={{i.value}}>{{i.value}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+		
+</div>
+	

@@ -1,0 +1,172 @@
+<div class="dz_curList c2noFilter">
+	<div ng-hide="curDZEdit">
+		<!--table表格-->
+		<div class="yx-table margin-top10 DNZLCurrentTable">
+			<table class="yx-tableInfo">
+				<thead>
+					<tr>
+						<td title="序号">序号</td>
+						<td title="对象名称" ng-click="listSort('GroupName',pageInfo.data)">
+							<span class="orderIndicate" ng-show="sortKey=='GroupName'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>对象名称
+						</td>
+						<td title="单位" ng-click="listSort('unit',pageInfo.data)">
+							<span class="orderIndicate" ng-show="sortKey=='unit'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>单位
+						</td>
+						<td title="操作">操作</td>
+					</tr>
+				</thead>
+				<tbody style="max-height: 615px;">
+					<tr ng-repeat="item in pageInfo.data" ng-class="{'dz-changeditem':item.changed}">
+						<td title={{$index+1}}>{{$index+1}}</td>
+						<td title={{item.GroupName}}>
+							{{item.GroupName}}
+						</td>
+						<td title={{item.unit}}>{{item.unit}}</td>
+						<td title="编辑">
+							<a class="hot-word" ng-click="curDZEditFun(item)">编辑</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div ng-hide="pageInfo.data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+		</div>
+        <span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+			
+	</div>
+	<div ng-show="curDZEdit">
+		<button class="yxBtn yxBtn-Active" type="button" ng-click="curDZEdit=false" ng-Disabled="searching">
+            <div ng-hide="searching">返回</div>
+            <div ng-show="searching">
+                <span class="fa fa-spin fa-spinner"></span> 请求中...
+            </div>
+        </button>
+        <button class="yxBtn yxBtn-Active" type="button" ng-click="dZCurConfirm()" ng-Disabled="searching">
+            <div ng-hide="searching">确认</div>
+            <div ng-show="searching">
+                <span class="fa fa-spin fa-spinner"></span> 请求中...
+            </div>
+        </button>
+		<!--编辑页面-->
+		<ul class="yx-edit" style="max-height: 600px;">
+			<li class="edit-title">通用参数：</li>
+			<li class="edit-items">
+				<ul>
+					<li>
+						<span class="item-label">分组名称：</span>
+						<div class="item-input">
+							<input type="text" ng-model="curZDDetail.data.Name" readonly/>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">单位：</span>
+						<div class="item-input">
+							<input type="text" ng-model="curZDDetail.data.Unit" readonly/>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li class="edit-title">启动定值：</li>
+			<li class="edit-items">
+				<ul>
+					<li>
+						<span class="item-label">突变量：</span>
+						<div class="item-input">
+							<input type="text" ng-model="curZDDetail.data.QDTB"/> 是否投入：
+							<span ng-class="{'checkbox-true':curZDDetail.data.FlagTB,'checkbox-false':!curZDDetail.data.FlagTB}">
+			            		<label>
+			            			<input type="checkbox" ng-model="curZDDetail.data.FlagTB"/>
+			            			<span>{{curZDDetail.data.FlagTB?'是':'否'}}</span>
+								</label>
+							</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">电流高越限（A）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="curZDDetail.data.QDVH"/> 是否投入：
+							<span ng-class="{'checkbox-true':curZDDetail.data.FlagVH,'checkbox-false':!curZDDetail.data.FlagVH}">
+			            		<label>
+			            			<input type="checkbox" ng-model="curZDDetail.data.FlagVH"/>
+			            			<span>{{curZDDetail.data.FlagVH?'是':'否'}}</span>
+							</label>
+							</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">负序：</span>
+						<div class="item-input">
+							<input type="text" ng-model="curZDDetail.data.QDV2H"/> 是否投入：
+							<span ng-class="{'checkbox-true':curZDDetail.data.FlagV2H,'checkbox-false':!curZDDetail.data.FlagV2H}">
+			            		<label>
+			            			<input type="checkbox" ng-model="curZDDetail.data.FlagV2H"/>
+			            			<span>{{curZDDetail.data.FlagV2H?'是':'否'}}</span>
+							</label>
+							</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">零序：</span>
+						<div class="item-input">
+							<input type="text" ng-model="curZDDetail.data.QDV0H"/> 是否投入：
+							<span ng-class="{'checkbox-true':curZDDetail.data.FlagV0H,'checkbox-false':!curZDDetail.data.FlagV0H}">
+			            		<label>
+			            			<input type="checkbox" ng-model="curZDDetail.data.FlagV0H"/>
+			            			<span>{{curZDDetail.data.FlagV0H?'是':'否'}}</span>
+								</label>
+							</span>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li class="edit-title">告警定值：</li>
+			<li class="edit-items">
+				<ul>
+					<li>
+						<span class="item-label">不平衡度（%）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="curZDDetail.data.BPH"/> 是否投入：
+							<span ng-class="{'checkbox-true':curZDDetail.data.FlagBPH,'checkbox-false':!curZDDetail.data.FlagBPH}">
+			            		<label>
+			            			<input type="checkbox" ng-model="curZDDetail.data.FlagBPH"/>
+			            			<span>{{curZDDetail.data.FlagBPH?'是':'否'}}</span>
+							</label>
+							</span>
+						</div>
+					</li>
+					
+					<li>
+						<span class="item-label">总谐波（%）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="curZDDetail.data.TotalXB"/> 是否投入：
+							<span ng-class="{'checkbox-true':curZDDetail.data.FlagTotalXB,'checkbox-false':!curZDDetail.data.FlagTotalXB}">
+			            		<label>
+			            			<input type="checkbox" ng-model="curZDDetail.data.FlagTotalXB"/>
+			            			<span>{{curZDDetail.data.FlagTotalXB?'是':'否'}}</span>
+							</label>
+							</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">功率因数（%）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="curZDDetail.data.FactorLow"/> 是否投入：
+							<span ng-class="{'checkbox-true':curZDDetail.data.FlagFactorLow,'checkbox-false':!curZDDetail.data.FlagFactorLow}">
+			            		<label>
+			            			<input type="checkbox" ng-model="curZDDetail.data.FlagFactorLow"/>
+			            			<span>{{curZDDetail.data.FlagFactorLow?'是':'否'}}</span>
+							</label>
+							</span>
+						</div>
+
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>

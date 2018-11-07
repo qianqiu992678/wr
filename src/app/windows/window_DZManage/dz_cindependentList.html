@@ -1,0 +1,117 @@
+
+<div class="yx-appContainer dz_cindependentList c2noFilter">
+	<!--table表格-->
+	<div class="yx-table hasCheckbox margin-top10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td title="序号">序号</td>
+					<td title='名称' ng-click="listSort('AnalogName',pageInfo.data)">
+						
+						<span class="orderIndicate" ng-show="sortKey=='AnalogName'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>名称
+					</td>
+					<td title='量纲' ng-click="listSort('Phase',pageInfo.data)">
+						
+						<span class="orderIndicate" ng-show="sortKey=='Phase'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>量纲
+					</td>
+					<td title='是否直流' ng-click="listSort('FlagDC',pageInfo.data)">
+						<span class="orderIndicate" ng-show="sortKey=='FlagDC'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>是否直流
+						
+					</td>
+					<td title='突变量启动定值' ng-click="listSort('TB',pageInfo.data)">
+						<span class="orderIndicate" ng-show="sortKey=='TB'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>突变量启动定值
+						
+					</td>
+					<td title='突变量启动投入' ng-click="listSort('FlagTB',pageInfo.data)">
+						<span class="orderIndicate" ng-show="sortKey=='FlagTB'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>
+						突变量启动投入
+					</td>
+					<td title='高电压启动定值' ng-click="listSort('VH',pageInfo.data)">
+						<span class="orderIndicate" ng-show="sortKey=='VH'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>
+						高电压启动定值
+					</td>
+					<td title='高电压启动投入' ng-click="listSort('FlagVH',pageInfo.data)">
+						<span class="orderIndicate" ng-show="sortKey=='FlagVH'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>
+						高电压启动投入
+					</td>
+					<td title='低电压启动定值' ng-click="listSort('VL',pageInfo.data)">
+						<span class="orderIndicate" ng-show="sortKey=='VL'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>
+						低电压启动定值
+					</td>
+					<td title='低电压启动投入' ng-click="listSort('FlagVL',pageInfo.data)">
+						<span class="orderIndicate" ng-show="sortKey=='FlagVL'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>
+						低电压启动投入
+					</td>
+					<td title="操作">
+						操作
+					</td>
+				</tr>
+			</thead>
+			<tbody style="max-height: 615px;">
+				<tr ng-repeat="item in pageInfo.data" ng-class="{'dz-changeditem':item.changed}">
+					<td title={{$index+1}}>{{$index+1}}</td>
+					<td title={{item.AnalogName}}>{{item.AnalogName}}</td>
+					<!--<td>{{item.AnalogID}}</td>-->
+					<td title={{item.Phase}}>{{item.Phase}}</td>
+					<td title={{item.FlagDC?'是':'否'}}>
+						<input type="checkbox" ng-model="item.FlagDC" disabled />
+						{{item.FlagDC?'是':'否'}}
+					</td>
+					<td title={{item.TB}}>
+						<input type="text" ng-model="item.TB" />
+					</td>
+					<td title={{item.FlagTB?'是':'否'}}>
+						<input type="checkbox" ng-model="item.FlagTB" />
+						{{item.FlagTB?'是':'否'}}
+					</td>
+					<td title={{item.VH}}>
+						<input type="text" ng-model="item.VH" />
+					</td>
+					<td title={{item.FlagVH}}>
+						<input type="checkbox" ng-model="item.FlagVH" />
+						{{item.FlagVH?'是':'否'}}
+					</td>
+					<td title={{item.VL}}>
+						<input type="text" ng-model="item.VL" />
+					</td>
+					<td title={{item.FlagVL?'是':'否'}}>
+						<input type="checkbox" ng-model="item.FlagVL" />
+						{{item.FlagVL?'是':'否'}}
+					</td>
+					<td title="确认">
+						<a class="hot-word" ng-click="dzIndepedentConfirm(item)">确认</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="pageInfo.data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+	<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+</div>

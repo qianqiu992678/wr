@@ -1,0 +1,27 @@
+<div class="yx-appContainer equipmentForecast">
+	<!--table表格-->
+	<div class="yx-table margin-top10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td title="序号">序号</td>
+					<td title="设备">设备</td>
+					<td title="故障预警数据分析">故障预警数据分析</td>
+					<td title="剩余处理时间">剩余处理时间(天)</td>
+					<td title="处理推荐">处理推荐</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in pageInfo.data">
+					<td title={{$index+1}}>{{$index+1}}</td>
+					<td title={{item.equipName}}>{{item.equipName}}</td>
+					<td title={{item.troubleDescribe}}>{{item.troubleDescribe}}</td>
+					<td title={{item.removeInTime}}>{{item.removeInTime}}</td>
+					<td title={{item.recommendRemoveMethod}}>{{item.recommendRemoveMethod}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="pageInfo.data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+	<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+</div>

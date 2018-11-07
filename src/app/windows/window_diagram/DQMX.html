@@ -1,0 +1,69 @@
+
+<div class="diagram-dqmx">
+	<div ng-class="{'svg-btnbox':true,showTool:!showTools}">
+		<ul ng-show="showTools">
+			<li>
+				<select class="folderSelect" name="" ng-change="getSvgFileList()" ng-model="selectedFolderUrl">
+					<!--ng-options="item.url as item.url for item in folderList"-->
+					<option value="">选择文件夹</option>
+					<option ng-repeat='item in folderList' value={{item.url}} ng-if="item.isDirectory">{{item.url}}</option>
+				</select>
+			</li>
+			<li>
+				<select class="svgSelect"  ng-change="svgPageGo(toSvg)" ng-model="toSvg">
+					<!--ng-options="item.url as item.url for item in svgFileList"-->
+					<option value="">选择文件</option>
+					<option ng-repeat='item in svgFileList' 
+						ng-if="!item.isDirectory&&item.url.split('.').pop()=='svg'" 
+						value={{item.url}}>{{item.url}}</option>
+				</select>
+			</li>
+			<li>
+				<button class="no-select btn-positionReset">复位</button>
+			</li>
+			<li>
+				<button class="no-select btn-pageback" 
+					ng-click="svgPageback()"
+					ng-class="{noBack:svgpageBrowsingHistory.length==1,}">
+					上一页
+				</button>
+			</li>
+			<!--<li>
+				<button class="no-select btn-svgDelete" ng-click="svgDeleteFun()">删除本页</button>
+			</li>-->
+			<!--<li>
+				<button class="no-select btn-svgDelete" ng-click="svgExport()">导出本页svg文件</button>
+			</li>-->
+			<li class="showRadarCheckbox">
+				显示小地图：
+				<span ng-class="{'checkbox-true':showRadar,'checkbox-false':!showRadar}">
+					<label>
+						<input type="checkbox" ng-model="showRadar"/>
+						<span>{{showRadar?'是':'否'}}</span>
+					</label>
+				</span>
+			</li>
+			<!--<li ng-click="testN()">
+				test
+			</li>-->
+			
+		</ul>
+		<a class="btnbox-ctrl" ng-click="showTools=!showTools"></a>
+	</div>
+		
+	
+	
+	
+	<!--ng-show="showRadar"-->
+	<!--,'hidden-radar':!showRadar-->
+	<div ng-class="{radarArea:true}" ng-show="showRadar">
+		<div class="areaMap"></div>
+		<div class="currentArea"></div>
+		<div class="areaWrap"></div>
+	</div>
+	
+	<div class="dqmx-svgContainer"></div>
+	
+	
+</div>
+

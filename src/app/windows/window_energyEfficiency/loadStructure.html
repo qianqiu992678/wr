@@ -1,0 +1,53 @@
+<div class="yx-appContainer loadStructure"><!--operateLogS-->
+	<div class="msg-summary">
+		<ul>
+			<li>
+				<table>
+					<thead>
+						<tr>
+							<td>能耗区域</td>
+							<td>能耗（kw）</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in allLoadArr">
+							<td>{{item[0]}}</td>
+							<td>{{item[1]}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+			<li>
+				<table>
+					<thead>
+						<tr>
+							<td>重负荷耗能设备</td>
+							<td>能耗（kw）</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in heavyLoadArr">
+							<td>{{item[0]}}</td>
+							<td>{{item[1]}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+		</ul>
+	</div>
+	<div class="piechartbox">
+		<ul>
+			<li>
+				<div id="chartContainer1" 
+					style="min-height: 320px;" >
+				</div>
+			</li>
+			<li>
+				<div id="chartContainer2" 
+					style="min-height: 320px;" >
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+</div>

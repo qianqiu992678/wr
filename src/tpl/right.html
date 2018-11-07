@@ -1,0 +1,24 @@
+<div class="app-right">
+	<div class="right-title">
+		<span>操作记录</span>
+		<span class="icon iconfont icon-guanbi" 
+			ng-click="showRight()"></span>
+	</div>
+	<!--table表格-->
+	<div class="yx-list margin-bottom10" >
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td>操作</td>
+					<td>时间</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="operate in operateList">
+					<td>{{operate.OperateInfo}}</td>
+					<td>{{operate.time}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

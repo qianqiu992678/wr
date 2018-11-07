@@ -1,0 +1,81 @@
+<div class="LSSJCX ">
+	<!--筛选-->
+	<div class="yx-appPanel yx-appFilter margin-bottom10">
+		<div class="yx-appPanel-header">
+			<div class="panelIcon">
+				<span class="iconfont icon-liebiao"></span>
+			</div>
+			<div class="panelTitle">
+				<span>历史记录查询</span>
+			</div>
+			<i class="btn-show" ng-show="showFilter" ng-click="showFilter=false"></i>
+		</div>
+		<div class="yx-appPanel-body" ng-hide="showFilter">
+			<ul>
+				<li>
+					<div class="inline">
+						<span>起始时间：</span>
+						<input class="xqc-input width200 dataPicker_startTime" 
+							ng-model="startTime" required/>
+						<span>毫秒：</span>
+						<input class="xqc-input width50" type="number"
+							min="0" ng-model="param.length" />
+						<button class="yxBtn yxBtn-Active" ng-click="getDataHistory()"type="button"
+							 ng-Disabled="searching||!startTime||!param.length">
+	                        <div ng-hide="searching">打开</div>
+	                        <div ng-show="searching">
+	                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                        </div>
+	                   </button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--<div class="yx-appPanel-footer" ng-hide="showFilter">
+			<i class="btn-hide" ng-click="showFilter=true"></i>
+		</div>-->
+	</div>
+	<!--table表格-->
+	<!--<div class="yx-table margin-top10 superWidthTable">
+		<table class="yx-tableInfo" style="min-width: 4000px;">
+			<thead>
+				<tr>
+					<td>序号</td>
+					<td>时间</td>
+					<td>A相电压</td>
+					<td>B相电压</td>
+					<td>C相电压</td>
+					<td>AB线电压</td>
+					<td>BC线电压</td>
+					<td>CA线电压</td>
+					<td>频率</td>
+					<td>序号</td>
+					<td>时间</td>
+					<td>A相电压</td>
+					<td>B相电压</td>
+					<td>C相电压</td>
+					<td>AB线电压</td>
+					<td>BC线电压</td>
+					<td>CA线电压</td>
+					<td>频率</td>
+					<td>序号</td>
+					<td>时间</td>
+					<td>A相电压</td>
+					<td>B相电压</td>
+					<td>C相电压</td>
+					<td>AB线电压</td>
+					<td>BC线电压</td>
+					<td>CA线电压</td>
+					<td>频率</td>
+					<td>序号</td>
+					<td>时间</td>
+					<td>A相电压</td>
+				</tr>
+			</thead>
+			<tbody style="max-height: 545px;">
+			<tbody>
+		</table>
+		<div ng-hide="data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>-->
+</div>
+

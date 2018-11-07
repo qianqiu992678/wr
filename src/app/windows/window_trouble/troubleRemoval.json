@@ -1,0 +1,23 @@
+[
+	{
+		"equipName":"便利店冷藏插座",
+		"troubleDescribe":"频繁弧光，介损持续加重严重超负荷，连续7天",
+		"removeInTime":"20",
+		"recommendRemoveMethod":"检测更换"
+	},{
+		"equipName":"灯箱3线缆",
+		"troubleDescribe":"温升异常，缓慢增加",
+		"removeInTime":"32",
+		"recommendRemoveMethod":"设备检修"
+	},{
+		"equipName":"自主餐台插座",
+		"troubleDescribe":"轻微超负荷，连续3天",
+		"removeInTime":"65",
+		"recommendRemoveMethod":"重点关注"
+	},{
+		"equipName":"便利店插座",
+		"troubleDescribe":"轻微超负荷",
+		"removeInTime":"99",
+		"recommendRemoveMethod":"重点关注"
+	}
+]

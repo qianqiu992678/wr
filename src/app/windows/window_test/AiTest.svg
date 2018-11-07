@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="2672px" height="1336px" viewBox="0 0 2672 1336" enable-background="new 0 0 2672 1336" xml:space="preserve">
+<rect x="0" y="0" fill="#003366" stroke="#000000" width="2672" height="1336"/>
+<g id="pageFrame">
+	<text transform="matrix(1 0 0 1 53.9998 92.9998)" fill="#FFFFFF" font-family="'ArialMT'" font-size="48">ULSTEIN IAS</text>
+	<text transform="matrix(1 0 0 1 53.9998 92.9998)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="48">ULSTEIN IAS</text>
+	<g id="menuItem">
+		<rect x="372.726" y="54.757" fill="#003366" stroke="#666666" stroke-width="2" width="166.774" height="42.145"/>
+		<text transform="matrix(1 0 0 1 425.7356 84.7566)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24">PMS</text>
+		<text transform="matrix(1 0 0 1 425.7356 84.7566)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="24">PMS</text>
+	</g>
+	<g id="menuItem_1_">
+		<rect x="562.726" y="54.757" fill="#003366" stroke="#666666" stroke-width="2" width="166.774" height="42.145"/>
+		<text transform="matrix(1 0 0 1 611.7356 83.7566)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24">Cargo</text>
+		<text transform="matrix(1 0 0 1 611.7356 83.7566)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="24">Cargo</text>
+	</g>
+	<g id="menuItem_2_">
+		<rect x="752.726" y="54.904" fill="#003366" stroke="#666666" stroke-width="2" width="166.774" height="42.144"/>
+		<text transform="matrix(1 0 0 1 786.7356 83.9041)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24">Engines</text>
+		<text transform="matrix(1 0 0 1 786.7356 83.9041)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="24">Engines</text>
+	</g>
+	<g id="menuItem_3_">
+		<rect x="939.109" y="54.757" fill="#003366" stroke="#666666" stroke-width="2" width="236.988" height="42.145"/>
+		<text transform="matrix(0.9422 0 0 1 993.6799 83.7566)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24">Propulsions</text>
+		<text transform="matrix(0.9422 0 0 1 993.6799 83.7566)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="24">Propulsions</text>
+	</g>
+	<g id="menuItem_7_">
+		<rect x="1202.236" y="54.83" fill="#003366" stroke="#666666" stroke-width="2" width="166.774" height="42.145"/>
+		<text transform="matrix(1 0 0 1 1241.2454 83.8298)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24">Cooling</text>
+		<text transform="matrix(1 0 0 1 1241.2454 83.8298)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="24">Cooling</text>
+	</g>
+	<g id="menuItem_6_">
+		<rect x="1391.236" y="54.83" fill="#003366" stroke="#666666" stroke-width="2" width="166.772" height="42.145"/>
+		<text transform="matrix(1 0 0 1 1446.2463 83.8298)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24">Misc</text>
+		<text transform="matrix(1 0 0 1 1446.2463 83.8298)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="24">Misc</text>
+	</g>
+	<g id="menuItem_5_">
+		<rect x="1581.236" y="54.977" fill="#003366" stroke="#666666" stroke-width="2" width="166.772" height="42.144"/>
+		<text transform="matrix(1 0 0 1 1631.2463 84.9773)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24">Trend</text>
+		<text transform="matrix(1 0 0 1 1631.2463 84.9773)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="24">Trend</text>
+	</g>
+	<g id="menuItem_4_">
+		<rect x="1769.736" y="54.83" fill="#003366" stroke="#666666" stroke-width="2" width="166.772" height="42.145"/>
+		<text transform="matrix(1 0 0 1 1830.7463 84.8298)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24">IAS</text>
+		<text transform="matrix(1 0 0 1 1830.7463 84.8298)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="24">IAS</text>
+	</g>
+	<g id="alarms">
+		<rect x="1971" y="13" fill="#FF0033" stroke="#FFFFFF" width="172" height="84.121"/>
+		<text transform="matrix(1 0 0 1 2000.0002 64.9998)" fill="#FFFFFF" font-family="'ArialMT'" font-size="36">Alarms</text>
+	</g>
+	<rect x="2192" y="11.671" fill="#003366" stroke="#FFFFFF" width="172" height="84.121"/>
+	<text transform="matrix(1 0 0 1 2216.0002 65.9998)" fill="#FFFFFF" font-family="'ArialMT'" font-size="36">Silence</text>
+	<rect x="2401" y="13" fill="#003366" stroke="#336666" width="238" height="83.975"/>
+	<path fill="#333333" stroke="#FFFFFF" d="M2652.951,1190.997c0,6.005-5.372,10.873-12,10.873H51.69c-6.627,0-12-4.868-12-10.873
+		V141.636c0-6.006,5.373-10.873,12-10.873h2589.262c6.628,0,12,4.867,12,10.873V1190.997z"/>
+	<g id="pageTitle">
+		<rect x="40" y="130.765" fill="#003366" stroke="#FFFFFF" width="485.5" height="55.379"/>
+		<text transform="matrix(1 0 0 1 65.9998 171.9998)" fill="#FFFFFF" font-family="'ArialMT'" font-size="36">Fresh Water Cargo System</text>
+		<text transform="matrix(1 0 0 1 65.9998 171.9998)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="36">Fresh Water Cargo System</text>
+	</g>
+</g>
+<g id="tanks">
+	<g id="tank">
+		<rect x="283" y="305.786" fill="#003366" stroke="#000000" stroke-width="4" width="276.744" height="141.016"/>
+		<rect x="285" y="307.668" fill="#666666" stroke="#000000" width="273.332" height="26"/>
+		<rect x="285" y="333.668" fill="#999999" stroke="#000000" width="273.332" height="111.332"/>
+		<circle fill="#999999" stroke="#FFFFFF" cx="530.666" cy="363.333" r="10.333"/>
+		<rect x="350.333" y="353" stroke="#FFFFFF" width="142.667" height="77.334"/>
+		<text transform="matrix(1 0 0 1 290.3333 325.6667)" fill="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<text transform="matrix(1 0 0 1 290.3333 325.6667)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<circle fill="#999999" stroke="#FFFFFF" cx="530.666" cy="412.001" r="10.333"/>
+		<text transform="matrix(1 0 0 1 389.9998 397.9998)" fill="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<text transform="matrix(1 0 0 1 389.9998 397.9998)" fill="none" stroke="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<rect x="254.464" y="430.25" fill="#999999" stroke="#000000" width="26.473" height="6.084"/>
+		<g id="普通阀">
+			<rect x="224.653" y="411.533" fill="none" stroke="#FFFF00" width="30.812" height="2.408"/>
+			<rect x="238.436" y="413.865" fill="none" stroke="#FFFF00" width="2.464" height="18.059"/>
+			<polygon fill="#FFFFFF" fill-opacity="0" stroke="#FCEE21" stroke-width="2" points="254.289,425.778 254.061,438.911 
+				240.111,432.187 			"/>
+			<polygon fill="#FFFFFF" fill-opacity="0" stroke="#FCEE21" stroke-width="2" points="224.762,438.485 224.989,425.354 
+				238.94,432.077 			"/>
+		</g>
+	</g>
+	<g id="tank_1_">
+		<rect x="281.604" y="918.119" fill="#003366" stroke="#000000" stroke-width="4" width="276.745" height="141.017"/>
+		<rect x="283.604" y="920" fill="#666666" stroke="#000000" width="273.333" height="26"/>
+		<rect x="283.604" y="946" fill="#999999" stroke="#000000" width="273.333" height="111.334"/>
+		<circle fill="#999999" stroke="#FFFFFF" cx="529.271" cy="975.667" r="10.333"/>
+		<rect x="348.938" y="965.334" stroke="#FFFFFF" width="142.667" height="77.334"/>
+		<text transform="matrix(1 0 0 1 288.9377 937.9998)" fill="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<text transform="matrix(1 0 0 1 288.9377 937.9998)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<circle fill="#999999" stroke="#FFFFFF" cx="529.271" cy="1024.335" r="10.333"/>
+		<text transform="matrix(1 0 0 1 388.6042 1010.3337)" fill="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<text transform="matrix(1 0 0 1 388.6042 1010.3337)" fill="none" stroke="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<rect x="253.069" y="1042.584" fill="#999999" stroke="#000000" width="26.474" height="6.084"/>
+		<g id="普通阀_2_">
+			<rect x="223.258" y="1023.867" fill="none" stroke="#FFFF00" width="30.811" height="2.406"/>
+			<rect x="237.041" y="1026.199" fill="none" stroke="#FFFF00" width="2.464" height="18.058"/>
+			<polygon fill="#FFFFFF" fill-opacity="0" stroke="#FCEE21" stroke-width="2" points="252.894,1038.111 252.666,1051.244 
+				238.715,1044.521 			"/>
+			<polygon fill="#FFFFFF" fill-opacity="0" stroke="#FCEE21" stroke-width="2" points="223.366,1050.818 223.593,1037.688 
+				237.544,1044.41 			"/>
+		</g>
+	</g>
+	<g>
+		<rect x="561.33" y="918.119" fill="#003366" stroke="#000000" stroke-width="4" width="276.746" height="141.017"/>
+		<rect x="563.33" y="920" fill="#666666" stroke="#000000" width="273.334" height="26"/>
+		<rect x="563.33" y="946" fill="#999999" stroke="#000000" width="273.334" height="111.334"/>
+		<circle fill="#999999" stroke="#FFFFFF" cx="808.998" cy="975.667" r="10.333"/>
+		<rect x="628.664" y="965.334" stroke="#FFFFFF" width="142.666" height="77.334"/>
+		<text transform="matrix(1 0 0 1 568.6638 937.9998)" fill="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<text transform="matrix(1 0 0 1 568.6638 937.9998)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<circle fill="#999999" stroke="#FFFFFF" cx="808.998" cy="1024.335" r="10.333"/>
+		<text transform="matrix(1 0 0 1 668.3303 1010.3337)" fill="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<text transform="matrix(1 0 0 1 668.3303 1010.3337)" fill="none" stroke="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+	</g>
+	<g id="tank_3_">
+		<rect x="1859.635" y="305.786" fill="#003366" stroke="#000000" stroke-width="4" width="276.744" height="141.016"/>
+		<rect x="1861.635" y="307.668" fill="#666666" stroke="#000000" width="273.334" height="26"/>
+		<rect x="1861.635" y="333.668" fill="#999999" stroke="#000000" width="273.334" height="111.332"/>
+		<circle fill="#999999" stroke="#FFFFFF" cx="2107.302" cy="363.333" r="10.333"/>
+		<rect x="1926.968" y="353" stroke="#FFFFFF" width="142.667" height="77.334"/>
+		<text transform="matrix(1 0 0 1 1866.969 325.6667)" fill="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<text transform="matrix(1 0 0 1 1866.969 325.6667)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<circle fill="#999999" stroke="#FFFFFF" cx="2107.302" cy="412.001" r="10.333"/>
+		<text transform="matrix(1 0 0 1 1966.635 397.9998)" fill="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<text transform="matrix(1 0 0 1 1966.635 397.9998)" fill="none" stroke="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<rect x="1831.1" y="430.25" fill="#999999" stroke="#000000" width="26.473" height="6.084"/>
+		<g id="普通阀_4_">
+			<rect x="1801.287" y="411.533" fill="none" stroke="#FFFF00" width="30.813" height="2.408"/>
+			<rect x="1815.07" y="413.865" fill="none" stroke="#FFFF00" width="2.465" height="18.059"/>
+			<polygon fill="#FFFFFF" fill-opacity="0" stroke="#FCEE21" stroke-width="2" points="1830.924,425.778 1830.695,438.911 
+				1816.746,432.187 			"/>
+			<polygon fill="#FFFFFF" fill-opacity="0" stroke="#FCEE21" stroke-width="2" points="1801.396,438.485 1801.623,425.354 
+				1815.573,432.077 			"/>
+		</g>
+	</g>
+	<g>
+		<rect x="2139.361" y="305.786" fill="#003366" stroke="#000000" stroke-width="4" width="276.745" height="141.016"/>
+		<rect x="2141.361" y="307.668" fill="#666666" stroke="#000000" width="273.333" height="26"/>
+		<rect x="2141.361" y="333.668" fill="#999999" stroke="#000000" width="273.333" height="111.334"/>
+		<circle fill="#999999" stroke="#FFFFFF" cx="2387.028" cy="363.333" r="10.333"/>
+		<rect x="2206.693" y="353" stroke="#FFFFFF" width="142.668" height="77.334"/>
+		<text transform="matrix(1 0 0 1 2146.6936 325.6667)" fill="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<text transform="matrix(1 0 0 1 2146.6936 325.6667)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<circle fill="#999999" stroke="#FFFFFF" cx="2387.028" cy="412.001" r="10.333"/>
+		<text transform="matrix(1 0 0 1 2246.3616 397.9998)" fill="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<text transform="matrix(1 0 0 1 2246.3616 397.9998)" fill="none" stroke="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+	</g>
+	<g id="tank_2_">
+		<rect x="1858.239" y="918.119" fill="#003366" stroke="#000000" stroke-width="4" width="276.745" height="141.017"/>
+		<rect x="1860.239" y="920" fill="#666666" stroke="#000000" width="273.333" height="26"/>
+		<rect x="1860.239" y="946" fill="#999999" stroke="#000000" width="273.333" height="111.334"/>
+		<circle fill="#999999" stroke="#FFFFFF" cx="2105.906" cy="975.668" r="10.334"/>
+		<rect x="1925.572" y="965.334" stroke="#FFFFFF" width="142.667" height="77.334"/>
+		<text transform="matrix(1 0 0 1 1865.5725 937.9998)" fill="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<text transform="matrix(1 0 0 1 1865.5725 937.9998)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<circle fill="#999999" stroke="#FFFFFF" cx="2105.906" cy="1024.334" r="10.334"/>
+		<text transform="matrix(1 0 0 1 1965.2385 1010.3337)" fill="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<text transform="matrix(1 0 0 1 1965.2385 1010.3337)" fill="none" stroke="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<rect x="1829.703" y="1042.584" fill="#999999" stroke="#000000" width="26.474" height="6.084"/>
+		<g id="普通阀_3_">
+			<rect x="1799.893" y="1023.867" fill="none" stroke="#FFFF00" width="30.811" height="2.406"/>
+			<rect x="1813.676" y="1026.199" fill="none" stroke="#FFFF00" width="2.464" height="18.058"/>
+			<polygon fill="#FFFFFF" fill-opacity="0" stroke="#FCEE21" stroke-width="2" points="1829.528,1038.111 1829.301,1051.244 
+				1815.35,1044.521 			"/>
+			<polygon fill="#FFFFFF" fill-opacity="0" stroke="#FCEE21" stroke-width="2" points="1800.002,1050.818 1800.229,1037.688 
+				1814.18,1044.41 			"/>
+		</g>
+	</g>
+	<g>
+		<rect x="2137.965" y="918.119" fill="#003366" stroke="#000000" stroke-width="4" width="276.746" height="141.017"/>
+		<rect x="2139.965" y="920" fill="#666666" stroke="#000000" width="273.334" height="26"/>
+		<rect x="2139.965" y="946" fill="#999999" stroke="#000000" width="273.334" height="111.334"/>
+		<circle fill="#999999" stroke="#FFFFFF" cx="2385.632" cy="975.667" r="10.333"/>
+		<rect x="2205.299" y="965.334" stroke="#FFFFFF" width="142.666" height="77.334"/>
+		<text transform="matrix(1 0 0 1 2145.2991 937.9998)" fill="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<text transform="matrix(1 0 0 1 2145.2991 937.9998)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<circle fill="#999999" stroke="#FFFFFF" cx="2385.632" cy="1024.335" r="10.333"/>
+		<text transform="matrix(1 0 0 1 2244.9651 1010.3337)" fill="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<text transform="matrix(1 0 0 1 2244.9651 1010.3337)" fill="none" stroke="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+	</g>
+	<g>
+		<rect x="336.647" y="595.532" fill="#003366" stroke="#000000" stroke-width="4" width="276.746" height="141.016"/>
+		<rect x="338.647" y="597.413" fill="#666666" stroke="#000000" width="273.333" height="26"/>
+		<rect x="338.647" y="623.413" fill="#999999" stroke="#000000" width="273.333" height="111.333"/>
+		<circle fill="#999999" stroke="#FFFFFF" cx="584.314" cy="653.081" r="10.333"/>
+		<rect x="403.98" y="642.747" stroke="#FFFFFF" width="142.667" height="77.333"/>
+		<text transform="matrix(1 0 0 1 343.9807 615.4138)" fill="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<text transform="matrix(1 0 0 1 343.9807 615.4138)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<circle fill="#999999" stroke="#FFFFFF" cx="584.314" cy="701.746" r="10.333"/>
+		<text transform="matrix(1 0 0 1 443.6472 687.7458)" fill="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<text transform="matrix(1 0 0 1 443.6472 687.7458)" fill="none" stroke="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+	</g>
+	<g>
+		<rect x="2053.627" y="609.727" fill="#003366" stroke="#000000" stroke-width="4" width="276.746" height="141.016"/>
+		<rect x="2055.627" y="611.607" fill="#666666" stroke="#000000" width="273.334" height="26"/>
+		<rect x="2055.627" y="637.607" fill="#999999" stroke="#000000" width="273.334" height="111.334"/>
+		<circle fill="#999999" stroke="#FFFFFF" cx="2301.293" cy="667.275" r="10.333"/>
+		<rect x="2120.961" y="656.941" stroke="#FFFFFF" width="142.666" height="77.334"/>
+		<text transform="matrix(1 0 0 1 2060.9612 629.6072)" fill="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<text transform="matrix(1 0 0 1 2060.9612 629.6072)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<circle fill="#999999" stroke="#FFFFFF" cx="2301.293" cy="715.941" r="10.333"/>
+		<text transform="matrix(1 0 0 1 2160.6272 701.9412)" fill="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<text transform="matrix(1 0 0 1 2160.6272 701.9412)" fill="none" stroke="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+	</g>
+	<g>
+		<rect x="1226.582" y="303.159" fill="#003366" stroke="#000000" stroke-width="4" width="276.746" height="141.016"/>
+		<rect x="1228.582" y="305.041" fill="#666666" stroke="#000000" width="273.334" height="26"/>
+		<rect x="1228.582" y="331.041" fill="#999999" stroke="#000000" width="273.334" height="111.332"/>
+		<circle fill="#999999" stroke="#FFFFFF" cx="1474.25" cy="360.709" r="10.334"/>
+		<rect x="1293.916" y="350.375" stroke="#FFFFFF" width="142.668" height="77.334"/>
+		<text transform="matrix(1 0 0 1 1233.9163 323.0408)" fill="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<text transform="matrix(1 0 0 1 1233.9163 323.0408)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<circle fill="#999999" stroke="#FFFFFF" cx="1474.25" cy="409.374" r="10.334"/>
+		<text transform="matrix(1 0 0 1 1333.5828 395.3738)" fill="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<text transform="matrix(1 0 0 1 1333.5828 395.3738)" fill="none" stroke="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+	</g>
+	<g>
+		<rect x="562.726" y="305.786" fill="#003366" stroke="#000000" stroke-width="4" width="276.746" height="141.016"/>
+		<rect x="564.726" y="307.668" fill="#666666" stroke="#000000" width="273.333" height="26"/>
+		<rect x="564.726" y="333.668" fill="#999999" stroke="#000000" width="273.333" height="111.334"/>
+		<circle fill="#999999" stroke="#FFFFFF" cx="810.393" cy="363.333" r="10.333"/>
+		<rect x="630.059" y="353" stroke="#FFFFFF" width="142.667" height="77.334"/>
+		<text transform="matrix(1 0 0 1 570.0593 325.6667)" fill="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<text transform="matrix(1 0 0 1 570.0593 325.6667)" fill="none" stroke="#FFFFFF" font-family="'ArialMT'" font-size="18">TK33(PS)</text>
+		<circle fill="#999999" stroke="#FFFFFF" cx="810.393" cy="412.001" r="10.333"/>
+		<text transform="matrix(1 0 0 1 669.7258 397.9998)" fill="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+		<text transform="matrix(1 0 0 1 669.7258 397.9998)" fill="none" stroke="#FF0000" font-family="'ArialMT'" font-size="24">Error</text>
+	</g>
+</g>
+<g id="newPipeWIDGET_2_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_2_" fill="none" stroke="#FFFF00" x1="371.168" y1="446.801" x2="371.168" y2="542.741"/>
+	<line id="pipeb_2_" fill="none" stroke="#FFFF00" x1="379.793" y1="446.801" x2="379.793" y2="534.409"/>
+	<g id="fillLine_2_">
+		<line fill="none" stroke="#FFFF00" x1="371.168" y1="458.258" x2="379.981" y2="458.258"/>
+		<line fill="none" stroke="#FFFF00" x1="371.168" y1="473.65" x2="379.981" y2="473.65"/>
+	</g>
+</g>
+<circle fill="#0000CC" stroke="#FFFF00" cx="1111.599" cy="682.553" r="39.806"/>
+<g id="newPipeWIDGET_4_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_4_" fill="none" stroke="#FFFF00" x1="665.32" y1="446.801" x2="665.32" y2="534.659"/>
+	<line id="pipeb_4_" fill="none" stroke="#FFFF00" x1="673.945" y1="446.801" x2="673.945" y2="534.659"/>
+	<g id="fillLine_4_">
+		<line fill="none" stroke="#FFFF00" x1="665.32" y1="457.966" x2="674.132" y2="457.966"/>
+		<line fill="none" stroke="#FFFF00" x1="665.32" y1="472.967" x2="674.132" y2="472.967"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_5_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_5_" fill="none" stroke="#FFFF00" x1="748.494" y1="542.802" x2="748.924" y2="685.75"/>
+	<line id="pipeb_5_" fill="none" stroke="#FFFF00" x1="757.119" y1="533.945" x2="757.149" y2="686.883"/>
+	<g id="fillLine_5_">
+		<line fill="none" stroke="#FFFF00" x1="748.494" y1="552.797" x2="757.307" y2="552.797"/>
+		<line fill="none" stroke="#FFFF00" x1="748.494" y1="578.125" x2="757.307" y2="578.125"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_7_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_7_" fill="none" stroke="#FFFF00" x1="371.815" y1="542.802" x2="748.494" y2="542.802"/>
+	<line id="pipea_7_" fill="none" stroke="#FFFF00" x1="380.378" y1="534.409" x2="756.369" y2="534.409"/>
+	<g id="fillLine_7_">
+		<line fill="none" stroke="#FFFF00" x1="572.211" y1="534.409" x2="572.211" y2="542.802"/>
+		<line fill="none" stroke="#FFFF00" x1="603.664" y1="534.409" x2="603.664" y2="542.802"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_8_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_8_" fill="none" stroke="#FFFF00" x1="384.387" y1="811.743" x2="757.119" y2="811.743"/>
+	<line id="pipea_8_" fill="none" stroke="#FFFF00" x1="375.33" y1="803.352" x2="748.443" y2="803.352"/>
+	<g id="fillLine_8_">
+		<line fill="none" stroke="#FFFF00" x1="460.905" y1="803.352" x2="460.905" y2="811.743"/>
+		<line fill="none" stroke="#FFFF00" x1="496.377" y1="803.352" x2="496.377" y2="811.743"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_9_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_9_" fill="none" stroke="#FFFF00" x1="748.924" y1="686.872" x2="748.924" y2="803.352"/>
+	<line id="pipeb_9_" fill="none" stroke="#FFFF00" x1="757.737" y1="686.872" x2="757.737" y2="811.743"/>
+	<g id="fillLine_9_">
+		<line fill="none" stroke="#FFFF00" x1="748.924" y1="720.04" x2="757.737" y2="720.04"/>
+		<line fill="none" stroke="#FFFF00" x1="748.924" y1="735.07" x2="757.737" y2="735.07"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_10_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_10_" fill="none" stroke="#FFFF00" x1="756.276" y1="695.273" x2="854.277" y2="695.273"/>
+	<line id="pipea_10_" fill="none" stroke="#FFFF00" x1="756.276" y1="686.883" x2="854.277" y2="686.883"/>
+	<g id="fillLine_10_">
+		<line fill="none" stroke="#FFFF00" x1="795.375" y1="686.883" x2="795.375" y2="695.273"/>
+		<line fill="none" stroke="#FFFF00" x1="808.829" y1="686.883" x2="808.829" y2="695.273"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_11_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_11_" fill="none" stroke="#FFFF00" x1="615.406" y1="627.609" x2="748.603" y2="627.609"/>
+	<line id="pipea_11_" fill="none" stroke="#FFFF00" x1="615.406" y1="619.218" x2="747.071" y2="619.218"/>
+	<g id="fillLine_11_">
+		<line fill="none" stroke="#FFFF00" x1="667.937" y1="619.218" x2="667.937" y2="627.609"/>
+		<line fill="none" stroke="#FFFF00" x1="686.014" y1="619.218" x2="686.014" y2="627.609"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_12_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_12_" fill="none" stroke="#FFFF00" x1="614.242" y1="721.385" x2="748.438" y2="721.385"/>
+	<line id="pipea_12_" fill="none" stroke="#FFFF00" x1="614.242" y1="712.993" x2="746.895" y2="712.993"/>
+	<g id="fillLine_12_">
+		<line fill="none" stroke="#FFFF00" x1="667.167" y1="712.993" x2="667.167" y2="721.385"/>
+		<line fill="none" stroke="#FFFF00" x1="685.38" y1="712.993" x2="685.38" y2="721.385"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_13_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_13_" fill="none" stroke="#FFFF00" x1="606" y1="811.746" x2="606" y2="918.839"/>
+	<line id="pipeb_13_" fill="none" stroke="#FFFF00" x1="614.813" y1="811.746" x2="614.813" y2="918.839"/>
+	<g id="fillLine_13_">
+		<line fill="none" stroke="#FFFF00" x1="606" y1="811.746" x2="614.813" y2="811.746"/>
+		<line fill="none" stroke="#FFFF00" x1="606" y1="828.928" x2="614.813" y2="828.928"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_14_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_14_" fill="none" stroke="#FFFF00" x1="375.574" y1="803.352" x2="375.574" y2="918.646"/>
+	<line id="pipeb_14_" fill="none" stroke="#FFFF00" x1="384.387" y1="811.743" x2="384.387" y2="918.646"/>
+	<g id="fillLine_14_">
+		<line fill="none" stroke="#FFFF00" x1="375.574" y1="803.352" x2="384.387" y2="803.352"/>
+		<line fill="none" stroke="#FFFF00" x1="375.574" y1="821.851" x2="384.387" y2="821.851"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_15_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_15_" fill="none" stroke="#FFFF00" x1="854.277" y1="695.704" x2="854.277" y2="815.569"/>
+	<line id="pipeb_15_" fill="none" stroke="#FFFF00" x1="862.902" y1="695.704" x2="862.902" y2="807.549"/>
+	<g id="fillLine_15_">
+		<line fill="none" stroke="#FFFF00" x1="854.277" y1="710.933" x2="863.089" y2="710.933"/>
+		<line fill="none" stroke="#FFFF00" x1="854.277" y1="731.4" x2="863.089" y2="731.4"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_17_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_17_" fill="none" stroke="#FFFF00" x1="854.277" y1="815.939" x2="1115.188" y2="815.939"/>
+	<line id="pipea_17_" fill="none" stroke="#FFFF00" x1="863.28" y1="807.549" x2="1115.188" y2="807.549"/>
+	<g id="fillLine_17_">
+		<line fill="none" stroke="#FFFF00" x1="918.939" y1="807.549" x2="918.939" y2="815.939"/>
+		<line fill="none" stroke="#FFFF00" x1="942.01" y1="807.549" x2="942.01" y2="815.939"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_18_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_18_" fill="none" stroke="#FFFF00" x1="1107.192" y1="724.5" x2="1107.192" y2="807.339"/>
+	<line id="pipeb_18_" fill="none" stroke="#FFFF00" x1="1116.005" y1="724.5" x2="1116.005" y2="807.339"/>
+	<g id="fillLine_18_">
+		<line fill="none" stroke="#FFFF00" x1="1107.192" y1="724.5" x2="1116.005" y2="724.5"/>
+		<line fill="none" stroke="#FFFF00" x1="1107.192" y1="733.614" x2="1116.005" y2="733.614"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_19_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_19_" fill="none" stroke="#FFFF00" x1="1105.553" y1="159.613" x2="1105.553" y2="641.209"/>
+	<line id="pipeb_19_" fill="none" stroke="#FFFF00" x1="1114.365" y1="159.613" x2="1114.365" y2="641.209"/>
+	<g id="fillLine_19_">
+		<line fill="none" stroke="#FFFF00" x1="1105.553" y1="159.613" x2="1114.365" y2="159.613"/>
+		<line fill="none" stroke="#FFFF00" x1="1105.553" y1="236.889" x2="1114.365" y2="236.889"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_21_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_21_" fill="none" stroke="#FFFF00" x1="1116.005" y1="815.939" x2="1262.917" y2="816.15"/>
+	<line id="pipea_21_" fill="none" stroke="#FFFF00" x1="1116.005" y1="807.339" x2="1254.881" y2="807.339"/>
+	<g id="fillLine_21_">
+		<line fill="none" stroke="#FFFF00" x1="1177.158" y1="807.339" x2="1177.158" y2="816.15"/>
+		<line fill="none" stroke="#FFFF00" x1="1194.457" y1="807.339" x2="1194.457" y2="816.15"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_22_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_22_" fill="none" stroke="#FFFF00" x1="1254.881" y1="683.649" x2="1254.881" y2="807.764"/>
+	<line id="pipeb_22_" fill="none" stroke="#FFFF00" x1="1263.506" y1="683.649" x2="1263.506" y2="816.045"/>
+	<g id="fillLine_22_">
+		<line fill="none" stroke="#FFFF00" x1="1254.881" y1="699.422" x2="1263.694" y2="699.422"/>
+		<line fill="none" stroke="#FFFF00" x1="1254.881" y1="720.613" x2="1263.694" y2="720.613"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_23_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_23_" fill="none" stroke="#FFFF00" x1="1263.506" y1="683.486" x2="1952.127" y2="683.486"/>
+	<line id="pipea_23_" fill="none" stroke="#FFFF00" x1="1263.694" y1="674.675" x2="1952.127" y2="674.675"/>
+	<g id="fillLine_23_">
+		<line fill="none" stroke="#FFFF00" x1="1536.047" y1="674.675" x2="1536.047" y2="683.486"/>
+		<line fill="none" stroke="#FFFF00" x1="1628.655" y1="674.675" x2="1628.655" y2="683.486"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_24_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_24_" fill="none" stroke="#FFFF00" x1="2020.832" y1="447.052" x2="2020.832" y2="520.196"/>
+	<line id="pipeb_24_" fill="none" stroke="#FFFF00" x1="2029.457" y1="447.052" x2="2029.457" y2="520.196"/>
+	<g id="fillLine_24_">
+		<line fill="none" stroke="#FFFF00" x1="2020.832" y1="456.345" x2="2029.646" y2="456.345"/>
+		<line fill="none" stroke="#FFFF00" x1="2020.832" y1="468.835" x2="2029.646" y2="468.835"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_25_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_25_" fill="none" stroke="#FFFF00" x1="2296.889" y1="446.677" x2="2296.889" y2="520.168"/>
+	<line id="pipeb_25_" fill="none" stroke="#FFFF00" x1="2305.514" y1="446.677" x2="2305.514" y2="529.385"/>
+	<g id="fillLine_25_">
+		<line fill="none" stroke="#FFFF00" x1="2296.889" y1="457.186" x2="2305.7" y2="457.186"/>
+		<line fill="none" stroke="#FFFF00" x1="2296.889" y1="471.308" x2="2305.7" y2="471.308"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_26_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_26_" fill="none" stroke="#FFFF00" x1="1960.752" y1="528.979" x2="2305.514" y2="528.979"/>
+	<line id="pipea_26_" fill="none" stroke="#FFFF00" x1="1952.127" y1="520.196" x2="2297.069" y2="520.168"/>
+	<g id="fillLine_26_">
+		<line fill="none" stroke="#FFFF00" x1="2091.851" y1="520.168" x2="2091.851" y2="528.979"/>
+		<line fill="none" stroke="#FFFF00" x1="2139.406" y1="520.168" x2="2139.406" y2="528.979"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_27_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_27_" fill="none" stroke="#FFFF00" x1="1952.127" y1="520.196" x2="1952.127" y2="674"/>
+	<line id="pipeb_27_" fill="none" stroke="#FFFF00" x1="1960.752" y1="528.979" x2="1960.752" y2="674"/>
+	<g id="fillLine_27_">
+		<line fill="none" stroke="#FFFF00" x1="1952.127" y1="539.741" x2="1960.94" y2="539.741"/>
+		<line fill="none" stroke="#FFFF00" x1="1952.127" y1="566.003" x2="1960.94" y2="566.003"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_28_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_28_" fill="none" stroke="#FFFF00" x1="1952.127" y1="846.89" x2="2316.778" y2="846.89"/>
+	<line id="pipea_28_" fill="none" stroke="#FFFF00" x1="1960.94" y1="838.077" x2="2325.591" y2="838.077"/>
+	<g id="fillLine_28_">
+		<line fill="none" stroke="#FFFF00" x1="2097.952" y1="838.077" x2="2097.952" y2="846.89"/>
+		<line fill="none" stroke="#FFFF00" x1="2147.637" y1="838.077" x2="2147.637" y2="846.89"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_29_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_29_" fill="none" stroke="#FFFF00" x1="2016.426" y1="846.89" x2="2016.426" y2="917.811"/>
+	<line id="pipeb_29_" fill="none" stroke="#FFFF00" x1="2025.238" y1="846.89" x2="2025.238" y2="917.811"/>
+	<g id="fillLine_29_">
+		<line fill="none" stroke="#FFFF00" x1="2016.426" y1="846.89" x2="2025.238" y2="846.89"/>
+		<line fill="none" stroke="#FFFF00" x1="2016.426" y1="858.269" x2="2025.238" y2="858.269"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_30_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_30_" fill="none" stroke="#FFFF00" x1="2316.778" y1="846.89" x2="2316.778" y2="918.145"/>
+	<line id="pipeb_30_" fill="none" stroke="#FFFF00" x1="2325.591" y1="838.077" x2="2325.591" y2="918.145"/>
+	<g id="fillLine_30_">
+		<line fill="none" stroke="#FFFF00" x1="2316.778" y1="862.89" x2="2325.591" y2="862.89"/>
+		<line fill="none" stroke="#FFFF00" x1="2316.778" y1="858.323" x2="2325.591" y2="858.323"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_31_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_31_" fill="none" stroke="#FFFF00" x1="1952.127" y1="674.675" x2="1952.127" y2="846.541"/>
+	<line id="pipeb_31_" fill="none" stroke="#FFFF00" x1="1960.94" y1="674.675" x2="1960.94" y2="838.077"/>
+	<g id="fillLine_31_">
+		<line fill="none" stroke="#FFFF00" x1="1952.127" y1="674.675" x2="1960.94" y2="674.675"/>
+		<line fill="none" stroke="#FFFF00" x1="1952.127" y1="702.252" x2="1960.94" y2="702.252"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_32_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_32_" fill="none" stroke="#FFFF00" x1="1961.359" y1="638.586" x2="2049.162" y2="638.586"/>
+	<line id="pipea_32_" fill="none" stroke="#FFFF00" x1="1960.94" y1="629.773" x2="2049.162" y2="629.773"/>
+	<g id="fillLine_32_">
+		<line fill="none" stroke="#FFFF00" x1="1995.842" y1="629.773" x2="1995.842" y2="638.586"/>
+		<line fill="none" stroke="#FFFF00" x1="2007.709" y1="629.773" x2="2007.709" y2="638.586"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_33_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_33_" fill="none" stroke="#FFFF00" x1="1964.019" y1="720.348" x2="2051.821" y2="720.348"/>
+	<line id="pipea_33_" fill="none" stroke="#FFFF00" x1="1963.6" y1="711.535" x2="2051.821" y2="711.535"/>
+	<g id="fillLine_33_">
+		<line fill="none" stroke="#FFFF00" x1="1998.5" y1="711.535" x2="1998.5" y2="720.348"/>
+		<line fill="none" stroke="#FFFF00" x1="2010.369" y1="711.535" x2="2010.369" y2="720.348"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_20_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_20_" fill="none" stroke="#FFFF00" x1="864.243" y1="579.066" x2="1105.107" y2="579.066"/>
+	<line id="pipea_20_" fill="none" stroke="#FFFF00" x1="853.858" y1="570.255" x2="1105.107" y2="570.255"/>
+	<g id="fillLine_20_">
+		<line fill="none" stroke="#FFFF00" x1="958.838" y1="570.255" x2="958.838" y2="579.066"/>
+		<line fill="none" stroke="#FFFF00" x1="991.393" y1="570.255" x2="991.393" y2="579.066"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_16_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_16_" fill="none" stroke="#FFFF00" x1="853.858" y1="569.915" x2="853.858" y2="694"/>
+	<line id="pipeb_16_" fill="none" stroke="#FFFF00" x1="862.483" y1="578.482" x2="862.483" y2="694"/>
+	<g id="fillLine_16_">
+		<line fill="none" stroke="#FFFF00" x1="853.858" y1="585.365" x2="862.67" y2="585.365"/>
+		<line fill="none" stroke="#FFFF00" x1="853.858" y1="606.124" x2="862.67" y2="606.124"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_34_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_34_" fill="none" stroke="#FFFF00" x1="1114.81" y1="578.856" x2="1254.881" y2="578.856"/>
+	<line id="pipea_34_" fill="none" stroke="#FFFF00" x1="1114.81" y1="570.465" x2="1263.084" y2="570.465"/>
+	<g id="fillLine_34_">
+		<line fill="none" stroke="#FFFF00" x1="1150.969" y1="570.465" x2="1150.969" y2="578.856"/>
+		<line fill="none" stroke="#FFFF00" x1="1163.412" y1="570.465" x2="1163.412" y2="578.856"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_35_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;longitudinal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipea_35_" fill="none" stroke="#FFFF00" x1="1254.881" y1="578.856" x2="1254.881" y2="683.486"/>
+	<line id="pipeb_35_" fill="none" stroke="#FFFF00" x1="1263.506" y1="570.252" x2="1263.506" y2="683.486"/>
+	<g id="fillLine_35_">
+		<line fill="none" stroke="#FFFF00" x1="1254.881" y1="584.641" x2="1263.693" y2="584.641"/>
+		<line fill="none" stroke="#FFFF00" x1="1254.881" y1="603.975" x2="1263.693" y2="603.975"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_36_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;0&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_36_" fill="none" stroke="#FFFF00" x1="1114.667" y1="159.809" x2="1244.942" y2="159.809"/>
+	<line id="pipea_36_" fill="none" stroke="#FFFF00" x1="1114.365" y1="151.417" x2="1243.135" y2="151.417"/>
+	<g id="fillLine_36_">
+		<line fill="none" stroke="#FFFF00" x1="1149.289" y1="151.417" x2="1149.289" y2="159.809"/>
+		<line fill="none" stroke="#FFFF00" x1="1160.742" y1="151.417" x2="1160.742" y2="159.809"/>
+	</g>
+</g>
+<g id="newPipeWIDGET_37_" onclick="alert('{&quot;compil_info&quot;:&quot;1&quot;,&quot;compil_version&quot;:&quot;0.1&quot;,&quot;widget_type&quot;:&quot;newPipe&quot;,&quot;signalType&quot;:&quot;yaoceObj&quot;,&quot;address&quot;:&quot;3&quot;,&quot;opposite&quot;:&quot;1&quot;,&quot;pipedirect&quot;:&quot;horizontal&quot;,&quot;lineColor&quot;:&quot;red&quot;,&quot;fillColor&quot;:&quot;yellow&quot;}')">
+	<line id="pipeb_37_" fill="none" stroke="#FFFF00" x1="875.805" y1="159.823" x2="1114.251" y2="159.823"/>
+	<line id="pipea_37_" fill="none" stroke="#FFFF00" x1="874.669" y1="151.011" x2="1114.251" y2="151.011"/>
+	<g id="fillLine_37_">
+		<line fill="none" stroke="#FFFF00" x1="969.451" y1="151.011" x2="969.451" y2="159.823"/>
+		<line fill="none" stroke="#FFFF00" x1="1001.679" y1="151.011" x2="1001.679" y2="159.823"/>
+	</g>
+</g>
+</svg>

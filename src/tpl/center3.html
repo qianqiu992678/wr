@@ -1,0 +1,185 @@
+<div class="app-center-footer" ng-show="centerFooter==1">
+	<!--导航-->
+	<div class='page-nav'>
+		<div class="yx-appTabNav">
+			<ul>
+				<li ng-class="{active:item=='gaojing'}" ng-click="footTabSwitch('gaojing')">
+					<a>告警</a>
+				</li>
+				<li ng-click="footTabSwitch('lubo')" ng-class="{active:item=='lubo'}">
+					<a>录波</a>
+				</li>
+			</ul>
+		</div>
+		<span class="icon iconfont icon-guanbi" ng-click="showFooter()"></span>
+	</div>
+	<!--内容-->
+	<div class="footer-content">
+		<!--table表格-->
+		<div class="yx-list margin-bottom10 gaojing" ng-show="item=='gaojing'" >
+			<table class="yx-tableInfo">
+				<thead>
+					<tr>
+						<td>
+							<input type="checkbox" ng-model="check.checkedAll" ng-change="checkAll(currentAlarms)" />
+						</td>
+						<td title="告警时间" ng-click="listSort('Time',currentAlarms)">
+							
+							<span class="orderIndicate" ng-show="sortKey=='Time'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>告警时间
+						</td>
+						<td title="告警信息" ng-click="listSort('message',currentAlarms)">
+							
+							<span class="orderIndicate" ng-show="sortKey=='message'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>告警信息
+						</td>
+						<td title="状态" ng-click="listSort('State',currentAlarms)">
+							
+							<span class="orderIndicate" ng-show="sortKey=='State'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>状态
+						</td>
+						<td title="时长（ms）" ng-click="listSort('Duration',currentAlarms)">
+							
+							<span class="orderIndicate" ng-show="sortKey=='Duration'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>时长
+						</td>
+						<td title="动作数值" ng-click="listSort('WarnValue',currentAlarms)">
+							
+							<span class="orderIndicate" ng-show="sortKey=='WarnValue'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>动作数值
+						</td>
+						<!--ng-mouseover="showOpt=true"-->
+						<td class="footer-opt">
+							操作	
+							<span class="fa fa-fw fa-angle-right"></span>
+							<span class="fa fa-fw fa-angle-down"></span>
+							<ul class="opt-btns">
+								<li>
+									<button class="yxBtn yxBtn-Danger yxBtn-xs" ng-show="item=='gaojing'" ng-Disabled="submiting" ng-click="alarmsClear()">
+									    <div ng-hide="submiting">清空</div>
+									    <div ng-show="submiting">
+									        <span class="fa fa-spin fa-spinner"></span> 请求中 ...
+									    </div>
+									</button>
+								</li>
+								<li>
+									<button class="yxBtn yxBtn-White yxBtn-xs" ng-show="item=='gaojing'" 
+										ng-Disabled="submiting" ng-click="listExport()">
+									    <div ng-hide="submiting">导出</div>
+									    <div ng-show="submiting">
+									        <span class="fa fa-spin fa-spinner"></span> 请求中 ...
+									    </div>
+									</button>
+								</li>
+								<!--<li>
+									<button class="yxBtn yxBtn-White yxBtn-xs" ng-Disabled="submiting" ng-click="alarmsDispose()">
+									    <div ng-hide="submiting">处理</div>
+									    <div ng-show="submiting">
+									        <span class="fa fa-spin fa-spinner"></span> 请求中...
+									    </div>
+									</button>
+								</li>-->
+							</ul>
+						</td>
+					</tr>
+				</thead>
+				<tbody class="footer-tbody">
+					<tr ng-class="{'reset':!item.State}"
+						ng-repeat="item in currentAlarms track by $index" ng-click="item.webState=false">
+						<td>
+							<input type="checkbox" ng-change="checkSingle(currentAlarms)" ng-model="item.checked" />
+						</td>
+						<td title={{item.Time}}>{{item.Time}}</td>
+						<td title={{item.message}}>{{item.message}}</td>
+						<td title={{item.State}}>{{item.State}}</td>
+						<td title={{item.Duration}}>{{item.Duration}}</td>
+						<td title={{item.WarnValue}}>{{item.WarnValue}}</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--录波-->
+		<!--table表格-->
+		<div class="yx-list margin-bottom10 lubo" ng-show="item=='lubo'" >
+			<table class="yx-tableInfo">
+				<thead>
+					<tr ng-click="openFile()">
+						<td title="录波文件信息">录波文件信息（双击打开）</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-dblclick="openFile(item.url)" ng-repeat="item in recordFiles">
+						<td title={{item.address}}>{{item.address}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!--控制器-->
+	<!--<span class="center3Ctrl" ng-mousedown="mouseDown($event)" ng-mouseup="mouseUp($event)" ></span>-->
+</div>
+
+
+
+<!--查看告警处理备注-->
+<div class="yx-modal-wrap gaojingMarkModal" ng-show="modals.gaojingMarkModal">
+	<div class="yx-modal">
+		<div class="yx-smallModal">
+			<div class="yx-modal-top clearfix">
+				<span>提示</span>
+				<span class="close iconfont icon-guanbi" ng-click="modals.gaojingMarkModal=false"></span>
+			</div>
+			<div class="yx-modal-content">
+				<!--table表格-->
+				<div class="yx-table margin-bottom10">
+					<table class="yx-tableInfo">
+						<thead>
+							<tr>
+								<td>时间</td>
+								<td>操作人</td>
+								<td>备注内容</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2018-3-3-09:50:56</td>
+								<td>白居易</td>
+								<td>没问题</td>
+							</tr>
+							<tr>
+								<td>2018-3-3-09:50:56</td>
+								<td>白居易</td>
+								<td>没问题</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="yx-modal-footer">
+				<button class="yxBtn yxBtn-Active" type="button" ng-Disabled="submiting" ng-click="delProjectConfirm()">
+                    <div ng-hide="submiting">确认</div>
+                    <div ng-show="submiting">
+                        <span class="fa fa-spin fa-spinner"></span> 请求中...
+                    </div>
+                </button>
+				<button class="yxBtn yxBtn-White" type="button" ng-Disabled="submiting" ng-click="modals.gaojingMarkModal=false">
+                    <div ng-hide="submiting">取消</div>
+                    <div ng-show="submiting">
+                        <span class="fa fa-spin fa-spinner"></span> 请求中 . . .
+                    </div>
+                </button>
+			</div>
+		</div>
+	</div>
+</div>

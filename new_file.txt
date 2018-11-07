@@ -1,0 +1,70 @@
+2018年8月13日13:53:11
+1，从sinopec最新版本拷贝
+2，./index.html title  修改成：山东方瑞电力科技有限公司
+3，./test/json/navCtrl.json  删除了  
+	能效管理；
+	节能管理；
+	电能质量管理->电能时间报告、电能质量评估；
+	设备只能管理；
+	系统监测管理->遥控；
+	事故预测与预防；
+	系统维护；
+4，./lib/yx-frame/res/css/app.less 增加了.new-yx-table 表格描述使用boot的响应式表格，自定义样式限制body高度
+5，./index.html 引用文件修改  加密了几个js文件，文件名.min.js
+	lib/yx-frame/myJS/drag_scale.min.js
+	config.min.js
+	lib/yx-frame/main.min.js
+	src/app/config-router.min.js
+	src/app/config-router.min.js 引用文件修改fileManageCtrl.min.js
+	加密了一个ctrl.js文件
+	src/app/windows/window_system/fileManageCtrl.min.js
+6， 独立监测点分成两个页面：电流和电压
+	src/app/windows/window_DZManage/dz_independentList(×)->
+	src/app/windows/window_DZManage/dz_cindependentList(√)
+	src/app/windows/window_DZManage/dz_uindependentList(√)
+	
+	src/app/windows/window_DZManage/dzManageCtrl.js
+	src/tpl/left.html 
+	对应修改了
+	src/app/config-router.min.js
+	./test/json/navCtrl.json
+7，  修改了显示：
+	src/app/windows/window_power/DNALCurrentCtrl.js
+	if(i==0){
+		obj.key=`A相基波`;
+	}else{
+		obj.key=`A相${i+1}次谐波`;
+	}
+	
+8，  修改了./lib/yx-frame/res/css/app.less  2018年8月16日14:19:58
+	底部告警表格宽度调整
+	
+9，  修改了src/app/windows/appCtrl.js 修改系统刷新时间限制不能小于5s	
+
+10， src/app/windows/window_alarmRecord/alarmRecord.html  去掉了头部导航
+11， src/app/windows/appCtrl.js
+	增加了方法  $rootScope.sleep，下载三个文件时休眠1000ms
+12，./lib/yx-frame/res/css/app.less
+	底部告警栏z-index:200;
+13，127.0.0.1下，登录成功？秒后处理一次数据  2018年8月17日10:22:58
+	修改了src/app/windows/appCtrl.js
+14，"定值修改，服务器重启中...!"》》》》》》》"定值修改，服务重启中...!"
+	src/tpl/modals.html
+15，lampCWIDGET组件显示有问题，lampCWIDGET组件修改：{reset:newCurrentData.yaoxinObj[3].value==1};
+
+
+16，/messageData.data.YaoXin是number类型，需要先toString()    2018年11月7日 15:20:48
+
+
+
+
+
+
+
+
+
+
+
+
+
+

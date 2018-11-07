@@ -1,0 +1,74 @@
+<div class="app-center-header">
+	<div class="header-content" ng-show="headerContentShow">
+		<!--table表格-->
+		<div class="yx-list margin-bottom10" >
+			<table class="yx-tableInfo">
+				<thead>
+					<tr>
+						<td ng-click="listSort('name',currentCollector.list.allData)">
+							
+							<span class="orderIndicate" ng-show="sortKey=='name'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>名称
+						</td>
+						<td ng-click="listSort('type',currentCollector.list.allData)">
+							
+							<span class="orderIndicate" ng-show="sortKey=='type'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>通道类型
+						</td>
+						<td ng-click="listSort('Channel',currentCollector.list.allData)">
+							
+							<span class="orderIndicate" ng-show="sortKey=='Channel'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>通道号
+						</td>
+						<td ng-click="listSort('Unit',currentCollector.list.allData)">
+							
+							<span class="orderIndicate" ng-show="sortKey=='Unit'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>单位
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in currentCollector.list.allData">
+						<td title={{item.name}}>{{item.name}}</td>
+						<td title={{item.type}}>{{(item.type==1||item.type==2)?'模拟量'
+							:item.type==3?'开关量':item.type==4?'开出量':''}}</td>
+						<td title={{item.Channel}}>{{item.Channel}}</td>
+						<td title={{item.Unit}}>{{item.Unit||'--'}}</td>
+					</tr>
+					<tr class="noData" ng-show="currentCollector.list.allData.length==0">
+						<td colspan="4">
+							<span>
+								暂无数据
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--<div ng-hide="currentCollector.list.allData.length>0" class="m-md alert-warning text-center text-lg">暂无数据</div>-->
+		</div>
+	</div>
+	<div class="contentShow">
+		<ul class="content-units">
+			<li ng-repeat="item in collectorsMsg" 
+				ng-click="collectorCheck(item.name)"
+				ng-class="{communication:item.v1==1,timeConfirmed:item.v2==1,currentItem:item.name==cc&&headerContentShow}">
+				<span>{{item.name.substring(4,item.name.length)}}</span>
+			</li>
+			<!--<li class="communication timeConfirmed currentItem">
+				<span>22</span>
+			</li>-->
+		</ul>
+		<span class="icon icon-arrow-down" ng-click="headerContentShow=!headerContentShow" 
+			ng-hide="headerContentShow"></span>
+		<span class="icon icon-arrow-up" ng-click="headerContentShow=!headerContentShow" 
+			ng-show="headerContentShow"></span>
+	</div>
+</div>

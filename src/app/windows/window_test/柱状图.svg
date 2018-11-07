@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+width="1024px" height="768px" viewBox="0 0 1024 768" enable-background="new 0 0 1024 768" xml:space="preserve">
+	<g id="柱状图" onclick='alert("{'col':'3','row':'6'}")'>
+		<!--横轴及横轴分割线-->
+		<g class='hzmsg'>
+			<line class='hz' fill="none" stroke="#000000" x1="97.199" y1="550.403" x2="782.221" y2="550.403"/>
+			<g>
+				<!--  -->
+				<g id="分割线" class='hzfgx'>
+					<line fill="none" stroke="#000000" x1="97.199" y1="550.403" x2="97.199" y2="539.919"/>
+					<line fill="none" stroke="#000000" x1="268.455" y1="550.403" x2="268.455" y2="539.919"/>
+					<line fill="none" stroke="#000000" x1="439.709" y1="550.403" x2="439.709" y2="539.919"/>
+					<line fill="none" stroke="#000000" x1="610.965" y1="550.403" x2="610.965" y2="539.919"/>
+					<line fill="none" stroke="#000000" x1="782.221" y1="550.403" x2="782.221" y2="539.919"/>
+				</g>
+			</g>
+		</g>
+		<!--纵轴轴标、纵轴、纵轴分割线-->
+		<g id="纵轴轴标" class='zzmsg'>
+			<!--  -->
+			<g class='zzzb'>
+				<text transform="matrix(1 0 0 1 70.4402 562.4441)" font-family="'ArialMT'" font-size="32.1104">0</text>
+				<text transform="matrix(1 0 0 1 54.385 478.5583)" font-family="'ArialMT'" font-size="32.1104">20</text>
+				<text transform="matrix(1 0 0 1 54.385 394.6736)" font-family="'ArialMT'" font-size="32.1104">40</text>
+				<text transform="matrix(1 0 0 1 54.385 310.7869)" font-family="'ArialMT'" font-size="32.1104">60</text>
+				<text transform="matrix(1 0 0 1 54.385 226.9011)" font-family="'ArialMT'" font-size="32.1104">80</text>
+				<text transform="matrix(1 0 0 1 38.3298 143.0154)" font-family="'ArialMT'" font-size="32.1104">100</text>
+			</g>
+			<!--  -->
+			<line class='zz' fill="none" stroke="#000000" x1="97.199" y1="550.403" x2="97.199" y2="130.974"/>
+			<!--  -->
+			<g class='zzfgx'>
+				<line fill="none" stroke="#000000" x1="97.199" y1="550.403" x2="114.325" y2="550.403"/>
+				<line fill="none" stroke="#000000" x1="97.199" y1="466.518" x2="114.325" y2="466.518"/>
+				<line fill="none" stroke="#000000" x1="97.199" y1="382.633" x2="114.325" y2="382.633"/>
+				<line fill="none" stroke="#000000" x1="97.199" y1="298.746" x2="114.325" y2="298.746"/>
+				<line fill="none" stroke="#000000" x1="97.199" y1="214.859" x2="114.325" y2="214.859"/>
+				<line fill="none" stroke="#000000" x1="97.199" y1="130.974" x2="114.325" y2="130.974"/>
+			</g>
+		</g>
+		<g id="条形柱及指示">
+			<g id="项目3">
+				<rect x="829.033" y="130.974" fill="#808080" stroke="#000000" stroke-width="0.5" width="85.628" height="41.942"/>
+				<!--  -->
+				<g>
+					<rect x="207.944" y="277.774" fill="#808080" stroke="#000000" stroke-width="0.5" width="41.102" height="272.629"/>
+					<rect x="379.2" y="151.945" fill="#808080" stroke="#000000" stroke-width="0.5" width="41.101" height="398.458"/>
+					<rect x="550.454" y="214.859" fill="#808080" stroke="#000000" stroke-width="0.5" width="41.103" height="335.544"/>
+					<rect x="721.711" y="256.803" fill="#808080" stroke="#000000" stroke-width="0.5" width="41.102" height="293.601"/>
+				</g>
+			</g>
+			<g id="项目2">
+				<rect x="829.033" y="193.888" fill="#DFDFDF" stroke="#000000" stroke-width="0.5" width="85.628" height="41.942"/>
+				<!--  -->
+				<g>
+					<rect x="162.276" y="193.888" fill="#DFDFDF" stroke="#000000" stroke-width="0.5" width="41.102" height="356.515"/>
+					<rect x="333.532" y="235.831" fill="#DFDFDF" stroke="#000000" stroke-width="0.5" width="41.101" height="314.572"/>
+					<rect x="504.786" y="235.831" fill="#DFDFDF" stroke="#000000" stroke-width="0.5" width="41.103" height="314.572"/>
+					<rect x="676.041" y="193.888" fill="#DFDFDF" stroke="#000000" stroke-width="0.5" width="41.103" height="356.515"/>
+				</g>
+			</g>
+			<g id="项目1">
+				<rect x="829.033" y="256.803" stroke="#000000" stroke-width="0.5" width="85.628" height="41.942"/>
+				<!--  -->
+				<g>
+					<rect x="116.608" y="151.945" stroke="#000000" stroke-width="0.5" width="41.102" height="398.458"/>
+					<rect x="287.864" y="193.888" stroke="#000000" stroke-width="0.5" width="41.102" height="356.515"/>
+					<rect x="459.118" y="172.917" stroke="#000000" stroke-width="0.5" width="41.103" height="377.487"/>
+					<rect x="630.373" y="277.774" stroke="#000000" stroke-width="0.5" width="41.103" height="272.629"/>
+				</g>
+			</g>
+		</g>
+		<g id="项目指示">
+			<!--  -->
+			<text transform="matrix(1 0 0 1 925.3655 163.9871)" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="32.1104">英语</text>
+			<text transform="matrix(1 0 0 1 925.3655 226.9011)" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="32.1104">语文</text>
+			<text transform="matrix(1 0 0 1 925.3655 289.8162)" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="32.1104">数学</text>
+		</g>
+		<g id="横轴轴标">
+			<!--  -->
+			<text transform="matrix(1 0 0 1 664.4827 581.0398)" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="32.1104">李磊</text>
+			<text transform="matrix(1 0 0 1 477.1716 581.0398)" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="32.1104">韩梅梅</text>
+			<text transform="matrix(1 0 0 1 321.9714 581.0398)" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="32.1104">小红</text>
+			<text transform="matrix(1 0 0 1 150.7166 581.0398)" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="32.1104">小明</text>
+		</g>
+	</g>
+</svg>

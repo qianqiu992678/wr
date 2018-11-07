@@ -1,0 +1,39 @@
+<div class="yx-appContainer controlEnergySaving">
+	<div class="ces-tableArea">
+		<select ng-model="date" 
+			ng-options="item.date for item in controlEnergySaving"
+			ng-change="dateSelectFun()"></select>
+		<!--table表格-->
+		<div class="yx-table margin-top10">
+			<table class="yx-tableInfo">
+				<thead>
+					<tr>
+						<td title="设备">设备</td>
+						<td title="实际投运时段">实际投运时段</td>
+						<td title="建议投运时段">建议投运时段</td>
+						<td title="预计节能百分比(%)">预计节能百分比(%)</td>
+						<td title="实际执行率(%)">实际执行率(%)</td>
+						<td title="实际节能百分比(%)">实际节能百分比(%)</td>
+					</tr>
+				</thead>
+				<tbody style="max-height:190px">
+					<tr ng-repeat="item in pageInfo[0].list">
+						<td title={{item.device}}>{{item.device}}</td>
+						<td title={{item.actual_time}}>{{item.actual_time}}</td>
+						<td title={{item.suggest_time}}>{{item.suggest_time}}</td>
+						<td title={{item.expect}}>{{item.expect}}</td>
+						<td title={{item.actual}}>{{item.actual}}</td>
+						<td title={{item.percent}}>{{item.percent}}</td>
+					</tr>
+				</tbody>
+			</table>
+			<div ng-hide="pageInfo.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+		</div>
+	</div>
+	<div class="ces-chartContainer">
+		<div class="chartBox" id="chartBox">
+		
+		</div>
+	</div>
+	
+</div>

@@ -1,0 +1,329 @@
+<div class="yx-appContainer dz_volList">
+	<div ng-hide="volDZEdit">
+		<!--table表格-->
+		<div class="yx-table margin-top10 DNZLCurrentTable">
+			<table class="yx-tableInfo">
+				<thead>
+					<tr>
+						<td title="序号">序号</td>
+						<td title="对象名称" ng-click="listSort('GroupName',pageInfo.data)">
+							<span class="orderIndicate" ng-show="sortKey=='GroupName'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>
+							对象名称
+						</td>
+						<td title="单位" ng-click="listSort('unit',pageInfo.data)">
+							
+							<span class="orderIndicate" ng-show="sortKey=='unit'">
+								<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+								<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+							</span>单位
+						</td>
+						<td title="操作">操作</td>
+					</tr>
+				</thead>
+				<tbody style="max-height: 615px;">
+					<tr ng-repeat="item in pageInfo.data" ng-class="{'dz-changeditem':item.changed}">
+						<td title={{$index+1}}>{{$index+1}}</td>
+						<td title={{item.GroupName}}>{{item.GroupName}}</td>
+						<td title={{item.unit}}>{{item.unit}}</td>
+						<td title="编辑">
+							<a class="hot-word" ng-click="dz_vol_get(item)">编辑</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div ng-hide="pageInfo.data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+		</div>
+		<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+	</div>
+	<div ng-show="volDZEdit">
+		<button class="yxBtn yxBtn-Active" type="button" 
+			ng-click="volDZEdit=false" ng-Disabled="searching">
+            <div ng-hide="searching">返回</div>
+            <div ng-show="searching">
+                <span class="fa fa-spin fa-spinner"></span> 请求中...
+            </div>
+        </button>
+        <button class="yxBtn yxBtn-Active" type="button" ng-click="volMsgConfirm()" ng-Disabled="searching">
+            <div ng-hide="searching">确认</div>
+            <div ng-show="searching">
+                <span class="fa fa-spin fa-spinner"></span> 请求中...
+            </div>
+        </button>
+		<!--编辑页面-->
+		<ul class="yx-edit" style="max-height: 600px;">
+			<li class="edit-title">通用参数：</li>
+			<li class="edit-items">
+				<ul>
+					<li>
+						<span class="item-label">分组名称：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.Name" readonly/>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">单位：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.Unit" readonly/>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">额定电压：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.RatedVol" readonly/>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li class="edit-title">启动定值：</li>
+			<li class="edit-items">
+				<ul>
+					<li>
+						<span class="item-label">突变量：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.QDTB" />
+							<!--<input type="checkbox" />投入-->
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagTB,'checkbox-false':!volZDDetail.data.FlagTB}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagTB"/>
+			            			<span>{{volZDDetail.data.FlagTB?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">电压高越限（V）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.QDVH"/>
+							是否投入：
+							<!--<checkboxswitch is-checked='{isShow}'></checkboxswitch>-->
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagVH,'checkbox-false':!volZDDetail.data.FlagVH}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagVH"/>
+			            			<span>{{volZDDetail.data.FlagVH?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">电压低越限：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.QDVL" />
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagVL,'checkbox-false':!volZDDetail.data.FlagVL}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagVL"/>
+			            			<span>{{volZDDetail.data.FlagVL?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">负序：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.QDV2H" />
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagV2H,'checkbox-false':!volZDDetail.data.FlagV2H}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagV2H"/>
+			            			<span>{{volZDDetail.data.FlagV2H?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">零序：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.QDV0H" />
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagV0H,'checkbox-false':!volZDDetail.data.FlagV0H}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagV0H"/>
+			            			<span>{{volZDDetail.data.FlagV0H?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">频率高越限（Hz）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.FreqH" />
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagFreqH,'checkbox-false':!volZDDetail.data.FlagFreqH}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagFreqH"/>
+			            			<span>{{volZDDetail.data.FlagFreqH?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">频率低越限（Hz）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.FreqL" />
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagFreqL,'checkbox-false':!volZDDetail.data.FlagFreqL}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagFreqL"/>
+			            			<span>{{volZDDetail.data.FlagFreqL?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li class="edit-title">告警定值：</li>
+			<li class="edit-items">
+				<ul>
+					<li>
+						<span class="item-label">不平衡度（%）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.BPH" />
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagBPH,'checkbox-false':!volZDDetail.data.FlagBPH}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagBPH"/>
+			            			<span>{{volZDDetail.data.FlagBPH?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">频率偏差（Hz）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.DeltaFreq" />
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagDeltaFreq,'checkbox-false':!volZDDetail.data.FlagDeltaFreq}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagDeltaFreq"/>
+			            			<span>{{volZDDetail.data.FlagDeltaFreq?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">电压偏差上限（%）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.VolHigh"/>
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagVolHighLow,'checkbox-false':!volZDDetail.data.FlagVolHighLow}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagVolHighLow"/>
+			            			<span>{{volZDDetail.data.FlagVolHighLow?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">电压偏差下限（%）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.VolLow" />
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagVolHighLow,'checkbox-false':!volZDDetail.data.FlagVolHighLow}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagVolHighLow"/>
+			            			<span>{{volZDDetail.data.FlagVolHighLow?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">短时闪变（%）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.MaxPst" />
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagPst,'checkbox-false':!volZDDetail.data.FlagPst}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagPst"/>
+			            			<span>{{volZDDetail.data.FlagPst?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">长时闪变（%）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.MaxPlt" />
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagPlt,'checkbox-false':!volZDDetail.data.FlagPlt}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagPlt"/>
+			            			<span>{{volZDDetail.data.FlagPlt?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">总谐波（%）：</span>
+						<div class="item-input">
+							<input type="text" ng-model="volZDDetail.data.TotalXB" />
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagTotalXB,'checkbox-false':!volZDDetail.data.FlagTotalXB}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagTotalXB"/>
+			            			<span>{{volZDDetail.data.FlagTotalXB?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">电压暂降投入：</span>
+						<div class="item-input">
+							<!--<input type="text" ng-model="volZDDetail.data.QDTB" />-->
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagVolDown,'checkbox-false':!volZDDetail.data.FlagVolDown}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagVolDown"/>
+			            			<span>{{volZDDetail.data.FlagVolDown?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">电压暂升投入：</span>
+						<div class="item-input">
+							<!--<input type="text" ng-model="volZDDetail.data.QDTB" />-->
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagVolUp,'checkbox-false':!volZDDetail.data.FlagVolUp}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagVolUp"/>
+			            			<span>{{volZDDetail.data.FlagVolUp?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">电压中断投入：</span>
+						<div class="item-input">
+							<!--<input type="text" ng-model="volZDDetail.data.QDTB" />-->
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagVolBreak,'checkbox-false':!volZDDetail.data.FlagVolBreak}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagVolBreak"/>
+			            			<span>{{volZDDetail.data.FlagVolBreak?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+					<li>
+						<span class="item-label">电压长时中断投入：</span>
+						<div class="item-input">
+							是否投入：
+							<span ng-class="{'checkbox-true':volZDDetail.data.FlagVolLongBreak,'checkbox-false':!volZDDetail.data.FlagVolLongBreak}">
+			            		<label>
+			            			<input type="checkbox" ng-model="volZDDetail.data.FlagVolLongBreak"/>
+			            			<span>{{volZDDetail.data.FlagVolLongBreak?'是':'否'}}</span>
+			            		</label>
+			            	</span>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+
+

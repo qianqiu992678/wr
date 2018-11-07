@@ -1,0 +1,58 @@
+
+<div class="left-sysInfo">
+    <div class="sysInfo-sysName">
+    	<!--<span class="yx-logo"></span>-->
+    </div>
+    <!--个人信息-->
+    <div class="sysInfo-userInfo">
+    	<div class="noLogin" ng-hide="hasUserInfo" ng-click="modals.systemLoginModal=true">
+    		<img src="lib/yx-frame/res/img/xiaoren.png" alt="" />
+    		点击登录客户端
+    	</div>
+    	<div class="hasLogin" ng-show="hasUserInfo">
+    		<img src="lib/yx-frame/res/img/xiaoren.png"/>
+    		<span>{{userName}}</span>
+    	</div>
+    </div>
+</div>
+<div class="">
+	
+</div>
+<ul class="left-menuList" ng-controller="navCtrl">
+    <li ng-repeat="menu in menuList "  ng-class="{active: $state.includes('**.{{menu.permission}}.**')}">
+        <a ng-if="menu.leaf==0" href class="auto" ng-click="showHide(menu)">
+	      <span class="pull-right text-muted">
+	        <i class="fa fa-fw fa-angle-right text" ng-hide="menu.isShow"></i>
+	        <i class="fa fa-fw fa-angle-down text-active" ng-show="menu.isShow"></i>
+	      </span>
+            <!--<i class="{{menu.iconcls}}"></i>-->
+            <span>{{menu.menuName}}</span>
+        </a>
+        <ul ng-if="menu.leaf==0" class="nav nav-sub dk" ng-show="menu.isShow">
+            <li ng-repeat="rm in menu.menuBeans" ng-class="{active: $state.includes('**.{{rm.permission}}.**')}">
+                <!--ui-sref="{{rm.request}}"-->
+                <a ng-click="menuFun(rm)" >
+                    <!--<i class="{{rm.iconcls}}"></i>-->
+                    <span>{{rm.menuName}}</span>
+                    <span ng-if="rm.command=='dzUpdateConfirmFun'&&
+                    	((dzUpdateMsg.upoint.length!=0)||(dzUpdateMsg.cpoint.length!=0)||(dzUpdateMsg.icpoint.length!=0)||(dzUpdateMsg.iupoint.length!=0)||(dzUpdateMsg.kpoint.length!=0))"
+                    	class="warning-word" style="float: right;margin-right: 6px;">*</span>
+                </a>
+                <span ng-if="rm.command=='leftAreaLock'" 
+ng-class="{'checkbox-true':leftLock,'checkbox-false':!leftLock,leftCtrl:true}">
+            		<label>
+            			<input type="checkbox" ng-model="leftLock" ng-change="leftLockFun()"/>
+            			<span>{{leftLock?'是':'否'}}</span>
+            		</label>
+            	</span>
+            </li>
+        </ul>
+        <!--ui-sref="{{menu.request}}"-->
+        <a ng-if="menu.leaf==1" ng-click="menuFun(menu)" ng-class="{active:menu.status}">
+            <!--<i class="{{menu.iconcls}}"></i>-->
+            <span>{{menu.menuName}}</span>
+        </a>
+    </li>
+
+
+</ul>

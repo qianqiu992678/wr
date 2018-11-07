@@ -1,0 +1,93 @@
+<div class="yx-appContainer equipmentSelectItem">
+	<select ng-init="item='switch'" ng-model="item" ng-change="itemChangeFun()">
+		<option value="switch">开关类</option>
+		<option value="important">重点设备</option>
+		<option value="others">其他类</option>
+	</select>
+	<!--table表格-->
+	<div class="yx-table margin-top10" ng-if="item=='switch'">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td title="设备名称">设备名称</td>
+					<td title="已动作次数">已动作次数</td>
+					<td title="服役时长（月）">服役时长（月）</td>
+					<td title="预估剩余动作次数">预估剩余动作次数</td>
+					<td title="预估寿命（月）">预估寿命（月）</td>
+					<td title="损耗程度(%)">损耗程度(%)</td>
+					<td title="是否需重点观察">是否需重点观察</td>
+				</tr>
+			</thead>
+			<tbody style="max-height: 580px;">
+				<tr ng-repeat="item in switch">
+					<td title={{item.name}}>{{item.name}}</td>
+					<td title={{times}}>{{item.times}}</td>
+					<td title={{item.onlineTime}}>{{item.onlineTime}}</td>
+					<!--<td title={{item.preTimes}}>{{item.preTimes}}</td>-->
+					<td title="{{(50-item.times>0)?(50-item.times):0}}">{{(20000-item.times>0)?(20000-item.times):0}}</td>
+					<td title={{item.leftTime}}>{{item.leftTime}}</td>
+					<td title={{item.wearLevel}}>{{item.wearLevel}}</td>
+					<td ng-class="{'alarmItem':item.needAttention}" title={{item.needAttention?'是':'否'}}>{{item.needAttention?'是':'否'}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="switch.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+	<!--table表格-->
+	<div class="yx-table margin-top10" ng-if="item =='others'">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td title="设备名称">设备名称</td>
+					<td title="服役时长（月）">服役时长（月）</td>
+					<td title="预估寿命（月）">预估寿命（月）</td>
+					<td title="损耗程度(%)">损耗程度(%)</td>
+					<td title="是否需重点观察">是否需重点观察</td>
+					<td title="当前状态">当前状态</td>
+				</tr>
+			</thead>
+			<tbody style="max-height: 580px;">
+				<tr ng-repeat="item in others">
+					<td title={{item.name}}>{{item.name}}</td>
+					<td title={{item.onlineTime}}>{{item.onlineTime}}</td>
+					<td title={{item.leftTime}}>{{item.leftTime}}</td>
+					<td title={{item.wearLevel}}>{{item.wearLevel}}</td>
+					<td title={{item.needAttention?'是':'否'}}
+						 ng-class="{'alarmItem':item.needAttention}">
+						 {{item.needAttention?'是':'否'}}
+					</td>
+					<td title={{item.currentStatus==1?'良好':item.currentStatus==2?'异常待检查':'故障待修'}}
+						ng-class="{'alarmItem':item.currentStatus==3,'warningItem':item.currentStatus==2,'successItem':item.currentStatus==1}">
+						{{item.currentStatus==1?'良好':item.currentStatus==2?'异常待检查':'故障待修'}}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="others.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+	<!--table表格-->
+	<div class="yx-table margin-top10" ng-if="item=='important'">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td title="设备名称">设备名称</td>
+					<td title="服役时长（月）">服役时长（月）</td>
+					<td title="预估寿命（月）">预估寿命（月）</td>
+					<td title="损耗程度(%)">损耗程度(%)</td>
+					<td title="是否需重点观察">是否需重点观察</td>
+				</tr>
+			</thead>
+			<tbody style="max-height: 580px;">
+				<tr ng-repeat="item in important">
+					<td title={{item.name}}>{{item.name}}</td>
+					<td title={{item.onlineTime}}>{{item.onlineTime}}</td>
+					<td title={{item.leftTime}}>{{item.leftTime}}</td>
+					<td title={{item.wearLevel}}>{{item.wearLevel}}</td>
+					<td ng-class="{'alarmItem':item.needAttention}" title={{item.needAttention?'是':'否'}}>{{item.needAttention?'是':'否'}}</td>
+					
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="important.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+</div>

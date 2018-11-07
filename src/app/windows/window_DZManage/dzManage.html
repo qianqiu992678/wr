@@ -1,0 +1,39 @@
+<!-- toaster directive -->
+<!--<toaster-container toaster-options="{'position-class': 'toast-top-right', 'close-button':true}"></toaster-container>-->
+<!-- / toaster directive -->
+
+<!--内容容器，默认有内边距10px-->
+<div class="yx-appContainer">
+	<!--导航-->
+	<div class="page-nav">
+		<div class="yx-appTabNav margin-bottom10">
+			<ul>
+				<li ng-class="{active:$state.includes('**.dz_volList.**')}" ui-sref="main.dzManage.dz_volList">
+					<a>电压</a>
+				</li>
+				<li ng-class="{active:$state.includes('**.dz_curList.**')}" ui-sref="main.dzManage.dz_curList">
+					<a>电流</a>
+				</li>
+				<li ng-class="{active:$state.includes('**.dz_independentList.**')}" ui-sref="main.dzManage.dz_independentList">
+					<a>独立监测点</a>
+				</li>
+				<li ng-class="{active:$state.includes('**.dz_switchList.**')}" ui-sref="main.dzManage.dz_switchList">
+					<a>开关量</a>
+				</li>
+				<!--<li ng-class="{active:$state.includes('**.dz_protectList.**')}" ui-sref="main.dzManage.dz_protectList">
+					<a>保护定值</a>
+				</li>
+				<li ng-class="{active:$state.includes('**.dz_systemList.**')}" ui-sref="main.dzManage.dz_systemList">
+					<a>系统定值</a>
+				</li>
+				<li ng-class="{active:$state.includes('**.dz_alarmList.**')}" ui-sref="main.dzManage.dz_alarmList">
+					<a>告警定值</a>
+				</li>
+				<li ng-class="{active:$state.includes('**.dz_recordStartList.**')}" ui-sref="main.dzManage.dz_recordStartList">
+					<a>录波定值</a>
+				</li>-->
+			</ul>
+		</div>
+	</div>
+	<div ui-view></div>
+</div>

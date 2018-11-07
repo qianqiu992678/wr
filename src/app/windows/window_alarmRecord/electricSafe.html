@@ -1,0 +1,89 @@
+<!-- toaster directive -->
+<toaster-container toaster-options="{'position-class': 'toast-top-right', 'close-button':true}"></toaster-container>
+<!-- / toaster directive -->
+
+<!--内容容器，默认有内边距10px-->
+<div class="yx-appContainer electricSafe">
+	<div class="tableArea">
+		<!--table表格-->
+		<div class="yx-table margin-top10">
+			<table class="yx-tableInfo">
+				<thead>
+					<tr>
+						<td title="序号">序号</td>
+						<td title="时间">时间</td>
+						<td title="设备名称">设备名称</td>
+						<td title="异常情况">异常情况</td>
+						<td title="处理记录">处理记录</td>
+						<td title="效果">效果</td>
+					</tr>
+				</thead>
+				<tbody style="max-height:390px">
+					<tr>
+						<td title="1">1</td>
+						<td title="2017-08-01">2017-08-01</td>
+						<td title="空调1供电线路">空调1供电线路</td>
+						<td title="电弧告警，温升告警">电弧告警，温升告警</td>
+						<td title="20180106检修，线路绝缘破损，更换">20180106检修，线路绝缘破损，更换</td>
+						<td title="排查故障隐患1处">排查故障隐患1处</td>
+					</tr>
+					<tr>
+						<td title="2">2</td>
+						<td title="2017-09-25">2017-09-25</td>
+						<td title="加油机1供电线路">加油机1供电线路</td>
+						<td title="电弧频繁告警">电弧频繁告警</td>
+						<td title="20170930检修，线路绝缘破损，更换">20170930检修，线路绝缘破损，更换</td>
+						<td title="排查故障隐患1处">排查故障隐患1处</td>
+					</tr>
+					<tr>
+						<td title="3">3</td>
+						<td title="2017-12-16">2017-12-16</td>
+						<td title="空开2">空开2</td>
+						<td title="空开节点温升多次告警">空开节点温升多次告警</td>
+						<td title="20171220检修，更换部分老化线路">20171220检修，更换部分老化线路</td>
+						<td title="排查故障隐患1处">排查故障隐患1处</td>
+					</tr>
+					<tr>
+						<td title="4">4</td>
+						<td title="2018-02-06">2018-02-06</td>
+						<td title="灯箱3">灯箱3</td>
+						<td title="电弧频繁告警">电弧频繁告警</td>
+						<td title="20180209检查线路绝缘，更换线缆">20180209检查线路绝缘，更换线缆</td>
+						<td title="排查故障隐患1处">排查故障隐患1处</td>
+					</tr>
+					<tr>
+						<td title="5">5</td>
+						<td title="2018-05-03">2018-05-03</td>
+						<td title="空调2供电线路">空调2供电线路</td>
+						<td title="介损增高告警，轻微过负荷告警">介损增高告警，轻微过负荷告警</td>
+						<td title="20180510检修，线路老化，更换">20180510检修，线路老化，更换</td>
+						<td title="排查故障隐患1处">排查故障隐患1处</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="dataDescription">
+		<h4 class="description-title">设备管理效果</h4>
+		<ul class="description-content">
+			<li>
+				<span>改造前:</span>
+				<p>
+					<span>电气数据异常发生频次：</span>未检测，更换线路3次 <br />
+					<span>电气隐患排查方式：</span>定期检修，间隔3月<br />
+					<span>电气隐患检查成本：</span>10人*天/3个月<br />
+					<span>电气隐患检查效果：</span>依靠人工作业和丰富的经验，定期对可见线路部分和设备进行安全检查
+				</p>
+			</li>
+			<li>
+				<span>改造后:</span>
+				<p>
+					<span>电气数据异常发生频次：</span>5次 <br />
+					<span>电气隐患排查方式：</span>精确定位，实时在线<br />
+					<span>电气隐患检查成本：</span>1人*天/3个月<br />
+					<span>电气隐患检查效果：</span>自动智能监测，实时在线，对全站线路、设备进行灵敏识别异常，并精确定位故障
+				</p>
+			</li>
+		</ul>
+	</div>
+</div>

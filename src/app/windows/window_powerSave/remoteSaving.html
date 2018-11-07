@@ -1,0 +1,28 @@
+<div class="yx-appContainer remoteSaving"><!--operateLogS-->
+	<!--table表格-->
+	<div class="yx-table margin-top10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td title="日期">日期</td>
+					<td title="节能区域/设备">节能区域/设备</td>
+					<td title="远程控制节能时长">远程控制节能时长（小时）</td>
+					<td title="节约能耗">节约能耗（kWh）</td>
+					<td title="节约成本">节约成本</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in pageInfo.data">
+					<td title={{item.time}}>{{item.time}}</td>
+					<td title={{item.device}}>{{item.device}}</td>
+					<td title={{item.continue}}>{{item.continue}}</td>
+					<td title={{item.energy}}>{{item.energy}}</td>
+					<td title={{item.pay}}>{{item.pay}}</td>
+					
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="pageInfo.data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+	<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+</div>

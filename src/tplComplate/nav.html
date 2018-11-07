@@ -1,0 +1,36 @@
+<!-- list -->
+<ul class="nav"  ng-controller="navCtrl" >
+	<li ng-repeat="menu in menuList "  ng-class="{active: $state.includes('**.{{menu.permission}}.**')}">
+	    <a ng-if="menu.leaf==0" href class="auto">
+	      <span class="pull-right text-muted">
+	        <i class="fa fa-fw fa-angle-right text"></i>
+	        <i class="fa fa-fw fa-angle-down text-active"></i>
+	      </span>
+	      <i class="{{menu.iconcls}}"></i>
+		  <span>{{menu.menuName}}</span>
+	    </a>
+	    <ul ng-if="menu.leaf==0" class="nav nav-sub dk">
+		      <li ng-repeat="rm in menu.menuBeans" ng-class="{active: $state.includes('**.{{rm.permission}}.**')}">
+		        <a ui-sref="{{rm.request}}">
+		        	<!--<i class="{{rm.iconcls}}"></i>-->
+		          <span>&nbsp;&nbsp;&nbsp;&nbsp;{{rm.menuName}}</span>
+		        </a>
+		      </li>
+	     </ul>
+	     <a ng-if="menu.leaf==1" ui-sref="{{menu.request}}">
+			<i class="{{menu.iconcls}}"></i>
+			<span>{{menu.menuName}}</span>
+		</a>
+	</li>
+	<div class="nav-footer" ng-if="compInfo.companyCredit">
+		<div class="progress">
+		  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100" ng-init="myStyle={width:(compInfo.companyCredit.creditUnused/compInfo.companyCredit.creditTotal)*100+'%'}" ng-style="myStyle">
+		  	<span class="numTip">
+		  		{{(compInfo.companyCredit.creditUnused/compInfo.companyCredit.creditTotal)*100 | number:"2"}}%<b class="glyphicon glyphicon-triangle-bottom"></b>
+		  	</span>
+		  </div>
+		</div>
+		<p>合同约定金额：{{compInfo.companyCredit.creditTotal | number:"2"}}元</p>
+		<p>剩余额度：{{compInfo.companyCredit.creditUnused | number:"2"}}元</p>
+	</div>
+</ul>

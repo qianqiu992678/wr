@@ -1,0 +1,31 @@
+[
+	{
+		"name":"电视",
+		"onlineTime":"32",
+		"leftTime":"4",
+		"needAttention":1,
+		"currentStatus":2,
+		"wearLevel":87
+	},{
+		"name":"易捷灯箱",
+		"onlineTime":32,
+		"leftTime":4,
+		"needAttention":1,
+		"currentStatus":2,
+		"wearLevel":78
+	},{
+		"name":"冰箱",
+		"onlineTime":24,
+		"leftTime":12,
+		"needAttention":0,
+		"currentStatus":1,
+		"wearLevel":35
+	},{
+		"name":"便利店空调",
+		"onlineTime":"21",
+		"leftTime":"15",
+		"needAttention":0,
+		"currentStatus":1,
+		"wearLevel":23
+	}
+]

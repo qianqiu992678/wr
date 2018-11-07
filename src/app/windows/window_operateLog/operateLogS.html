@@ -1,0 +1,104 @@
+<div class="yx-appContainer operateLogS">
+	<!--筛选-->
+	<div class="yx-appPanel yx-appFilter margin-bottom10">
+		<div class="yx-appPanel-header">
+			<div class="panelIcon">
+				<span class="iconfont icon-liebiao"></span>
+			</div>
+			<div class="panelTitle">
+				<span>筛选</span>
+			</div>
+			<i class="btn-show" ng-show="showFilter" ng-click="showFilter=false"></i>
+		</div>
+		<div class="yx-appPanel-body" ng-hide="showFilter">
+			<ul>
+				<li>
+<div class="inline">
+	<span>日期&nbsp;&nbsp;</span>
+	<input class="xqc-input width200 dataPicker_startTime" dateread="param.start_time" 
+		 ng-model="param.start_time"
+		ng-value="param.start_time" required />&nbsp;—&nbsp;
+	<input class="xqc-input width200 dataPicker_endTime" dateread="param.end_time" 
+		 ng-model="param.param.end_time"
+		ng-value="param.end_time"required/>
+	<select ng-change="quickSearch()" ng-model="days">
+		<option value="">快速选择</option>
+		<option value="1">最近1天</option>
+		<option value="7">最近7天</option>
+		<option value="30">最近30天</option>
+	</select>
+	<button class="yxBtn yxBtn-Active" type="button" 
+		ng-click="getOperateLog()" ng-Disabled="searching||!param.start_time||!param.end_time">
+        <div ng-hide="searching">查询</div>
+        <div ng-show="searching">
+            <span class="fa fa-spin fa-spinner"></span> 请求中...
+        </div>
+    </button>
+	
+    <button class="yxBtn yxBtn-Active" type="button" 
+		ng-click="listExport()" ng-Disabled="searching||!operateLog">
+        <div ng-hide="searching">导出</div>
+        <div ng-show="searching">
+            <span class="fa fa-spin fa-spinner"></span> 请求中...
+        </div>
+    </button>
+</div>
+				</li>
+			</ul>
+		</div>
+		<!--<div class="yx-appPanel-footer" ng-hide="showFilter">
+			<i class="btn-hide" ng-click="showFilter=true"></i>
+		</div>-->
+	</div>
+	<!--table表格-->
+	<div class="yx-table margin-top10 DNZLCurrentTable">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td ng-click="listSort('InfoID',pageInfo.data)">
+						
+						<span class="orderIndicate" ng-show="sortKey=='InfoID'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>记录ID
+					</td>
+					<td ng-click="listSort('OperateTime',pageInfo.data)">
+						
+						<span class="orderIndicate" ng-show="sortKey=='OperateTime'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>操作时间
+					</td>
+					<td ng-click="listSort('OperateInfo',pageInfo.data)">
+						
+						<span class="orderIndicate" ng-show="sortKey=='OperateInfo'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>操作信息
+					</td>
+					<!--ng-click="listSort('UserName',pageInfo.data)"-->
+					<td >
+						
+						<!--<span class="orderIndicate" ng-show="sortKey=='UserName'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>-->
+						操作人
+					</td>
+				</tr>
+			</thead>
+			<tbody style="max-height: 560px;">
+				<tr ng-repeat="item in pageInfo.data">
+					<td title={{item.InfoID}}>{{item.InfoID}}</td>
+					<!--.split('.')[0]-->
+					<td title={{item.time}}>{{item.time}}</td>
+					<td title={{item.OperateInfo}}>{{item.OperateInfo}}</td>
+					<td title={{item.UserName||'--'}}>{{item.UserName||'--'}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="pageInfo.data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+	<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+</div>
+

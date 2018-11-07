@@ -1,0 +1,2689 @@
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+td,
+i,
+b,
+s,
+u,
+button,
+input,
+textarea {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.yxBlue {
+  color: #eee;
+}
+.hot-word {
+  color: #4f93ce;
+  font-size: 14px ;
+}
+.success-word {
+  color: #5BB85D;
+  font-size: 14px;
+}
+.warning-word {
+  color: #D9544F;
+  font-size: 14px;
+}
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*左边导航*/
+.nav * {
+  font-size: 14px;
+}
+/*顶部右边文字*/
+.nav.navbar-nav * {
+  font-size: 16px;
+}
+.panel {
+  margin-bottom: 0;
+}
+body {
+  font-family: "Microsoft YaHei", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.42857143;
+  color: #000;
+  background-color: #eee;
+}
+ul {
+  list-style-type: none;
+}
+body > div.ng-scope {
+  height: 100%;
+}
+.app-content .body-bg {
+  width: 100%;
+  height: 1999px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 1;
+}
+.container .body-bg {
+  width: 100%;
+  height: 999px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+*:focus {
+  outline: 0 !important;
+}
+th {
+  text-align: inherit;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #2177ba;
+}
+.uploadImg label {
+  margin: 0;
+}
+.uploadImg .upLoading {
+  text-align: center;
+  padding-top: 10px;
+}
+.uploadImg .upLoading .fa-spin {
+  font-size: 38px;
+}
+.uploadImg .uploadPic {
+  border: 1px solid #cceeff;
+  width: 85px;
+  height: 85px;
+  margin-bottom: 0;
+  background: #e0f5ff;
+  color: #fff;
+  padding-left: 14px;
+  padding-top: 7px;
+  cursor: pointer;
+  line-height: normal;
+  overflow: hidden;
+}
+.uploadImg .uploadPic input {
+  display: none;
+}
+.upload-imgs,
+.upload-loading,
+.upload-add {
+  display: inline-block;
+  border: 1px solid #cceeff;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  margin-left: 6px;
+  text-align: center;
+  line-height: 54px;
+}
+.upload-imgs {
+  overflow: initial;
+}
+.upload-imgs > span {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.upload-imgs > span > b {
+  position: absolute;
+  right: -7px;
+  top: -8px;
+  border-radius: 10px;
+  background: #ddd;
+  padding: 3px 3px 3px 3px;
+  font-size: 13px;
+}
+.upload-loading {
+  text-align: center;
+  padding-top: 20px;
+}
+.upload-loading .fa-spin {
+  font-size: 38px;
+  color: #567392;
+}
+.uploadPic {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 0;
+  background: #e0f5ff;
+  color: #27a9e3;
+  padding-left: 0px;
+  padding-top: 19px;
+  cursor: pointer;
+  line-height: normal;
+  overflow: hidden;
+}
+#toast-container {
+  z-index: 1000 !important;
+}
+.xdsoft_datetimepicker * {
+  font-size: 13px !important;
+}
+.margin {
+  margin: 15px;
+}
+.margin30 {
+  margin: 30px;
+}
+.margin-left {
+  margin-left: 15px;
+}
+.margin-left30 {
+  margin-left: 30px;
+}
+.margin-right {
+  margin-right: 15px !important;
+}
+.margin-right30 {
+  margin-right: 30px !important;
+}
+.margin-top {
+  margin-top: 15px;
+}
+.margin-top30 {
+  margin-top: 30px;
+}
+.margin-bottom {
+  margin-bottom: 15px;
+}
+.margin-bottom30 {
+  margin-bottom: 30px;
+}
+.margin-nBottom30 {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.margin-side {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.margin-side30 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.margin-side45 {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+.margin-side60 {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.padding {
+  padding: 15px;
+}
+.padding-top {
+  padding-top: 15px;
+}
+.padding-top6 {
+  padding-top: 6px;
+}
+.padding-side {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+.padding-left20 {
+  padding-left: 20px;
+}
+.padding30 {
+  padding: 30px;
+}
+.width100 {
+  width: 100px !important;
+}
+.width50 {
+  width: 50px !important;
+}
+.width160 {
+  width: 160px !important;
+}
+.width130 {
+  width: 130px !important;
+}
+.width230 {
+  width: 230px !important;
+}
+.width200 {
+  width: 200px !important;
+}
+.width350 {
+  width: 350px !important;
+}
+.rt {
+  float: right;
+}
+.lf {
+  float: left;
+}
+.noBorder {
+  border: none !important;
+}
+.nowarp {
+  white-space: nowrap;
+}
+.border-top {
+  border-top: 1px solid #eaeff0 !important;
+}
+.border-left-grey {
+  border-left: 1px solid #ccc;
+}
+.margin-bottom10 {
+  margin-bottom: 10px;
+}
+.margin-top10 {
+  margin-top: 10px;
+}
+.yx-crumbsNav {
+  background-color: #fff;
+  overflow: hidden;
+  height: 36px;
+  padding-left: 6px;
+}
+.yx-crumbsNav ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  line-height: 36px;
+  color: #555555;
+}
+.yx-crumbsNav ul li {
+  margin: 0 0 0 5px;
+  padding: 0;
+  float: left;
+  font-size: 14px;
+}
+.yx-crumbsNav ul li:first-child i {
+  color: #555;
+}
+.yx-crumbsNav ul li .glyphicon {
+  font-size: 12px;
+}
+.yx-appTabNav {
+  border-bottom: 2px solid #eee;
+}
+.yx-appTabNav ul {
+  margin: 0;
+  padding: 0;
+}
+.yx-appTabNav ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.yx-appTabNav ul li a {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #c3c3c3;
+  border-bottom: none;
+  margin: 0;
+  padding: 1px 30px;
+  color: #6B6B6B;
+  background-color: #D2D2D2;
+  border-radius: 7px 7px 0 0 ;
+}
+.yx-appTabNav ul li.active a {
+  border: 1px solid #337AB7;
+  background-color: #337AB7;
+  padding: 6px 30px 0 30px;
+  color: #FFF;
+  font-weight: bold;
+}
+.yx-appPanel {
+  border: 1px solid #aaa;
+}
+.yx-appPanel .yx-appPanel-header {
+  height: 26px;
+  border-bottom: 1px solid #aaa;
+  background: #efefef;
+}
+.yx-appPanel .yx-appPanel-header .panelIcon {
+  margin: 0;
+  display: inline-block;
+  width: 40px;
+  height: 26px;
+  border-right: 1px solid #aaa;
+  padding: 2px 0px 0px 10px;
+  vertical-align: top;
+}
+.yx-appPanel .yx-appPanel-header .panelIcon .iconfont {
+  color: #555;
+  font-weight: bold;
+}
+.yx-appPanel .yx-appPanel-header .panelTitle {
+  display: inline-block;
+  line-height: 26px;
+  color: #555;
+  font-size: 14px;
+  font-weight: bold;
+}
+.yx-appPanel .yx-appPanel-body {
+  min-height: 50px;
+  background: #f9f9f9;
+}
+.yx-appPanel .yx-appPanel-footer {
+  min-height: 28px;
+  background: #efefef;
+  padding: 10px;
+}
+.urlBack {
+  width: 74px;
+  background: #337AB7;
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  top: -2px;
+  height: calc(100% + 1px);
+  padding-left: 3px;
+  cursor: pointer;
+}
+.yx-appFilter .yx-appPanel-header,
+.yx-appFilter .yx-appPanel-footer {
+  position: relative;
+}
+.yx-appFilter .yx-appPanel-body > ul {
+  margin: 0;
+  padding: 0;
+}
+.yx-appFilter .yx-appPanel-body > ul > li {
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #fff;
+  color: #555;
+  padding-bottom: 10px ;
+}
+.yx-appFilter .yx-appPanel-body > ul > li .inline {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.yx-appFilter .btn-show {
+  background: url("../img/u386.png");
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 4px;
+}
+.yx-appFilter .btn-hide {
+  background: url("../img/u386.png");
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+.yx-input {
+  height: 30px;
+  width: 170px;
+  padding: 0 6px 2px 6px;
+  font-size: 13px;
+}
+.yxBtn {
+  min-width: 94px;
+  padding: 2px 18px;
+}
+.yxBtn:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+.yxBtn-Active {
+  background: #337AB7;
+  border: 1px solid #0C80B5 ;
+  color: #FFF ;
+}
+.yxBtn-Active:active {
+  background: #fff;
+  color: #000;
+}
+.yxBtn-White {
+  border: 1px solid #aaa;
+  background: #fff;
+}
+.yxBtn-White:active {
+  background: #337AB7;
+  color: #fff;
+}
+.yxBtn-Danger {
+  border: 1px solid #aaa;
+  background: #D9544F;
+  color: #fff;
+}
+.yxBtn-Danger:active {
+  background: #fff;
+  color: #000;
+}
+.yxBtn-xs {
+  min-width: 0;
+  padding: 3px 9px;
+  height: 27px;
+  line-height: 20px;
+}
+.checkbox-true label {
+  width: 50px;
+  background: #337AB7;
+  height: 25px;
+  border-radius: 12px;
+  position: relative;
+  top: 5px;
+}
+.checkbox-true label > input {
+  display: none;
+}
+.checkbox-true label:after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  margin-left: 27px;
+  margin-bottom: 1px;
+}
+.checkbox-true label > span {
+  color: #fff;
+  position: absolute;
+  left: 8px;
+  bottom: -5px;
+}
+.checkbox-false label {
+  width: 50px;
+  background: #ccc;
+  height: 25px;
+  border-radius: 12px;
+  position: relative;
+  top: 5px;
+}
+.checkbox-false label > input {
+  display: none;
+}
+.checkbox-false label:after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  margin-left: 4px;
+  margin-bottom: 1px;
+}
+.checkbox-false label > span {
+  color: #fff;
+  position: absolute;
+  right: 8px;
+  bottom: -5px;
+}
+.yx-table {
+  overflow: auto;
+}
+.yx-table .yx-tableInfo {
+  width: 100%;
+  border: 1px solid #aaa;
+  border-left: 0;
+  font-size: 12px;
+}
+.yx-table .yx-tableInfo td {
+  word-break: keep-all;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #333;
+  padding: 0 8px;
+  border: 1px solid #aaa;
+  border-left: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.yx-table .yx-tableInfo td b {
+  display: inline-block;
+  width: 30px;
+}
+.yx-table .yx-tableInfo td input,
+.yx-table .yx-tableInfo td select {
+  border: 0;
+  background: inherit;
+}
+.yx-table .yx-tableInfo thead {
+  background: #c7ddef;
+  font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  display: block;
+  margin-right: 17px;
+}
+.yx-table .yx-tableInfo thead td {
+  cursor: pointer;
+}
+.yx-table .yx-tableInfo thead td .orderIndicate {
+  float: right;
+}
+.yx-table .yx-tableInfo tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.yx-table .yx-tableInfo tbody {
+  display: block;
+  overflow-y: scroll;
+  line-height: 36px;
+}
+.yx-table.hasCheckbox tr > td:first-child {
+  width: 62px;
+}
+.new-yx-table {
+  overflow: auto;
+}
+.new-yx-table .new-yx-tableInfo td {
+  word-break: keep-all;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.new-yx-table .new-yx-tableInfo td input,
+.new-yx-table .new-yx-tableInfo td select {
+  border: 0;
+  background: inherit;
+}
+.new-yx-table .new-yx-tableInfo thead {
+  background: #eff5fa;
+  display: block;
+  margin-right: 17px;
+}
+.new-yx-table .new-yx-tableInfo thead td {
+  cursor: pointer;
+}
+.new-yx-table .new-yx-tableInfo thead td .orderIndicate {
+  float: right;
+}
+.new-yx-table .new-yx-tableInfo tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.new-yx-table .new-yx-tableInfo tbody {
+  display: block;
+  overflow-y: scroll;
+  line-height: 36px;
+}
+.yx-appPanel.yx-appEditPanel {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  left: 10px;
+  bottom: 10px;
+}
+.yx-appPanel.yx-appEditPanel .panelIcon {
+  width: 77px;
+  padding: 6px 0px 0px 12px;
+  background: #eee;
+  cursor: pointer;
+}
+.yx-appPanel.yx-appEditPanel .panelIcon .iconfont {
+  color: #fff;
+}
+.yx-appPanel.yx-appEditPanel .yx-appPanel-body {
+  position: absolute;
+  top: 0;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+.yx-appPanel.yx-appEditPanel .yx-appPanel-body .editTable {
+  width: 100%;
+}
+.yx-appPanel.yx-appEditPanel .yx-appPanel-body .editTable tr td {
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #fff;
+  padding: 15px 10px;
+}
+.yx-appPanel.yx-appEditPanel .yx-appPanel-body .editTable tr td:first-child {
+  font-size: 14px;
+  color: #939da8;
+  width: 17%;
+  text-align: right;
+}
+.yx-appPanel.yx-appEditPanel .yx-appPanel-body .editTable tr td:last-child {
+  width: 83px;
+}
+.yx-appPanel.yx-appEditPanel .yx-appPanel-body .editTable tr td input,
+.yx-appPanel.yx-appEditPanel .yx-appPanel-body .editTable tr td select {
+  width: 100%;
+}
+.yx-appPanel.yx-appEditPanel .yx-appPanel-body .editTable tr .textTop {
+  vertical-align: top;
+}
+.yx-appPanel.yx-appEditPanel .yx-appPanel-body .editTable .title {
+  background: #DEDEDE;
+}
+.yx-appPanel.yx-appEditPanel .yx-appPanel-body .editTable .title td {
+  width: 100%;
+  text-align: left !important;
+  font-size: 16px !important;
+  color: #555 !important;
+  padding: 6px 10px !important;
+  border-top: none !important;
+}
+.yx-appPanel.yx-appEditPanel .yx-appPanel-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding: 9px 10px 0 10px;
+}
+.yx-modal-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(175, 177, 177, 0.2);
+  z-index: 199;
+}
+.yx-modal-wrap .yx-smallModal {
+  position: absolute;
+  width: 300px;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+.yx-modal-wrap .yx-smallModal .yx-modal-top {
+  border: 1px solid #1976BC;
+  height: 28px;
+  line-height: 28px;
+  background-color: #337AB7;
+}
+.yx-modal-wrap .yx-smallModal .yx-modal-top span {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+.yx-modal-wrap .yx-smallModal .yx-modal-top .close {
+  float: right;
+  margin: 5px 12px 0 0;
+  color: #fff;
+  opacity: 1 !important;
+}
+.yx-modal-wrap .yx-smallModal .yx-modal-content {
+  padding: 6px;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  max-height: 200px;
+  overflow: auto;
+}
+.yx-modal-wrap .yx-smallModal .yx-modal-content textarea {
+  width: 326px;
+  height: 170px;
+  resize: none;
+  font-size: 14px;
+  overflow-y: auto;
+  border: 1px solid #1976BC;
+}
+.yx-modal-wrap .yx-smallModal .yx-modal-footer {
+  width: 100%;
+  background: #EDEDED;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  padding: 12px 0px;
+  text-align: center;
+}
+.yx-loadingModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(175, 177, 177, 0.2);
+  z-index: 200;
+}
+.yx-loadingModal .loadingModal-container {
+  border: 2px solid #067bb0;
+  background: #eee;
+  opacity: 0.8;
+  color: #fff;
+  position: absolute;
+  width: 300px;
+  height: 90px;
+  top: 30%;
+  left: 50%;
+  margin-left: -150px;
+}
+.yx-loadingModal .loadingModal-container p {
+  line-height: 90px;
+  text-align: center;
+}
+.yx-loadingModal .loadingModal-container p i {
+  display: inline-block;
+  font-size: 33px;
+  -webkit-animation: run 3s linear 0s infinite;
+}
+.yx-loadingModal .loadingModal-container p span {
+  display: inline-block;
+  vertical-align: super;
+  margin-left: 10px;
+}
+.yx-edit {
+  overflow: auto;
+  max-height: 650px;
+}
+.yx-edit .edit-title {
+  padding: 4px 22px;
+  background: #e1e1e1;
+  font-size: 18px;
+  font-weight: bold;
+}
+.yx-edit .edit-items {
+  font-size: 14px;
+  background: #fbfbfb;
+}
+.yx-edit .edit-items ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.yx-edit .edit-items li {
+  padding: 6px;
+}
+.yx-edit .edit-items li .item-input {
+  border: 0;
+  display: inline-block;
+  width: 60%;
+}
+.yx-edit .edit-items li .item-input [type="text"] {
+  border: 0;
+  border-bottom: 1px solid #aaa;
+}
+.yx-edit .edit-items li .item-label {
+  width: 30%;
+  text-align: right;
+  display: inline-block;
+}
+.yx-list {
+  overflow: auto;
+}
+.yx-list .yx-tableInfo {
+  width: 100%;
+  border: 1px solid #aaa;
+  font-size: 12px;
+}
+.yx-list .yx-tableInfo td {
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  color: #333;
+  padding-left: 8px;
+  border-bottom: 1px solid #aaa;
+  cursor: pointer;
+}
+.yx-list .yx-tableInfo thead {
+  background: #ddd;
+  font-weight: bold;
+  display: block;
+  margin-right: 17px;
+}
+.yx-list .yx-tableInfo thead td {
+  cursor: pointer;
+}
+.yx-list .yx-tableInfo thead td .orderIndicate {
+  float: right;
+}
+.yx-list .yx-tableInfo tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.yx-list .yx-tableInfo tbody {
+  display: block;
+  overflow-y: scroll;
+}
+.yx-list .yx-tableInfo tbody tr.selectedItem {
+  background-color: #337AB7;
+}
+.yx-list .yx-tableInfo tbody tr.selectedItem td {
+  color: #fff;
+}
+.yxPaging {
+  padding: 12px;
+}
+.yxPaging ul.pagination {
+  margin: 0;
+}
+[ng-show^="currentSwitchAddress=="] {
+  cursor: pointer;
+}
+@-webkit-keyframes showMenus {
+  from {
+    left: 0;
+  }
+  to {
+    left: 200px;
+  }
+}
+/**********************************/
+html,
+body,
+body > div.ng-scope {
+  height: 100%;
+  min-height: 768px;
+}
+body > div.ng-scope {
+  min-width: 1000px;
+}
+body > div.ng-scope > .app-left,
+body > div.ng-scope .app-right,
+body > div.ng-scope .app-center {
+  border: 1px solid #aaa;
+  height: 100%;
+}
+body > div.ng-scope .app-left {
+  float: left;
+  width: 200px;
+  position: relative;
+}
+body > div.ng-scope .app-left .left-sysInfo {
+  padding: 10px;
+  height: 160px;
+  text-align: center;
+}
+body > div.ng-scope .app-left .left-sysInfo .sysInfo-sysName {
+  border: 1px solid #aaa;
+  height: 40px;
+  line-height: 40px;
+}
+body > div.ng-scope .app-left .left-sysInfo .sysInfo-sysName .yx-logo {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/yx.png) no-repeat;
+  background-size: 176px 38px;
+}
+body > div.ng-scope .app-left .left-sysInfo .sysInfo-userInfo {
+  border: 1px solid #aaa;
+  height: 92px;
+  margin-top: 8px;
+  padding: 25px 12px;
+}
+body > div.ng-scope .app-left .left-sysInfo .sysInfo-userInfo .noLogin img,
+body > div.ng-scope .app-left .left-sysInfo .sysInfo-userInfo .hasLogin img {
+  width: 30px;
+  height: 30px;
+  margin-top: -5px;
+}
+body > div.ng-scope .app-left .left-sysInfo .sysInfo-userInfo .noLogin {
+  cursor: pointer;
+}
+body > div.ng-scope .app-left .left-menuList {
+  position: absolute;
+  top: 160px;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  overflow: auto;
+  border: 1px solid #aaa;
+  padding: 10px 0;
+}
+body > div.ng-scope .app-left .left-menuList > li {
+  margin: 1px 0 1px 0;
+  border-bottom: 1px solid #aaa;
+}
+body > div.ng-scope .app-left .left-menuList > li > a {
+  padding: 8px 6px;
+  display: inline-block;
+  width: 100%;
+}
+body > div.ng-scope .app-left .left-menuList > li > a:hover {
+  color: #fff;
+  background: #337AB7;
+}
+body > div.ng-scope .app-left .left-menuList > li .nav li {
+  margin: 1px 0 1px 0;
+}
+body > div.ng-scope .app-left .left-menuList > li .nav li a {
+  padding: 10px 0 10px 18px;
+}
+body > div.ng-scope .app-left .left-menuList > li .nav li a:hover {
+  background: #337AB7;
+  color: #fff;
+}
+body > div.ng-scope .app-left .left-menuList > li .nav li.active > a {
+  background: #4f93ce;
+  color: #fff;
+}
+body > div.ng-scope .app-left .left-menuList > li .nav li span.leftCtrl {
+  position: relative;
+  top: -35px;
+  left: 100px;
+}
+body > div.ng-scope .app-left .left-menuList > li.active > a {
+  color: #fff;
+  background: #337AB7;
+}
+body > div.ng-scope .app-right {
+  float: right;
+  width: 325px;
+  padding: 6px;
+  position: absolute;
+  right: 6px;
+  z-index: 13;
+  background: #fff;
+  height: auto;
+  box-shadow: #888888 5px 5px 11px;
+  border-radius: 6px;
+}
+body > div.ng-scope .app-right .right-title {
+  position: relative;
+  height: 26px;
+  margin-bottom: 3px;
+  background: #337AB7;
+  color: #fff;
+}
+body > div.ng-scope .app-right .right-title > .icon {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  background: #ddd;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000;
+  cursor: pointer;
+}
+body > div.ng-scope .app-right .right-title > .icon:hover {
+  background: #337AB7;
+  color: #fff;
+}
+body > div.ng-scope .app-right .yx-list tbody {
+  max-height: 690px;
+}
+body > div.ng-scope .app-center {
+  margin-left: 10px;
+  background: #fff;
+  transition: margin-left 1s ease;
+  position: relative;
+}
+body > div.ng-scope .app-center.app-center-showMenus {
+  margin-left: 200px;
+}
+body > div.ng-scope .app-center .app-center-header {
+  width: 98%;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: #888888 5px 5px 11px;
+}
+body > div.ng-scope .app-center .app-center-header .header-content {
+  padding: 6px;
+  height: 243px;
+  position: relative;
+}
+body > div.ng-scope .app-center .app-center-header .header-content .yx-list {
+  width: 99%;
+  position: absolute;
+}
+body > div.ng-scope .app-center .app-center-header .header-content .yx-list tbody {
+  height: 200px;
+}
+body > div.ng-scope .app-center .app-center-header .header-content .yx-list tbody .noData td {
+  padding: 12px;
+  border: 0;
+}
+body > div.ng-scope .app-center .app-center-header .header-content .yx-list tbody .noData td span {
+  background: #FCF8E3;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  display: inline-block;
+}
+body > div.ng-scope .app-center .app-center-header .contentShow {
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+  padding-top: 3px;
+  background: #eee;
+  margin: 3px;
+  border-radius: 6px;
+}
+body > div.ng-scope .app-center .app-center-header .contentShow .content-units {
+  height: 42px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+body > div.ng-scope .app-center .app-center-header .contentShow .content-units:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body > div.ng-scope .app-center .app-center-header .contentShow .content-units li {
+  text-align: center;
+  background: #D9544F;
+  float: left;
+  display: inline-block;
+  width: 34px;
+  height: 24px;
+  border: 1px solid #000;
+  margin-left: 10px;
+  line-height: 24px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+body > div.ng-scope .app-center .app-center-header .contentShow .content-units li span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+@keyframes c1Checked {
+  0% {
+    background: #337AB7;
+    color: #fff;
+  }
+  50% {
+    background: transparent;
+    color: #000;
+  }
+  100% {
+    background: transparent;
+    color: #FFF;
+  }
+}
+body > div.ng-scope .app-center .app-center-header .contentShow .content-units li.currentItem.currentItem span {
+  animation: c1Checked 1s infinite;
+}
+body > div.ng-scope .app-center .app-center-header .contentShow .content-units li.communication {
+  background: #EFAD4D;
+}
+body > div.ng-scope .app-center .app-center-header .contentShow .content-units li.communication.timeConfirmed {
+  background: #5BB85D;
+}
+body > div.ng-scope .app-center .app-center-header .contentShow .icon {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+body > div.ng-scope .app-center .app-center-header .contentShow button {
+  border: 0;
+  height: 100%;
+  width: 100px;
+}
+body > div.ng-scope .app-center .app-center-container {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  bottom: 0;
+  border: 1px solid #aaa;
+}
+body > div.ng-scope .app-center .app-center-container .rightController {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+body > div.ng-scope .app-center .app-center-container .footerController {
+  position: absolute;
+  right: 50%;
+  bottom: 3px;
+  z-index: 10;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer {
+  padding: 10px 25px 10px 10px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  background: #fff;
+  right: 0px;
+  z-index: 4;
+  top: 0;
+  padding: 8px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svg-btnbox {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 40px;
+  border: 1px solid #aaa;
+  padding: 3px 10px 0;
+  background: rgba(254, 254, 254, 0.9);
+  border-radius: 22px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svg-btnbox .btnbox-ctrl {
+  background: rgba(51, 122, 183, 0.9);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svg-btnbox.showTool {
+  transition: background 3s linear;
+  background: rgba(254, 254, 254, 0.3);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svg-btnbox.showTool .btnbox-ctrl {
+  transition: background 3s linear;
+  background: rgba(51, 122, 183, 0.3);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svg-btnbox ul {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svg-btnbox ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svg-btnbox ul li {
+  float: left;
+  margin-left: 3px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svg-btnbox ul li button {
+  outline: 0;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  background: #337AB7;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svg-btnbox ul li.showRadarCheckbox {
+  position: relative;
+  top: -5px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svg-btnbox .btnbox-ctrl {
+  display: inline-block;
+  vertical-align: top;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-right: -2px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svgList {
+  height: 30px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svgList:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svgList li {
+  float: left;
+  margin-right: 3px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .svgList li.currentSvg button {
+  background: #337AB7;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .dqmx-svgContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .dqmx-svgContainer svg.dqmx-svg {
+  cursor: -webkit-grab;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .dqmx-svgContainer svg.dqmx-svg:active {
+  cursor: -webkit-grabbing;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .radarArea {
+  position: absolute;
+  right: 0;
+  width: 300px;
+  border: 1px solid #aaa;
+  overflow: hidden;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .radarArea .areaMap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .radarArea .areaWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(100, 100, 100, 0.4);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-dqmx .radarArea .currentArea {
+  position: absolute;
+  border: 1px solid #aaa;
+  background: rgba(100, 100, 100, 0.4);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .waveform .yx-appPanel .yx-appPanel-body {
+  height: 670px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .waveform .pannelBody-items {
+  border: 1px solid #aaa;
+  height: 200px;
+  overflow: auto;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .waveform .pannelBody-items > ul {
+  padding: 3px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .waveform .pannelBody-items > ul li {
+  float: left;
+  background: #bbbbbb;
+  margin: 4px;
+  border-radius: 19px;
+  padding: 0 10px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .waveform .pannelBody-items > ul li > label {
+  line-height: 12px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .waveform .pannelBody-items > ul li.checked {
+  background: #337AB7;
+  color: #fff;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .waveform .pannelBody-items > ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .waveform .pannelBody-diagram {
+  padding: 10px;
+  border: 1px solid #aaa;
+  height: calc(100% - 210px);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .SJYZT-NAV li {
+  float: left;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .SJYZT-NAV:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .allData .yx-table {
+  width: calc(33% - 3px);
+  display: inline-block;
+  vertical-align: top;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .allData .alarmItem td {
+  color: #D9544F;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .allData .itemA td {
+  color: #B6B70B;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .allData .itemB td {
+  color: #5BB85D;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .allData .itemC td {
+  color: #D9544F;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .yaoxin .table-data {
+  max-height: 600px;
+  overflow: auto;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .yaoxin .table-data tbody {
+  overflow: unset;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .yaoxin .table-data tbody tr:first-child {
+  background: #eee;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .yaoxin .table-data tbody tr:first-child td {
+  position: relative;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .yaoxin .table-data tbody tr:first-child td > span {
+  position: absolute;
+  right: 3px;
+  top: 12px;
+  font-size: 22px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .yaoxin .table-data tbody tr:first-child.active-title {
+  background: #337AB7;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .yaoxin .table-data tbody tr:first-child.active-title td {
+  color: #fff;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .diagram-SJYZT .yaoxin .table-data tbody tr.alarmItem td {
+  color: #D9544F;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .logDiagram1 .yx-appPanel .yx-appPanel-body .pannelBody-left {
+  vertical-align: top;
+  border: 1px solid red;
+  display: inline-block;
+  width: 100px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .logDiagram1 .yx-appPanel .yx-appPanel-body .pannelBody-right {
+  border: 1px solid green;
+  display: inline-block;
+  width: calc(100% - 105px);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .DNZLLog > .yx-appPanel {
+  overflow: auto;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .DNZLLog > .yx-appPanel .yx-appPanel-header,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .DNZLLog > .yx-appPanel .yx-appPanel-body,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .DNZLLog > .yx-appPanel .yx-appPanel-footer {
+  min-width: 826px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .alarmManage .yx-table tr td:nth-child(2) {
+  width: 150px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .alarmManage .yx-table tr td:nth-child(4) {
+  width: 60px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .alarmManage .yx-table tr td:nth-child(5) {
+  width: 110px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .alarmManage .yx-table tr td:nth-child(6) {
+  width: 150px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .recordManage .yx-table tr td:nth-child(2) {
+  width: 206px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer > .ng-scope:not(span) .recordManage .yx-table tr td:nth-child(4) {
+  width: 60px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_independentList .yx-table .yx-tableInfo {
+  min-width: 1200px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_curList .dz-changeditem,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_volList .dz-changeditem,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_independentList .dz-changeditem,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_switchList .dz-changeditem {
+  background: #eff5fa;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_volList .yx-table tr td:nth-child(1),
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_curList .yx-table tr td:nth-child(1) {
+  width: 50px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_volList .yx-table tr td:nth-child(3),
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_curList .yx-table tr td:nth-child(3) {
+  width: 60px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_volList .yx-table tr td:nth-child(4),
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_curList .yx-table tr td:nth-child(4) {
+  width: 50px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_switchList .yx-table tr td:nth-child(1) {
+  width: 50px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_switchList .yx-table tr td:nth-child(3) {
+  width: 80px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .dz_switchList .yx-table tr td:nth-child(4) {
+  width: 50px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer .DNZLCurrent tbody {
+  max-height: 540px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.totalloadAnalog {
+  border: 1px solid #aaa;
+  width: 100%;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.totalloadAnalog .msg-summary {
+  width: 270px;
+  height: 150px;
+  float: right;
+  margin-top: 80px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.totalloadAnalog .msg-summary li {
+  float: right;
+  margin-left: 8px;
+  width: 262px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.totalloadAnalog .msg-summary li table {
+  width: 100%;
+  border-collapse: collapse;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.totalloadAnalog .msg-summary li table thead {
+  font-weight: bold;
+  color: #434348;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.totalloadAnalog .msg-summary li table thead td {
+  text-align: center;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.totalloadAnalog .msg-summary li table td {
+  border: 1px solid black;
+  padding: 1px 5px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.totalloadAnalog .msg-summary li:first-child {
+  margin-bottom: 12px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.totalloadAnalog .msg-summary li:first-child table thead {
+  color: #7CB5EC;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.totalloadAnalog .msg-summary li:first-child table td:first-child {
+  color: #7CB5EC;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.totalloadAnalog .linechartbox {
+  width: 100%;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.loadForecast .linechartbox > ul > li {
+  width: calc(50% - 2px);
+  border: 1px solid #aaa;
+  float: left;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.loadForecast .linechartbox > ul > li > div[id^='linechart'] {
+  width: 100%;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.loadForecast .linechartbox > ul > li > ul {
+  float: right;
+  margin: 50px 6px 0 0;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.loadForecast .linechartbox > ul > li > ul li {
+  font-size: 14px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.loadForecast .linechartbox > ul > li > ul li > span {
+  font-size: 14px;
+  display: inline-block;
+  width: 45px;
+  color: #337AB7;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.controlEnergySaving .ces-chartContainer {
+  overflow: auto;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.controlEnergySaving .ces-chartContainer .chartBox {
+  min-width: 1500px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.equipSaving .chartbox li {
+  width: calc(50% - 2px);
+  border: 1px solid #aaa;
+  float: left;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.savingAnalysis .sa-chartbox li {
+  width: calc(50% - 2px);
+  border: 1px solid #aaa;
+  float: left;
+  min-height: 400px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.loadStructure .msg-summary {
+  width: 100%;
+  height: 250px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.loadStructure .msg-summary li {
+  width: 50%;
+  float: left;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.loadStructure .msg-summary li table {
+  margin: auto;
+  border-collapse: collapse;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.loadStructure .msg-summary li table thead {
+  color: #337AB7;
+  font-weight: bold;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.loadStructure .msg-summary li table td {
+  border: 1px solid black;
+  padding: 1px 5px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.loadStructure .piechartbox ul li {
+  float: left;
+  width: 50%;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.loadStructure .piechartbox ul li > div {
+  width: 100%;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.assessment-switch td.alarmItem {
+  color: #D9544F;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.assessment-important td.alarmItem {
+  color: #D9544F;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.assessment-others td.alarmItem {
+  color: #D9544F;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.assessment-others td.warningItem {
+  color: #EFAD4D;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.assessment-others td.successItem {
+  color: #5BB85D;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.trouble-removal tbody tr:nth-child(1) {
+  background: #D9544F;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.trouble-removal tbody tr:nth-child(2) {
+  background: #EFAD4D;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.peakLoadShifting .timeConfig {
+  overflow: auto;
+  border: 1px solid #aaa;
+  padding: 3px 6px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.peakLoadShifting .timeConfig > ul > li > span {
+  vertical-align: top;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.peakLoadShifting .timeConfig > ul ul {
+  display: inline-block;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.peakLoadShifting .timeConfig > ul ul > li {
+  margin-bottom: 5px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.operateLogS .yx-table tr td:nth-child(1) {
+  width: 80px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.operateLogS .yx-table tr td:nth-child(2) {
+  width: 150px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.operateLogS .yx-table tr td:nth-child(4) {
+  width: 100px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.equipmentSafe .dataDescription .description-content li {
+  float: left;
+  width: calc(50% - 2px);
+  padding: 12px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.equipmentSafe .dataDescription .description-content li > span {
+  color: #337AB7;
+  font-weight: 700;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.equipmentSafe .dataDescription .description-content li:first-child {
+  border-right: 1px solid #aaa;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.equipmentSafe .dataDescription .description-content li > p > span {
+  display: inline-block;
+  width: 150px;
+  font-weight: 600;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.equipmentSafe .dataDescription .description-content li .myDiv {
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 190px);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.equipmentForecast tbody tr:nth-child(1) {
+  background: #D9544F;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.equipmentForecast tbody tr:nth-child(2) {
+  background: #EFAD4D;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.electricSafe .dataDescription .description-content li {
+  float: left;
+  width: calc(50% - 2px);
+  padding: 12px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.electricSafe .dataDescription .description-content li > span {
+  color: #337AB7;
+  font-weight: 700;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.electricSafe .dataDescription .description-content li:first-child {
+  border-right: 1px solid #aaa;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.electricSafe .dataDescription .description-content li > p > span {
+  display: inline-block;
+  width: 180px;
+  font-weight: 600;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.electricSafe .dataDescription .description-content li .myDiv {
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 190px);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.DNQualityAssess .dataDescription .description-content li {
+  float: left;
+  width: calc(50% - 2px);
+  padding: 12px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.DNQualityAssess .dataDescription .description-content li > span {
+  color: #337AB7;
+  font-weight: 700;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.DNQualityAssess .dataDescription .description-content li:first-child {
+  border-right: 1px solid #aaa;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.DNQualityAssess .dataDescription .description-content li > p > span {
+  display: inline-block;
+  width: 180px;
+  font-weight: 600;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.DNQualityAssess .dataDescription .description-content li .myDiv {
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 190px);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.DNQualityAssess td {
+  word-break: break-all;
+  white-space: inherit;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.DNQualityAssess td > ul li:not(:last-child) {
+  border-bottom: 1px solid #aaa;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.equipmentSelectItem > .yx-table {
+  top: 30px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.efficiencyReport > div {
+  border: 1px solid #aaa;
+  padding: 6px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.efficiencyReport .zhuzhuangtu1Box:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.efficiencyReport .zhuzhuangtu1Box > div {
+  float: left;
+  width: calc(50% - 2px);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.efficiencyReport .bingtu2Box:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.efficiencyReport .bingtu2Box > div {
+  float: left;
+  width: calc(50% - 2px);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.efficiencyReport .tableArea tbody tr:nth-child(3) td,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.efficiencyReport .tableArea tbody tr:nth-child(4) td {
+  color: #5BB85D;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.troubleModal {
+  max-height: 700px;
+  overflow: auto;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.troubleModal h4 {
+  color: #337AB7;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .yx-appContainer.troubleModal .shili > p > span {
+  font-weight: 600;
+  color: #337AB7;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(175, 177, 177, 0.2);
+  z-index: 199;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .fileNav {
+  border: 1px solid #aaa;
+  float: left;
+  width: 200px;
+  padding: 3px;
+  height: 680px;
+  overflow: auto;
+  position: relative;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .fileNav .nav-constructor li {
+  margin: 3px 0;
+  padding-left: 12px;
+  cursor: pointer;
+  background: #FFF;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .fileNav .nav-constructor li.currentFolder {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .fileNav .nav-constructor li > a:after {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 16px;
+  background: url(../img/wenjianjia.png);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .fileNav .window-folderOptMenu {
+  position: fixed;
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 3px 0;
+  border-radius: 3px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .fileNav .window-folderOptMenu .menu-close {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  border: 1px solid #aaa;
+  padding: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #fff;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .fileNav .window-folderOptMenu .menu-close .icon-guanbi {
+  position: relative;
+  top: 0px;
+  left: 3px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .fileNav .window-folderOptMenu li {
+  cursor: pointer;
+  padding: 2px 6px;
+  border: 1px solid transparent;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .fileNav .window-folderOptMenu li:hover {
+  border-color: #337AB7;
+  background: #337AB7;
+  color: #fff;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .fileNav .window-folderOptMenu li:hover .fileUpload {
+  background: #337AB7;
+  color: #fff;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .fileNav .window-folderOptMenu li .fileUpload {
+  background: #fff;
+  border: 0;
+  padding: 0;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window {
+  border: 1px solid #aaa;
+  margin-left: 200px;
+  height: 680px;
+  position: relative;
+  overflow: auto;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-contextmenu,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-fileOptMenu {
+  position: fixed;
+  border: 1px solid #aaa;
+  padding: 3px 0;
+  border-radius: 3px;
+  background: #fff;
+  z-index: 10;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-contextmenu .menu-close,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-fileOptMenu .menu-close {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  border: 1px solid #aaa;
+  padding: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #fff;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-contextmenu .menu-close .icon-guanbi,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-fileOptMenu .menu-close .icon-guanbi {
+  position: relative;
+  top: 0px;
+  left: 3px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-contextmenu li,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-fileOptMenu li {
+  cursor: pointer;
+  padding: 2px 6px;
+  border: 1px solid transparent;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-contextmenu li:hover,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-fileOptMenu li:hover {
+  border-color: #337AB7;
+  background: #337AB7;
+  color: #fff;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-contextmenu li:hover .fileUpload,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-fileOptMenu li:hover .fileUpload {
+  background: #337AB7;
+  color: #fff;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-contextmenu li .fileUpload,
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .window-fileOptMenu li .fileUpload {
+  background: #fff;
+  border: 0;
+  padding: 0;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .folderFiles {
+  position: absolute;
+  z-index: 5;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .folderFiles li {
+  padding: 3px;
+  margin: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .folderFiles li:hover {
+  border-color: #aaa;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .folderFiles li.selectedItem {
+  border-color: #aaa;
+  background: #9fc4e4;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .folderFiles li > span {
+  display: inline-block;
+  height: 16px;
+  width: 13px;
+  position: relative;
+  top: 2px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .folderFiles li > span.isDirectory {
+  background: url(../img/wenjianjia.png);
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .display-window .uploadDropArea {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .yx-smallModal {
+  position: absolute;
+  width: 460px;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .yx-smallModal .yx-modal-top {
+  border: 1px solid #1976BC;
+  height: 28px;
+  line-height: 28px;
+  background-color: #337AB7;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .yx-smallModal .yx-modal-top span {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .yx-smallModal .yx-modal-top .close {
+  float: right;
+  margin: 5px 12px 0 0;
+  color: #fff;
+  opacity: 1 !important;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .yx-smallModal .yx-modal-content {
+  padding: 6px;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  max-height: 300px;
+  overflow: auto;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .yx-smallModal .yx-modal-content textarea {
+  width: 326px;
+  height: 170px;
+  resize: none;
+  font-size: 14px;
+  overflow-y: auto;
+  border: 1px solid #1976BC;
+}
+body > div.ng-scope .app-center .app-center-container > .ng-scope .ng-scope .dqmx-fileManage .yx-smallModal .yx-modal-footer {
+  width: 100%;
+  background: #EDEDED;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  padding: 12px 0px;
+  text-align: center;
+}
+body > div.ng-scope .app-center .app-center-footer {
+  box-shadow: #888888 5px 5px 11px;
+  padding: 3px;
+  z-index: 200;
+  background: #fff;
+  min-height: 180px;
+  position: absolute;
+  bottom: 6px;
+  border-radius: 8px;
+  width: 100%;
+  margin-left: 3%;
+  border: 1px solid #bbb;
+}
+body > div.ng-scope .app-center .app-center-footer .page-nav {
+  background: #D9544F;
+  border-radius: 6px;
+  position: relative;
+  cursor: n-resize;
+}
+body > div.ng-scope .app-center .app-center-footer .page-nav > .icon {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  background: #ddd;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000;
+  cursor: pointer;
+}
+body > div.ng-scope .app-center .app-center-footer .page-nav > .icon:hover {
+  background: #337AB7;
+  color: #fff;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .content-buttons {
+  position: absolute;
+  right: 10px;
+  top: 1px;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list thead td {
+  color: #D9544F;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list thead td.footer-opt .opt-btns {
+  position: absolute;
+  display: none;
+  padding: 3px;
+  background: #aaa;
+  border-radius: 6px;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list thead td.footer-opt .fa-angle-right {
+  display: inline-block;
+  font-size: 16px;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list thead td.footer-opt .fa-angle-down {
+  display: none;
+  font-size: 16px;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list thead td.footer-opt:hover > .opt-btns {
+  display: block;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list thead td.footer-opt:hover .fa-angle-right {
+  display: none;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list thead td.footer-opt:hover .fa-angle-down {
+  display: inline-block;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list tbody {
+  max-height: 170px;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list.gaojing td {
+  overflow: hidden;
+  white-space: nowrap;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list.gaojing tr td:first-child {
+  width: 30px;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list.gaojing tr td:nth-child(2) {
+  width: 140px;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list.gaojing tr td:nth-child(4) {
+  width: 60px;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list.gaojing tr td:nth-child(5) {
+  width: 60px;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list.gaojing tr td:nth-child(6) {
+  width: 120px;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list.gaojing tr td:last-child {
+  width: 60px;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list.gaojing tbody tr {
+  background: #D9544F;
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list.gaojing tbody tr.reset {
+  background: green;
+}
+@keyframes activeItem {
+  from {
+    background: rgba(100, 100, 100, 0.5);
+  }
+  to {
+    background: #fff;
+  }
+}
+body > div.ng-scope .app-center .app-center-footer .footer-content .yx-list.gaojing tbody tr.webActive td {
+  color: #000;
+  animation: activeItem 1s infinite;
+}
+body > div.ng-scope .app-center .app-center-footer .center3Ctrl {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: red;
+  box-shadow: red 0px 0px 30px;
+  cursor: nw-resize;
+}
+body > div.ng-scope .app-modals .systemLoginModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(175, 177, 177, 0.2);
+  z-index: 199;
+}
+body > div.ng-scope .app-modals .systemLoginModal .yx-smallModal {
+  position: absolute;
+  width: 460px;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+body > div.ng-scope .app-modals .systemLoginModal .yx-smallModal .yx-modal-top {
+  border: 1px solid #1976BC;
+  height: 28px;
+  line-height: 28px;
+  background-color: #337AB7;
+}
+body > div.ng-scope .app-modals .systemLoginModal .yx-smallModal .yx-modal-top span {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+body > div.ng-scope .app-modals .systemLoginModal .yx-smallModal .yx-modal-top .close {
+  float: right;
+  margin: 5px 12px 0 0;
+  color: #fff;
+  opacity: 1 !important;
+}
+body > div.ng-scope .app-modals .systemLoginModal .yx-smallModal .yx-modal-content {
+  padding: 6px;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  max-height: 300px;
+  overflow: auto;
+}
+body > div.ng-scope .app-modals .systemLoginModal .yx-smallModal .yx-modal-content textarea {
+  width: 326px;
+  height: 170px;
+  resize: none;
+  font-size: 14px;
+  overflow-y: auto;
+  border: 1px solid #1976BC;
+}
+body > div.ng-scope .app-modals .systemLoginModal .yx-smallModal .yx-modal-footer {
+  width: 100%;
+  background: #EDEDED;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  padding: 12px 0px;
+  text-align: center;
+}
+body > div.ng-scope .app-modals .systemLoginModal .yx-smallModal .yx-modal-content {
+  padding: 22px;
+}
+body > div.ng-scope .app-modals .systemLoginModal .yx-smallModal .yx-modal-content li {
+  margin: 6px auto;
+}
+body > div.ng-scope .app-modals .systemLoginModal .yx-smallModal .yx-modal-content li span {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+body > div.ng-scope .app-modals .systemLogoutModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(175, 177, 177, 0.2);
+  z-index: 199;
+}
+body > div.ng-scope .app-modals .systemLogoutModal .yx-smallModal {
+  position: absolute;
+  width: 460px;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+body > div.ng-scope .app-modals .systemLogoutModal .yx-smallModal .yx-modal-top {
+  border: 1px solid #1976BC;
+  height: 28px;
+  line-height: 28px;
+  background-color: #337AB7;
+}
+body > div.ng-scope .app-modals .systemLogoutModal .yx-smallModal .yx-modal-top span {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+body > div.ng-scope .app-modals .systemLogoutModal .yx-smallModal .yx-modal-top .close {
+  float: right;
+  margin: 5px 12px 0 0;
+  color: #fff;
+  opacity: 1 !important;
+}
+body > div.ng-scope .app-modals .systemLogoutModal .yx-smallModal .yx-modal-content {
+  padding: 6px;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  max-height: 300px;
+  overflow: auto;
+}
+body > div.ng-scope .app-modals .systemLogoutModal .yx-smallModal .yx-modal-content textarea {
+  width: 326px;
+  height: 170px;
+  resize: none;
+  font-size: 14px;
+  overflow-y: auto;
+  border: 1px solid #1976BC;
+}
+body > div.ng-scope .app-modals .systemLogoutModal .yx-smallModal .yx-modal-footer {
+  width: 100%;
+  background: #EDEDED;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  padding: 12px 0px;
+  text-align: center;
+}
+body > div.ng-scope .app-modals .refreshTimeModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(175, 177, 177, 0.2);
+  z-index: 199;
+}
+body > div.ng-scope .app-modals .refreshTimeModal .yx-smallModal {
+  position: absolute;
+  width: 360px;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+body > div.ng-scope .app-modals .refreshTimeModal .yx-smallModal .yx-modal-top {
+  border: 1px solid #1976BC;
+  height: 28px;
+  line-height: 28px;
+  background-color: #337AB7;
+}
+body > div.ng-scope .app-modals .refreshTimeModal .yx-smallModal .yx-modal-top span {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+body > div.ng-scope .app-modals .refreshTimeModal .yx-smallModal .yx-modal-top .close {
+  float: right;
+  margin: 5px 12px 0 0;
+  color: #fff;
+  opacity: 1 !important;
+}
+body > div.ng-scope .app-modals .refreshTimeModal .yx-smallModal .yx-modal-content {
+  padding: 6px;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  max-height: 300px;
+  overflow: auto;
+}
+body > div.ng-scope .app-modals .refreshTimeModal .yx-smallModal .yx-modal-content textarea {
+  width: 326px;
+  height: 170px;
+  resize: none;
+  font-size: 14px;
+  overflow-y: auto;
+  border: 1px solid #1976BC;
+}
+body > div.ng-scope .app-modals .refreshTimeModal .yx-smallModal .yx-modal-footer {
+  width: 100%;
+  background: #EDEDED;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  padding: 12px 0px;
+  text-align: center;
+}
+body > div.ng-scope .app-modals .luboStartModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(175, 177, 177, 0.2);
+  z-index: 199;
+}
+body > div.ng-scope .app-modals .luboStartModal .yx-smallModal {
+  position: absolute;
+  width: 360px;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+body > div.ng-scope .app-modals .luboStartModal .yx-smallModal .yx-modal-top {
+  border: 1px solid #1976BC;
+  height: 28px;
+  line-height: 28px;
+  background-color: #337AB7;
+}
+body > div.ng-scope .app-modals .luboStartModal .yx-smallModal .yx-modal-top span {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+body > div.ng-scope .app-modals .luboStartModal .yx-smallModal .yx-modal-top .close {
+  float: right;
+  margin: 5px 12px 0 0;
+  color: #fff;
+  opacity: 1 !important;
+}
+body > div.ng-scope .app-modals .luboStartModal .yx-smallModal .yx-modal-content {
+  padding: 6px;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  max-height: 150px;
+  overflow: auto;
+}
+body > div.ng-scope .app-modals .luboStartModal .yx-smallModal .yx-modal-content textarea {
+  width: 326px;
+  height: 170px;
+  resize: none;
+  font-size: 14px;
+  overflow-y: auto;
+  border: 1px solid #1976BC;
+}
+body > div.ng-scope .app-modals .luboStartModal .yx-smallModal .yx-modal-footer {
+  width: 100%;
+  background: #EDEDED;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  padding: 12px 0px;
+  text-align: center;
+}
+body > div.ng-scope .app-modals .refreshTipModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(175, 177, 177, 0.2);
+  z-index: 199;
+}
+body > div.ng-scope .app-modals .refreshTipModal .yx-smallModal {
+  position: absolute;
+  width: 360px;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+body > div.ng-scope .app-modals .refreshTipModal .yx-smallModal .yx-modal-top {
+  border: 1px solid #1976BC;
+  height: 28px;
+  line-height: 28px;
+  background-color: #337AB7;
+}
+body > div.ng-scope .app-modals .refreshTipModal .yx-smallModal .yx-modal-top span {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+body > div.ng-scope .app-modals .refreshTipModal .yx-smallModal .yx-modal-top .close {
+  float: right;
+  margin: 5px 12px 0 0;
+  color: #fff;
+  opacity: 1 !important;
+}
+body > div.ng-scope .app-modals .refreshTipModal .yx-smallModal .yx-modal-content {
+  padding: 6px;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  max-height: 150px;
+  overflow: auto;
+}
+body > div.ng-scope .app-modals .refreshTipModal .yx-smallModal .yx-modal-content textarea {
+  width: 326px;
+  height: 170px;
+  resize: none;
+  font-size: 14px;
+  overflow-y: auto;
+  border: 1px solid #1976BC;
+}
+body > div.ng-scope .app-modals .refreshTipModal .yx-smallModal .yx-modal-footer {
+  width: 100%;
+  background: #EDEDED;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  padding: 12px 0px;
+  text-align: center;
+}
+body > div.ng-scope .app-modals .uploadingModal .yx-modal-content {
+  padding: 12px 4px;
+}
+body > div.ng-scope .app-modals .uploadingModal .yx-modal-content .uploading-barContainer {
+  border: 1px solid #337AB7;
+  position: relative;
+  height: 24px;
+}
+body > div.ng-scope .app-modals .uploadingModal .yx-modal-content .uploading-barContainer .uploading-backgroundBar {
+  width: 100%;
+  height: 22px;
+  background: #fff;
+  position: absolute;
+}
+body > div.ng-scope .app-modals .uploadingModal .yx-modal-content .uploading-barContainer .uploading-currentBar {
+  width: 0%;
+  height: 22px;
+  background: #77acd9;
+  position: absolute;
+}
+body > div.ng-scope .protectModal3,
+body > div.ng-scope .protectModal2,
+body > div.ng-scope .protectModal1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(175, 177, 177, 0.2);
+  z-index: 199;
+}
+body > div.ng-scope .protectModal3 .yx-smallModal,
+body > div.ng-scope .protectModal2 .yx-smallModal,
+body > div.ng-scope .protectModal1 .yx-smallModal {
+  position: absolute;
+  width: 460px;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+body > div.ng-scope .protectModal3 .yx-smallModal .yx-modal-top,
+body > div.ng-scope .protectModal2 .yx-smallModal .yx-modal-top,
+body > div.ng-scope .protectModal1 .yx-smallModal .yx-modal-top {
+  border: 1px solid #1976BC;
+  height: 28px;
+  line-height: 28px;
+  background-color: #337AB7;
+}
+body > div.ng-scope .protectModal3 .yx-smallModal .yx-modal-top span,
+body > div.ng-scope .protectModal2 .yx-smallModal .yx-modal-top span,
+body > div.ng-scope .protectModal1 .yx-smallModal .yx-modal-top span {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+body > div.ng-scope .protectModal3 .yx-smallModal .yx-modal-top .close,
+body > div.ng-scope .protectModal2 .yx-smallModal .yx-modal-top .close,
+body > div.ng-scope .protectModal1 .yx-smallModal .yx-modal-top .close {
+  float: right;
+  margin: 5px 12px 0 0;
+  color: #fff;
+  opacity: 1 !important;
+}
+body > div.ng-scope .protectModal3 .yx-smallModal .yx-modal-content,
+body > div.ng-scope .protectModal2 .yx-smallModal .yx-modal-content,
+body > div.ng-scope .protectModal1 .yx-smallModal .yx-modal-content {
+  padding: 6px;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  max-height: 300px;
+  overflow: auto;
+}
+body > div.ng-scope .protectModal3 .yx-smallModal .yx-modal-content textarea,
+body > div.ng-scope .protectModal2 .yx-smallModal .yx-modal-content textarea,
+body > div.ng-scope .protectModal1 .yx-smallModal .yx-modal-content textarea {
+  width: 326px;
+  height: 170px;
+  resize: none;
+  font-size: 14px;
+  overflow-y: auto;
+  border: 1px solid #1976BC;
+}
+body > div.ng-scope .protectModal3 .yx-smallModal .yx-modal-footer,
+body > div.ng-scope .protectModal2 .yx-smallModal .yx-modal-footer,
+body > div.ng-scope .protectModal1 .yx-smallModal .yx-modal-footer {
+  width: 100%;
+  background: #EDEDED;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  padding: 12px 0px;
+  text-align: center;
+}
+body > div.ng-scope .bhkz_beizhuModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(175, 177, 177, 0.2);
+  z-index: 199;
+}
+body > div.ng-scope .bhkz_beizhuModal .yx-smallModal {
+  position: absolute;
+  width: 720px;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+body > div.ng-scope .bhkz_beizhuModal .yx-smallModal .yx-modal-top {
+  border: 1px solid #1976BC;
+  height: 28px;
+  line-height: 28px;
+  background-color: #337AB7;
+}
+body > div.ng-scope .bhkz_beizhuModal .yx-smallModal .yx-modal-top span {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+body > div.ng-scope .bhkz_beizhuModal .yx-smallModal .yx-modal-top .close {
+  float: right;
+  margin: 5px 12px 0 0;
+  color: #fff;
+  opacity: 1 !important;
+}
+body > div.ng-scope .bhkz_beizhuModal .yx-smallModal .yx-modal-content {
+  padding: 6px;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  max-height: 500px;
+  overflow: auto;
+}
+body > div.ng-scope .bhkz_beizhuModal .yx-smallModal .yx-modal-content textarea {
+  width: 326px;
+  height: 170px;
+  resize: none;
+  font-size: 14px;
+  overflow-y: auto;
+  border: 1px solid #1976BC;
+}
+body > div.ng-scope .bhkz_beizhuModal .yx-smallModal .yx-modal-footer {
+  width: 100%;
+  background: #EDEDED;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  padding: 12px 0px;
+  text-align: center;
+}
+body > div.ng-scope .bhkz_beizhuModal td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body > div.ng-scope .bhkz_beizhuModal .yx-smallModal .yx-modal-content .newBeizhu {
+  text-align: center;
+}
+body > div.ng-scope .bhkz_beizhuModal .yx-smallModal .yx-modal-content .newBeizhu textarea {
+  height: 34px;
+  vertical-align: bottom;
+}
+body > div.ng-scope .gaojingMarkModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(175, 177, 177, 0.2);
+  z-index: 199;
+}
+body > div.ng-scope .gaojingMarkModal .yx-smallModal {
+  position: absolute;
+  width: 720px;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+body > div.ng-scope .gaojingMarkModal .yx-smallModal .yx-modal-top {
+  border: 1px solid #1976BC;
+  height: 28px;
+  line-height: 28px;
+  background-color: #337AB7;
+}
+body > div.ng-scope .gaojingMarkModal .yx-smallModal .yx-modal-top span {
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+body > div.ng-scope .gaojingMarkModal .yx-smallModal .yx-modal-top .close {
+  float: right;
+  margin: 5px 12px 0 0;
+  color: #fff;
+  opacity: 1 !important;
+}
+body > div.ng-scope .gaojingMarkModal .yx-smallModal .yx-modal-content {
+  padding: 6px;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  max-height: 500px;
+  overflow: auto;
+}
+body > div.ng-scope .gaojingMarkModal .yx-smallModal .yx-modal-content textarea {
+  width: 326px;
+  height: 170px;
+  resize: none;
+  font-size: 14px;
+  overflow-y: auto;
+  border: 1px solid #1976BC;
+}
+body > div.ng-scope .gaojingMarkModal .yx-smallModal .yx-modal-footer {
+  width: 100%;
+  background: #EDEDED;
+  border: 1px solid #cdcdcd;
+  overflow: hidden;
+  padding: 12px 0px;
+  text-align: center;
+}
+body > div.ng-scope .superWidthTable .yx-tableInfo tr > td:first-child {
+  position: relative;
+  background: #eff5fa;
+  text-align: center;
+  border-right: 1px solid #aaa;
+}
+body > div.ng-scope .superWidthTable .yx-tableInfo thead > tr > td:first-child {
+  background: #c7ddef;
+  z-index: 9;
+}
+@keyframes myRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+[id^='fengshan'] [id^='rotateItems'] path {
+  animation: myRotate 3s linear infinite;
+}
+[id^="lampAWIDGET"] > rect {
+  display: none;
+}
+[id^="lampAWIDGET"]:hover > rect {
+  display: block;
+}
+@keyframes alarm_color {
+  0% {
+    fill: #33FF00;
+  }
+  50% {
+    fill: #3333FF;
+  }
+  100% {
+    fill: #33FF00;
+  }
+}
+[id^="lampBWIDGET"].lampBAlarm [id^='colorIndicate'] {
+  animation: alarm_color 1s linear infinite;
+}
+[id^='lampCWIDGET'].reset {
+  fill: #33FF00;
+}
+[id^='indicateValveWIDGET'].opened [id^='colorIndicator'] {
+  fill: #33FF00;
+}
+[id^='showcontrolWIDGET'] [id^='controllor'] {
+  cursor: pointer;
+}
+[id^='closeWIDGET']:hover [id^='targetEle'] {
+  fill: #aaa;
+}
+[id^="showcontrolWIDGET"] > rect:nth-child(1) {
+  display: none;
+}
+[id^="showcontrolWIDGET"]:hover > rect:nth-child(1) {
+  display: block;
+}
+/**************************************/
+[id^="hoverBtnWIDGET"] > rect:nth-child(1) {
+  display: none;
+}
+[id^="hoverBtnWIDGET"]:hover > rect:nth-child(1) {
+  display: block;
+}
+[id^="hoverBtnWIDGET"] > [id^="controllor"] {
+  display: none;
+}
+[id^="hoverBtnWIDGET"]:hover {
+  cursor: pointer;
+}
+[id^="hoverBtnWIDGET"]:hover > [id^="controllor"] {
+  display: block;
+}
+[id^="jumpPhotoWIDGET"] > rect:nth-child(1) {
+  display: none;
+}
+[id^="jumpPhotoWIDGET"]:hover {
+  cursor: pointer;
+}
+[id^="jumpPhotoWIDGET"]:hover > rect:nth-child(1) {
+  display: block;
+}
+@keyframes pipeWIDGET_x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(76px);
+  }
+}

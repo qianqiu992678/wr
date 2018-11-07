@@ -1,0 +1,62 @@
+<div class="yx-appContainer equipSaving"><!--operateLogS-->
+	<!--筛选-->
+	<div class="yx-appPanel yx-appFilter margin-bottom10">
+		<div class="yx-appPanel-header">
+			<div class="panelIcon">
+				<span class="iconfont icon-liebiao"></span>
+			</div>
+			<div class="panelTitle">
+				<span>筛选</span>
+			</div>
+			<i class="btn-show" ng-show="showFilter" ng-click="showFilter=false"></i>
+		</div>
+		<div class="yx-appPanel-body" ng-hide="showFilter">
+			<ul>
+				<li>
+					<div class="inline">
+						<select ng-model="equipment" ng-options="item for item in equipmentList">
+						</select>
+						<select ng-model="years">
+							<option value="1">1年</option>
+							<option value="2">2年</option>
+							<option value="3">3年</option>
+						</select>
+						<button class="yxBtn yxBtn-Active" type="button" 
+							ng-click="equipChanged()" 
+							ng-Disabled="searching">
+	                        <div ng-hide="searching">查询</div>
+	                        <div ng-show="searching">
+	                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                        </div>
+	                  	</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<p>当前设备能耗状态：良好    更换设备后降耗预估：＜1%    建议更换时间：2年后</p>
+	<div class="chartbox">
+		<ul>
+			<li>
+				<div id="linechart1Container" 
+					style="height: 300px;;width: 100%;">
+				</div>
+			</li>
+			<li>
+				<div id="linechart2Container" 
+					style="height: 300px;width: 100%;">
+				</div>
+			</li>
+			<li>
+				<div id="linechart3Container"
+					style="height: 300px;width: 100%;">
+				</div>
+			</li>
+			<li>
+				<div id="linechart4Container" 
+					style="height: 300px;width: 100%;">
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

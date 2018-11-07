@@ -1,0 +1,274 @@
+<div class="operateLog c2hasFilter">
+	<!--筛选-->
+	<div class="yx-appPanel yx-appFilter margin-bottom10">
+		<div class="yx-appPanel-header">
+			<div class="panelIcon">
+				<span class="iconfont icon-liebiao"></span>
+			</div>
+			<div class="panelTitle">
+				<span>筛选</span>
+			</div>
+			<i class="btn-show" ng-show="showFilter" ng-click="showFilter=false"></i>
+		</div>
+		<div class="yx-appPanel-body" ng-hide="showFilter">
+			<ul>
+				<li>
+					<form id="resetForm0">
+					<div class="inline">
+						<span>日期&nbsp;&nbsp;</span>
+						<input class="xqc-input width100 logminA" readonly
+							dateread="param.logmin" 
+							 ng-model="param.logmin"
+							ng-value="param.logmin | date :'yyyy-MM-dd'" 
+							required/>&nbsp;—&nbsp;
+						<input class="xqc-input width100 logmaxA" readonly
+							dateread="param.logmax" 
+							 ng-model="param.logmax"
+							ng-value="param.logmax | date :'yyyy-MM-dd'"
+							required/>
+						<select name="">
+							<option value="">U1XYZ</option>
+							<option value="">U1XYZ</option>
+							<option value="">U1XYZ</option>
+							<option value="">U1XYZ</option>
+						</select>
+						<button class="yxBtn yxBtn-Active" type="button" ng-click="getOrderDetail()" ng-Disabled="searching">
+	                        <div ng-hide="searching">查询</div>
+	                        <div ng-show="searching">
+	                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                        </div>
+	                    </button>
+					</div>
+					</form>
+				</li>
+			</ul>
+		</div>
+		<div class="yx-appPanel-footer" ng-hide="showFilter">
+			<i class="btn-hide" ng-click="showFilter=true"></i>
+		</div>
+	</div>
+	<!--table表格-->
+	<div class="yx-table margin-top10 DNZLCurrentTable">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td>时间</td>
+					<td>操作过程</td>
+					<td>操作人</td>
+					<td>操作</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2018-3-2 09:53:34</td>
+					<td>断开操作</td>
+					<td>李白</td>
+					<td>
+						<a class="hot-word" ng-click="modals.bhkz_beizhuModal=true">查看/编辑备注</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2018-3-2 09:53:34</td>
+					<td>断开操作</td>
+					<td>李白</td>
+					<td>
+						<a class="hot-word" ng-click="modals.bhkz_beizhuModal=true">查看/编辑备注</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2018-3-2 09:53:34</td>
+					<td>断开操作</td>
+					<td>李白</td>
+					<td>
+						<a class="hot-word" ng-click="modals.bhkz_beizhuModal=true">查看/编辑备注</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2018-3-2 09:53:34</td>
+					<td>断开操作</td>
+					<td>李白</td>
+					<td>
+						<a class="hot-word" ng-click="modals.bhkz_beizhuModal=true">查看/编辑备注</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2018-3-2 09:53:34</td>
+					<td>断开操作</td>
+					<td>李白</td>
+					<td>
+						<a class="hot-word" ng-click="modals.bhkz_beizhuModal=true">查看/编辑备注</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2018-3-2 09:53:34</td>
+					<td>断开操作</td>
+					<td>李白</td>
+					<td>
+						<a class="hot-word" ng-click="modals.bhkz_beizhuModal=true">查看/编辑备注</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2018-3-2 09:53:34</td>
+					<td>断开操作</td>
+					<td>李白</td>
+					<td>
+						<a class="hot-word" ng-click="modals.bhkz_beizhuModal=true">查看/编辑备注</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2018-3-2 09:53:34</td>
+					<td>断开操作</td>
+					<td>李白</td>
+					<td>
+						<a class="hot-word" ng-click="modals.bhkz_beizhuModal=true">查看/编辑备注</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2018-3-2 09:53:34</td>
+					<td>断开操作</td>
+					<td>李白</td>
+					<td>
+						<a class="hot-word" ng-click="modals.bhkz_beizhuModal=true">查看/编辑备注</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2018-3-2 09:53:34</td>
+					<td>断开操作</td>
+					<td>李白</td>
+					<td>
+						<a class="hot-word" ng-click="modals.bhkz_beizhuModal=true">查看/编辑备注</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2018-3-2 09:53:34</td>
+					<td>断开操作</td>
+					<td>李白</td>
+					<td>
+						<a class="hot-word" ng-click="modals.bhkz_beizhuModal=true">查看/编辑备注</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2018-3-2 09:53:34</td>
+					<td>断开操作</td>
+					<td>李白</td>
+					<td>
+						<a class="hot-word" ng-click="modals.bhkz_beizhuModal=true">查看/编辑备注</a>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
+</div>
+<!--保护与控制-设备控制管理-查看记录--备注模态框-->
+<div class="yx-modal-wrap bhkz_beizhuModal" ng-show="modals.bhkz_beizhuModal">
+	<div class="yx-modal">
+		<div class="yx-smallModal">
+			<div class="yx-modal-top clearfix">
+				<span>查看备注</span>
+				<span class="close iconfont icon-guanbi" ng-click="modals.bhkz_beizhuModal=false"></span>
+			</div>
+			<div class="yx-modal-content">
+				<!--table表格-->
+				<div class="yx-table margin-bottom10">
+					<table class="yx-tableInfo margin-bottom10">
+						<thead>
+							<tr>
+								<td>序号</td>
+								<td>添加人</td>
+								<td>内容</td>
+								<td>时间</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>李世民</td>
+								<td>
+									<span>记得下次开机前检查发电机滑油油位记得下次开机前检查发电机滑油油位记得下次开机前检查发电机滑油油位记得下次开机前检查发电机滑油油位记得下次开机前检查发电机滑油油位</span>
+								</td>
+								<td>2018年3月2日10:18:15</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>李白</td>
+								<td>收到@李世民</td>
+								<td>2018年3月2日10:18:41</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>李世民</td>
+								<td>
+									<span>记得下次开机前检查发电机滑油油位</span>
+								</td>
+								<td>2018年3月2日10:18:15</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>李白</td>
+								<td>收到@李世民</td>
+								<td>2018年3月2日10:18:41</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>李世民</td>
+								<td>
+									<span>记得下次开机前检查发电机滑油油位</span>
+								</td>
+								<td>2018年3月2日10:18:15</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>李白</td>
+								<td>收到@李世民</td>
+								<td>2018年3月2日10:18:41</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>李世民</td>
+								<td>
+									<span>记得下次开机前检查发电机滑油油位</span>
+								</td>
+								<td>2018年3月2日10:18:15</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>李白</td>
+								<td>收到@李世民</td>
+								<td>2018年3月2日10:18:41</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="newBeizhu" ng-show="newBeizhu">
+						<textarea  name="" rows="" cols=""></textarea>
+						<button class="yxBtn yxBtn-Active" type="button" ng-Disabled="submiting"
+							ng-click="logoutConfirm()">
+		                    <div ng-hide="submiting">确认</div>
+		                    <div ng-show="submiting">
+		                        <span class="fa fa-spin fa-spinner"></span> 请求中...
+		                    </div>
+		                </button>
+		                <button class="yxBtn yxBtn-White" type="button" ng-Disabled="submiting"
+							ng-click="newBeizhu=false">
+		                    <div ng-hide="submiting">取消</div>
+		                    <div ng-show="submiting">
+		                        <span class="fa fa-spin fa-spinner"></span> 请求中...
+		                    </div>
+		                </button>
+					</div>
+					
+				</div>
+			</div>
+			<div class="yx-modal-footer">
+				<button class="yxBtn yxBtn-Active" type="button" ng-Disabled="submiting"
+					ng-click="newBeizhu=true">
+                    <div ng-hide="submiting">添加备注</div>
+                    <div ng-show="submiting">
+                        <span class="fa fa-spin fa-spinner"></span> 请求中...
+                    </div>
+               </button>
+			</div>
+		</div>
+	</div>
+</div>
+

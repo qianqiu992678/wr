@@ -1,0 +1,38 @@
+<div class="yx-appContainer savingAnalysis"><!--operateLogS-->
+	<div class="sa-table">
+		<!--table表格-->
+		<div class="yx-table margin-top10">
+			<table class="yx-tableInfo">
+				<thead>
+					<tr>
+						<td title="序号">序号</td>
+						<td title="设备">设备</td>
+						<td title="节能方式">节能方式</td>
+						<td title="执行时间">执行时间（天）</td>
+						<td title="节能效果">节能效果（%）</td>
+						<td title="节能累计">节能累计（kwh）</td>
+					</tr>
+				</thead>
+				<tbody style="max-height: 190px;">
+					<tr ng-repeat="item in pageInfo.data">
+						<td title={{$index+1}}>{{$index+1}}</td>
+						<td title={{item.equip}}>{{item.equip}}</td>
+						<td title={{item.type}}>{{item.type}}</td>
+						<td title={{item.executionTime}}>{{item.executionTime}}</td>
+						<td title={{item.saveEffect}}>{{item.saveEffect}}</td>
+						<td title={{item.totalSaved}}>{{item.totalSaved}}</td>
+						
+					</tr>
+				</tbody>
+			</table>
+			<div ng-hide="pageInfo.data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+		</div>
+		<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+	</div>
+	<div class="sa-chartbox">
+		<ul>
+			<li id="chart1"></li>
+			<li id="chart2"></li>
+		</ul>
+	</div>
+</div>

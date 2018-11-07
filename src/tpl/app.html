@@ -1,0 +1,26 @@
+<toaster-container 
+	toaster-options="{'position-class': 'toast-top-right', 'close-button':true}">
+</toaster-container>
+<!--left-->
+<div class="app-left" ng-mouseenter="leftAreaShowFun()" ng-mouseleave="leftAreaHideFun()" ng-include="'src/tpl/left.html'"></div>
+<!--right-->
+<div class="" ng-controller="rightCtrl" data-ng-include="'src/tpl/right.html'" ng-show="rightSide==1"></div>
+<!--center-->
+<div  ng-class="{'app-center':true,'app-center-showMenus':leftAreaShow||leftLock}">
+	<!--中1区-->
+	<div data-ng-include="'src/tpl/center1.html'"></div>
+	<!--中2区-->
+	<div class="app-center-container">
+		<!--右侧窗口控制-->
+		<!--<div class="rightController" ng-click="showRight()">
+			<span class="icon icon-arrow-left" ng-hide="rightSide==1"></span>
+			<span class="icon icon-arrow-right" ng-show="rightSide==1"></span>
+		</div>-->
+		<div ui-view></div>
+
+	</div>
+	<!--中3区-->
+	<div data-ng-include="'src/tpl/center3.html'" ng-controller="footerCtrl"></div>
+</div>
+<!--模态框s-->
+<div class="app-modals" ng-include="'src/tpl/modals.html'"></div>

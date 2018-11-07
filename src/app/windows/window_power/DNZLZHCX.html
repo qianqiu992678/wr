@@ -1,0 +1,16 @@
+<div class="yx-appContainer DNZLZHCX">
+	<!--导航-->
+	<div class="page-nav">
+		<div class="yx-appTabNav margin-bottom10">
+			<ul>
+				<li ng-class="{active:$state.includes('**.DNZLCurrent.**')}" ui-sref='main.power.DNZLZHCX.DNZLCurrent'>
+					<a>当前电能质量数据查询</a>
+				</li>
+				<li ng-class="{active:($state.includes('**.DNZLLog.**')||$state.includes('**.DNZLLogWaveform.**'))}" ui-sref='main.power.DNZLZHCX.DNZLLog'>
+					<a>历史电能质量数据查询</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div ui-view></div>
+</div>

@@ -1,0 +1,125 @@
+<div class="yx-appContainer sysMaintains">
+	<!--筛选-->
+	<div class="yx-appPanel yx-appFilter margin-bottom10">
+		<div class="yx-appPanel-header">
+			<div class="panelIcon">
+				<span class="iconfont icon-liebiao"></span>
+			</div>
+			<div class="panelTitle">
+				<span>筛选</span>
+			</div>
+			<i class="btn-show" ng-show="showFilter" ng-click="showFilter=false"></i>
+		</div>
+		<div class="yx-appPanel-body" ng-hide="showFilter">
+			<ul>
+				<li>
+					<form id="resetForm0">
+					<div class="inline">
+						<span>日期&nbsp;&nbsp;</span>
+						<input class="yx-input width160 dataPicker_startTime"
+							dateread="param.start_time" 
+							 ng-model="param.start_time"
+							ng-value="param.start_time" 
+							required/>&nbsp;—&nbsp;
+						<input class="yx-input width160 dataPicker_endTime"
+							 ng-model="param.end_time"
+							dateread="param.end_time" ng-value="param.end_time" required/>
+						<select ng-change="quickSearch()" ng-model="days">
+							<option value="">快速选择</option>
+							<option value="1">最近1天</option>
+							<option value="7">最近7天</option>
+							<option value="30">最近30天</option>
+						</select>
+						<button class="yxBtn yxBtn-Active" type="button" ng-click="getAlarmList()" ng-Disabled="searching||!param.start_time||!param.end_time">
+	                        <div ng-hide="searching">查询</div>
+	                        <div ng-show="searching">
+	                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                        </div>
+	                    </button>
+	                    <!--<button class="yxBtn yxBtn-Active" type="button" ng-click="alarmManageFun()" ng-Disabled="searching">
+	                        <div ng-hide="searching">批量处理</div>
+	                        <div ng-show="searching">
+	                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                        </div>
+	                    </button>-->
+	                    <button class="yxBtn yxBtn-Active" type="button" 
+	                    	ng-click="listExport()" ng-Disabled="searching||!alarmList">
+	                        <div ng-hide="searching">导出</div>
+	                        <div ng-show="searching">
+	                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                        </div>
+	                    </button>
+					</div>
+					</form>
+				</li>
+			</ul>
+		</div>
+		<!--<div class="yx-appPanel-footer" ng-hide="showFilter">
+			<i class="btn-hide" ng-click="showFilter=true"></i>
+		</div>-->
+	</div>
+	<!--table表格-->
+	<div class="yx-table hasCheckbox margin-top10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td title="序号">
+						序号
+						<!--<input type="checkbox" ng-change="checkAll(pageInfo.data)" ng-model="check.checkedAll" />-->
+					</td>
+					<td title="动作时间" ng-click="listSort('Time',pageInfo.data)">
+						
+						<span class="orderIndicate" ng-show="sortKey=='Time'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>动作时间
+					</td>
+					<td title="事件信息" ng-click="listSort('alarmPoint',pageInfo.data)">
+						<span class="orderIndicate" ng-show="sortKey=='alarmPoint'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>事件信息
+					</td>
+					<td title="状态" ng-click="listSort('State',pageInfo.data)">
+						
+						<span class="orderIndicate" ng-show="sortKey=='State'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>状态
+					</td>
+					<td title="时长（ms）" ng-click="listSort('Duration',pageInfo.data)">
+						
+						<span class="orderIndicate" ng-show="sortKey=='Duration'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>时长（ms）
+					</td>
+					<td title="数值" ng-click="listSort('WarnValue',pageInfo.data)">
+						
+						<span class="orderIndicate" ng-show="sortKey=='WarnValue'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>数值
+					</td>
+					<td>推荐处理方式</td>
+				</tr>
+			</thead>
+			<tbody style="max-height: 540px;">
+				<tr ng-repeat="item in pageInfo.data">
+					<td title={{$index+1}}>
+						{{$index+1}}
+						<!--<input type="checkbox" ng-change="checkSingle(pageInfo.data)" ng-model="item.checked" />-->
+					</td>
+					<td title={{item.Time}}>{{item.Time}}</td>
+					<td title={{item.alarmPoint}}>{{item.alarmPoint}}</td>
+					<td title=>{{item.State}}</td>
+					<td title={{item.Duration}}>{{item.Duration}}</td>
+					<td title={{item.WarnValue}}>{{item.WarnValue}}</td>
+					<td title={{item.recommendType}}>{{item.recommendType}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="pageInfo.data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+	<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+</div>

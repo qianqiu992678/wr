@@ -1,0 +1,278 @@
+[
+		{
+			"volId":1,
+			"enName": "BPH",
+			"zhName": "不平衡度越限值",
+			"type": "double"
+		},
+		{
+			"volId":2,
+			"enName": "ChannelA",
+			"zhName": "通道号",
+			"type": "int"
+		},
+		{
+			"volId":3,
+			"enName": "ChannelB",
+			"zhName": "通道号",
+			"type": "int"
+		},
+		{
+			"volId":4,
+			"enName": "ChannelC",
+			"zhName": "通道号",
+			"type": "int"
+		},
+		{
+			"volId":5, 
+			"enName": "DeltaFreq",
+			"zhName": "频率偏差越限制",
+			"type": "double"
+		},
+		{
+			"volId":6,
+			"enName": "DevID",
+			"zhName": "采集单元编号",
+			"type": "int"
+		},
+		{
+			"volId":7,
+			"enName": "Flag2F",
+			"zhName": "A、C两相电流组标志",
+			"type": "bool"
+		},
+		{
+			"volId":8,
+			"enName": "FlagBPH",
+			"zhName": "不平衡度告警",
+			"type": "bool"
+		},
+		{
+			"volId":9,
+			"enName": "FlagDeltaFreq",
+			"zhName": "频率偏差越限告警",
+			"type": "bool"
+		},
+		{
+			"volId":10,
+			"enName": "FlagFreqH",
+			"zhName": "频率高越限告警",
+			"type": "bool"
+		},
+		{
+			"volId":11,
+			"enName": "FlagFreqL",
+			"zhName": "频率低越限告警",
+			"type": "bool"
+		},
+		{
+			"volId":12,
+			"enName": "FlagLineVol",
+			"zhName": "线电压组标志",
+			"type": "bool"
+		},
+		{
+			"volId":13,
+			"enName": "FlagPlt",
+			"zhName": "长时闪变告警",
+			"type": "bool"
+		},
+		{
+			"volId":14,
+			"enName": "FlagPst",
+			"zhName": "短时闪变告警",
+			"type": "bool"
+		},
+		{
+			"volId":15,
+			"enName": "FlagTB",
+			"zhName": "突变量启动",
+			"type": "bool"
+		},
+		{
+			"volId":16,
+			"enName": "FlagTotalXB",
+			"zhName": "谐波总含量告警",
+			"type": "bool"
+		},
+		{
+			"volId":17,
+			"enName": "FlagV0H",
+			"zhName": "零序越限启动",
+			"type": "bool"
+		},
+		{
+			"volId":18,
+			"enName": "FlagV2H",
+			"zhName": "负序越限启动",
+			"type": "bool"
+		},
+		{
+			"volId":19,
+			"enName": "FlagVH",
+			"zhName": "越上限启动（电压高越限）",
+			"type": "bool"
+		},
+		{
+			"volId":20,
+			"enName": "FlagVL",
+			"zhName": "越下限启动（电压低越限）",
+			"type": "bool"
+		},
+		{
+			"volId":21,
+			"enName": "FlagVolBreak",
+			"zhName": "电压中断告警",
+			"type": "bool"
+		},
+		{
+			"volId":22,
+			"enName": "FlagVolDown",
+			"zhName": "电压暂降告警",
+			"type": "bool"
+		},
+		{
+			"volId":23,
+			"enName": "FlagVolHighLow",
+			"zhName": "",
+			"type": "bool"
+		},
+		{
+			"volId":24,
+			"enName": "FlagVolLongBreak",
+			"zhName": "电压长时中断告警",
+			"type": "bool"
+		},
+		{
+			"volId":25,
+			"enName": "FlagVolUp",
+			"zhName": "电压暂升告警",
+			"type": "bool"
+		},
+		{
+			"volId":26,
+			"enName": "FreqH",
+			"zhName": "频率高越限",
+			"type": "double"
+		},
+		{
+			"volId":27,
+			"enName": "FreqL",
+			"zhName": "频率低越限",
+			"type": "double"
+		},
+		{
+			"volId":28,
+			"enName": "GroupID",
+			"zhName": "模拟量组总编号",
+			"type": "int"
+		},
+		{
+			"volId":29,
+			"enName": "MaxPlt",
+			"zhName": "长时闪变告警值",
+			"type": "double"
+		},
+		{
+			"volId":30,
+			"enName": "MaxPst",
+			"zhName": "短时闪变告警值",
+			"type": "double"
+		},
+		{
+			"volId":31,
+			"enName": "MotherFlag",
+			"zhName": "",
+			"type": ""
+		},
+		{
+			"volId":32,
+			"enName": "Name",
+			"zhName": "分组名称",
+			"type": "varchar"
+		},
+		{
+			"volId":33,
+			"enName": "ObjectID",
+			"zhName": "对象编号",
+			"type": "int"
+		},
+		{
+			"volId":34,
+			"enName": "PosID",
+			"zhName": "电压监测点编号",
+			"type": "int"
+		},
+		{
+			"volId":35,
+			"enName": "PrimaryRatio",
+			"zhName": "一次变比",
+			"type": ""
+		},
+		{
+			"volId":36,
+			"enName": "QDTB",
+			"zhName": "突变量定值",
+			"type": "double"
+		},
+		{
+			"volId":37,
+			"enName": "QDV0H",
+			"zhName": "零序越限定值",
+			"type": "double"
+		},
+		{
+			"volId":38,
+			"enName": "QDV2H",
+			"zhName": "负序越限定值",
+			"type": "double"
+		},
+		{
+			"volId":39,
+			"enName": "QDVH",
+			"zhName": "幅值越高限定值（电压高越限）",
+			"type": "double"
+		},
+		{
+			"volId":40,
+			"enName": "QDVL",
+			"zhName": "幅值越低限定值（电压高越限）",
+			"type": "double"
+		},
+		{
+			"volId":41,
+			"enName": "RatedVol",
+			"zhName": "额定电压",
+			"type": "double"
+		},
+		{
+			"volId":42,
+			"enName": "SecondaryRatio",
+			"zhName": "二次变比",
+			"type": ""
+		},
+		{
+			"volId":43,
+			"enName": "TotalXB",
+			"zhName": "谐波总含量越限值",
+			"type": "double"
+		},
+		{
+			"volId":44,
+			"enName": "Unit",
+			"zhName": "单位",
+			"type": "varchar"
+		},
+		{
+			"volId":45,
+			"enName": "VolHigh",
+			"zhName": "电压偏差上限",
+			"type": "double"
+		},
+		{
+			"volId":46,
+			"enName": "VolLow",
+			"zhName": "电压偏差下限",
+			"type": "double"
+		}
+	]

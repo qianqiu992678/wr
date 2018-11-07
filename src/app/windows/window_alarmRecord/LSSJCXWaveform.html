@@ -1,0 +1,33 @@
+<div class="LSSJCXWaveform waveform">
+	<!--面板-->
+	<div class="yx-appPanel margin-bottom10">
+		<div class="yx-appPanel-header">
+			<!--<div class="panelIcon">
+				<span class="iconfont icon-liebiao"></span>
+			</div>-->
+			<div class="urlBack" ui-sref="main.diagram.LSSJCX">
+				<span class="icon iconfont icon-shiliangzhinengduixiang4"></span>
+				返回
+			</div>
+			<div class="panelTitle">
+				<span>面板</span>
+			</div>
+		</div>
+		<div class="yx-appPanel-body">
+			<div class="pannelBody-left">
+				<ul>
+					<li ng-repeat="item in series">
+						<input ng-change="seriesChange()" ng-model="item.checked" type="checkbox" />{{item.name}}
+					</li>
+					
+				</ul>
+			</div>
+			<div class="pannelBody-right">
+				<div id="highstockcontainer" style="min-width: 335px;min-height: 340px;" ></div>
+			</div>
+		</div>
+		<div class="yx-appPanel-footer" ng-show="pageInfo.data.length>0">
+			<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+		</div>
+	</div>
+</div>

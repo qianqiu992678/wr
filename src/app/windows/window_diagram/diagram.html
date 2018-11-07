@@ -1,0 +1,24 @@
+<!-- toaster directive -->
+<!--<toaster-container toaster-options="{'position-class': 'toast-top-right', 'close-button':true}"></toaster-container>-->
+<!-- / toaster directive -->
+
+<!--内容容器，默认有内边距10px-->
+<div class="yx-appContainer">
+	<!--导航-->
+	<!--<div class="page-nav">
+		<div class="yx-appTabNav margin-bottom10">
+			<ul>
+				<li ng-class="{active:$state.includes('**.DQMX.**')}" ng-click="urlChange('DQMX')">
+					<a>电气模型</a>
+				</li>
+				<li ng-class="{active:$state.includes('**.SJYZT.**')}" ng-click="urlChange('SJYZT.allData')">
+					<a>数据与状态</a>
+				</li>
+				<li ng-class="{active:$state.includes('**.LSSJCX.**')||$state.includes('**.LSSJCXWaveform.**')}" ng-click="urlChange('LSSJCX')">
+					<a>历史数据查询</a>
+				</li>
+			</ul>
+		</div>
+	</div>-->
+	<div ui-view></div>
+</div>

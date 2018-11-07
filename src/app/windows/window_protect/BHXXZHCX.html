@@ -1,0 +1,186 @@
+<div class="BHXXZHCX c2hasFilter">
+	<!--筛选-->
+	<div class="yx-appPanel yx-appFilter margin-bottom10">
+		<div class="yx-appPanel-header">
+			<div class="panelIcon">
+				<span class="iconfont icon-liebiao"></span>
+			</div>
+			<div class="panelTitle">
+				<span>筛选</span>
+			</div>
+			<i class="btn-show" ng-show="showFilter" ng-click="showFilter=false"></i>
+		</div>
+		<div class="yx-appPanel-body" ng-hide="showFilter">
+			<ul>
+				<li>
+					<form id="resetForm0">
+					<div class="inline">
+						<span>日期&nbsp;&nbsp;</span>
+						<input class="xqc-input width100 logminA" readonly
+							dateread="param.logmin" 
+							 ng-model="param.logmin"
+							ng-value="param.logmin | date :'yyyy-MM-dd'" 
+							required/>&nbsp;—&nbsp;
+						<input class="xqc-input width100 logmaxA" readonly
+							dateread="param.logmax" 
+							 ng-model="param.logmax"
+							ng-value="param.logmax | date :'yyyy-MM-dd'"
+							required/>
+						<select name="">
+							<option value="">U1XYZ</option>
+							<option value="">U1XYZ</option>
+							<option value="">U1XYZ</option>
+							<option value="">U1XYZ</option>
+						</select>
+						<button class="yxBtn yxBtn-Active" type="button" ng-click="getOrderDetail()" ng-Disabled="searching">
+	                        <div ng-hide="searching">查询</div>
+	                        <div ng-show="searching">
+	                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                        </div>
+	                    </button>
+					</div>
+					</form>
+				</li>
+			</ul>
+		</div>
+		<div class="yx-appPanel-footer" ng-hide="showFilter">
+			<i class="btn-hide" ng-click="showFilter=true"></i>
+		</div>
+	</div>
+	<!--table表格-->
+	<div class="yx-table margin-top10 DNZLCurrentTable">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td>告警名称</td>
+					<td>处理连接</td>
+					<td>说明</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+

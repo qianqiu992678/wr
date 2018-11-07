@@ -1,0 +1,28 @@
+<div class="yx-appContainer assessment-important">
+	<!--table表格-->
+	<div class="yx-table margin-top10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td title="设备名称">设备名称</td>
+					<td title="服役时长（月）">服役时长（月）</td>
+					<td title="预估寿命（月）">预估寿命（月）</td>
+					<td title="损耗程度(%)">损耗程度(%)</td>
+					<td title="是否需重点观察">是否需重点观察</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in pageInfo.data">
+					<td title={{item.name}}>{{item.name}}</td>
+					<td title={{item.onlineTime}}>{{item.onlineTime}}</td>
+					<td title={{item.leftTime}}>{{item.leftTime}}</td>
+					<td title={{item.wearLevel}}>{{item.wearLevel}}</td>
+					<td ng-class="{'alarmItem':item.needAttention}" title={{item.needAttention?'是':'否'}}>{{item.needAttention?'是':'否'}}</td>
+					
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="pageInfo.data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+	<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+</div>

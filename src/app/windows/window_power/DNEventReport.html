@@ -1,0 +1,32 @@
+<div class="yx-appContainer DNEventReport">
+	<div>
+		
+	</div>
+	<!--table表格-->
+	<div class="yx-table margin-top10 DNZLCurrentTable">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td>序号</td>
+					<td>故障时间</td>
+					<td>故障原因</td>
+					<td>故障报告</td>
+					<td>查看故障报告</td>
+				</tr>
+			</thead>
+			<tbody style="max-height: 560px;">
+				<tr ng-repeat="item in pageInfo.data">
+					<td title={{$index+1}}>{{$index+1}}</td>
+					<td title={{item.time}}>{{item.time}}</td>
+					<td title={{item.reason}}>{{item.reason}}</td>
+					<td title={{item.recordReport}}>{{item.recordReport}}</td>
+					<td title="查看报告">
+						<a class="hot-word" target="_Blank" ng-href="src/app/windows/window_power/reports/{{item.report}}.html">查看报告</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="pageInfo.data.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+	<span data-ng-include=" 'src/tpl/pageInfo.html' "></span>
+</div>

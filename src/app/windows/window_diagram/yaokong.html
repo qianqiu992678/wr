@@ -1,0 +1,36 @@
+<div class="yx-appContainer yaokong">
+	<!--table表格-->
+	<div class="yx-table margin-top10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td title="地址">地址</td>
+					<td title="名称">名称</td>
+					<td title="操作">操作</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in dictionaryMsg.YaoKong">
+					<td>{{item.Address}}</td>
+					<td>{{item.Description}}</td>
+					<td style="    padding: 3px;">
+						<button class="yxBtn yxBtn-Active" type="button" ng-click="yaokongOpt('OFF',item.Address)" ng-Disabled="searching">
+	                        <div ng-hide="searching">断开</div>
+	                        <div ng-show="searching">
+	                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                        </div>
+	                    </button>
+	                    <button class="yxBtn yxBtn-Active" type="button" ng-click="yaokongOpt('ON',item.Address)" ng-Disabled="searching">
+	                        <div ng-hide="searching">闭合</div>
+	                        <div ng-show="searching">
+	                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                        </div>
+	                    </button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div ng-hide="dictionaryMsg.YaoKong.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+	</div>
+</div>
+	

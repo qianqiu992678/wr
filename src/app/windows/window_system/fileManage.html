@@ -1,0 +1,207 @@
+<div class="dqmx-fileManage">
+	<div class="fileNav">
+		<ul class="nav-constructor">
+			<li ng-repeat="item in folderData" ng-if="item.isDirectory" ng-class="{currentFolder:currentFolder==item}">
+				<a ng-click="getFolder()">{{item.showSubFolder?"- ":"+"}}</a>
+				<span ng-click="toFolder()">
+					{{item.url.split('/').pop()}}
+				</span>
+				<ul ng-show="item.showSubFolder">
+					<li ng-repeat="it in item.subFolder" ng-if="it.isDirectory" ng-class="{currentFolder:currentFolder==it}">
+						<a ng-click="showSubFolderFun(it)">{{it.showSubFolder?"- ":"+"}}</a>
+						<span ng-click="toSubFolder(it)" ng-right-click="showFolderOptMenu($event,it)">
+							{{it.url.split('/').pop()}}
+						</span>
+
+						<ul>
+							<li ng-repeat="i in it.subFolder" ng-if="i.isDirectory" ng-class="{currentFolder:currentFolder==i}">
+								<a ng-click="showSubFolderFun(i)">{{i.showSubFolder?"- ":"+"}}</a>
+
+								{{i.url.split('/').pop()}}
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<!--菜单右键操作菜单-->
+		<ul class="window-folderOptMenu" ng-show="folderOptMenu">
+			<li class="menu-close" ng-click="folderOptMenu=false">
+				<span class="icon iconfont icon-guanbi"></span>
+			</li>
+			<li ng-click="folderRenameFun()">重命名</li>
+			<li ng-click="folderDeleteFun()">删除</li>
+		</ul>
+
+	</div>
+	<div class="display-window" ng-right-click="showContextmenuFun($event)">
+
+		<!--窗口右键——窗口操作菜单-->
+		<ul class="window-contextmenu" ng-show="showContextmenu">
+			<li class="menu-close" ng-click="showContextmenu=false">
+				<span class="icon iconfont icon-guanbi"></span>
+			</li>
+			<li ng-click="newFolder()">新建文件夹</li>
+			<li>
+				<a class="fileUpload" type="file" id="file1" ngf-pattern=".*" accept=".*" ng-model="fileData" ngf-select>上传文件</a>
+			</li>
+		</ul>
+		<!--窗口右键——文件操作菜单-->
+		<ul class="window-fileOptMenu" ng-show="showFileOptMenu">
+			<li class="menu-close" ng-click="showFileOptMenu=false">
+				<span class="icon iconfont icon-guanbi"></span>
+			</li>
+			<li ng-click="fileDeleteFun()">删除文件</li>
+			<li ng-click="fileRenameFun()">文件重命名</li>
+			<li ng-click="fileDownLoad()">文件下载</li>
+			<li ng-click="svgfilecompile()">svg文件编译</li>
+		</ul>
+		<ul class="folderFiles">
+			<li ng-class="{selectedItem:item.checked}" 
+				ng-repeat="item in currentFolder.subFolder" data-toggle={{$index}} 
+				ng-click="item.checked=!item.checked"
+				ng-dblclick='fileOptFun($event,item)'>
+				<span ng-class="{isDirectory:item.isDirectory}"></span> {{item.url}}
+			</li>
+		</ul>
+		<!--拖拽上传区域-->
+		<div class="uploadDropArea drop-box" ngf-drop ng-model="fileData1" 
+			ngf-drag-over-class="dragover" ngf-multiple="true" 
+			ngf-allow-dir="true" ngf-accept="'.jpg,.png,.pdf,.html,.zip'">
+			
+		</div>
+		
+	</div>
+	<!--新建文件夹名称输入模态框-->
+	<div class="yx-modal-wrap newFolderConfirmModal" ng-show="newFolderConfirmModal">
+		<div class="yx-modal">
+			<div class="yx-smallModal">
+				<div class="yx-modal-top clearfix">
+					<span>新建文件夹</span>
+					<span class="close iconfont icon-guanbi" ng-click="newFolderConfirmModal=false"></span>
+				</div>
+				<div class="yx-modal-content">
+					<ul>
+						<li>
+							<span>文件夹名称：</span>
+							<input type="text" ng-model="foldername" />
+						</li>
+					</ul>
+				</div>
+				<div class="yx-modal-footer">
+					<button class="yxBtn yxBtn-Active" type="button" ng-Disabled="submiting" ng-click="newFolderConfirm()">
+	                    <div ng-hide="submiting">确认</div>
+	                    <div ng-show="submiting">
+	                        <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                    </div>
+	                </button>
+					<button class="yxBtn yxBtn-White" type="button" ng-Disabled="submiting" ng-click="newFolderConfirmModal=false">
+	                    <div ng-hide="submiting">取消</div>
+	                    <div ng-show="submiting">
+	                        <span class="fa fa-spin fa-spinner"></span> 请求中 . . .
+	                    </div>
+	                </button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--文件夹重命名名称输入模态框-->
+	<div class="yx-modal-wrap folderRenameConfirmModal" ng-show="folderRenameConfirmModal">
+		<div class="yx-modal">
+			<div class="yx-smallModal">
+				<div class="yx-modal-top clearfix">
+					<span>重命名</span>
+					<span class="close iconfont icon-guanbi" ng-click="folderRenameConfirmModal=false"></span>
+				</div>
+				<div class="yx-modal-content">
+					<ul>
+						<li>
+							<span>文件夹名称：</span>
+							<input type="text" ng-model="newFileName" />
+						</li>
+					</ul>
+				</div>
+				<div class="yx-modal-footer">
+					<button class="yxBtn yxBtn-Active" type="button" ng-Disabled="submiting" ng-click="folderRenameConfirm()">
+	                    <div ng-hide="submiting">确认</div>
+	                    <div ng-show="submiting">
+	                        <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                    </div>
+	                </button>
+					<button class="yxBtn yxBtn-White" type="button" ng-Disabled="submiting" ng-click="folderRenameConfirmModal=false">
+	                    <div ng-hide="submiting">取消</div>
+	                    <div ng-show="submiting">
+	                        <span class="fa fa-spin fa-spinner"></span> 请求中 . . .
+	                    </div>
+	                </button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--文件重命名名称输入模态框-->
+	<div class="yx-modal-wrap fileRenameConfirmModal" ng-show="fileRenameConfirmModal">
+		<div class="yx-modal">
+			<div class="yx-smallModal">
+				<div class="yx-modal-top clearfix">
+					<span>文件重命名</span>
+					<span class="close iconfont icon-guanbi" ng-click="fileRenameConfirmModal=false"></span>
+				</div>
+				<div class="yx-modal-content">
+					<ul>
+						<li>
+							<span>文件名称：</span>
+							<input type="text" ng-model="newFileName" />
+						</li>
+					</ul>
+				</div>
+				<div class="yx-modal-footer">
+					<button class="yxBtn yxBtn-Active" type="button" ng-Disabled="submiting" ng-click="fileRenameConfirm()">
+	                    <div ng-hide="submiting">确认</div>
+	                    <div ng-show="submiting">
+	                        <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                    </div>
+	                </button>
+					<button class="yxBtn yxBtn-White" type="button" ng-Disabled="submiting" ng-click="fileRenameConfirmModal=false">
+	                    <div ng-hide="submiting">取消</div>
+	                    <div ng-show="submiting">
+	                        <span class="fa fa-spin fa-spinner"></span> 请求中 . . .
+	                    </div>
+	                </button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--编译报错提示模态框-->
+	<div class="yx-modal-wrap compileErrorModal" ng-show="compileErrorModal">
+		<div class="yx-modal">
+			<div class="yx-smallModal">
+				<div class="yx-modal-top clearfix">
+					<span>svg源码编译错误</span><!--newFolderConfirmModal-->
+					<span class="close iconfont icon-guanbi" ng-click="compileErrorModalClose()"></span>
+				</div>
+				<div class="yx-modal-content">
+					<p style='color:red'>您可以按照id到svg源码搜索错误位置并修改</p>
+					<!--table表格-->
+					<div class="yx-table margin-top10">
+						<table class="yx-tableInfo">
+							<thead>
+								<tr>
+									<td title="元素id">元素id</td>
+									<td title="错误信息">错误信息</td>
+								</tr>
+							</thead>
+							<tbody style="max-height: 218px;">
+								<tr ng-repeat="item in compileError">
+									<td title={{item.id}}>{{item.id}}</td>
+									<td title={{item.errorMsg}}>{{item.errorMsg}}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="svgCompileBox" style="display: none;">
+	</div>
+</div>

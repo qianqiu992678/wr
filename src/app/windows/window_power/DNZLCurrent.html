@@ -1,0 +1,71 @@
+<div class="DNZLCurrent">
+	<!--筛选-->
+	<div class="yx-appPanel yx-appFilter margin-bottom10">
+		<div class="yx-appPanel-header">
+			<div class="panelIcon">
+				<span class="iconfont icon-liebiao"></span>
+			</div>
+			<div class="panelTitle">
+				<span>筛选</span>
+			</div>
+			<i class="btn-show" ng-show="showFilter" ng-click="showFilter=false"></i>
+		</div>
+		<div class="yx-appPanel-body" ng-hide="showFilter">
+			<ul>
+				<li>
+					<div class="inline">
+						<span>分组：</span>
+						<select ng-model="msg" ng-options="item.GroupName for item in posIDs">
+						</select>	
+						<button class="yxBtn yxBtn-Active" type="button" 
+							ng-click="getCurrentPowerQuality()" ng-Disabled="searching||!msg">
+	                        <div ng-hide="searching">查询</div>
+	                        <div ng-show="searching">
+	                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                        </div>
+	                    </button>
+	                    <button class="yxBtn yxBtn-Active" type="button" ng-click="listExport()" 
+							ng-Disabled="searching||!currentDNData">
+	                        <div ng-hide="searching">导出</div>
+	                        <div ng-show="searching">
+	                            <span class="fa fa-spin fa-spinner"></span> 请求中...
+	                        </div>
+	                    </button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--<div class="yx-appPanel-footer" ng-hide="showFilter">
+			<i class="btn-hide" ng-click="showFilter=true"></i>
+		</div>-->
+	</div>
+	<!--table表格-->
+	<div class="yx-table margin-top10 DNZLCurrentTable">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td title="名称" ng-click="listSort('key',currentDNData)">
+						
+						<span class="orderIndicate" ng-show="sortKey=='key'">
+							<span ng-show="sortNum<0" class="fa fa-fw fa-angle-up"></span>
+							<span ng-show="sortNum>0" class="fa fa-fw fa-angle-down"></span>
+						</span>名称
+					</td>
+					<td title="当前值">
+						当前值
+					</td>
+				</tr>
+			</thead>
+			<!--电压-->
+			<tbody style="max-height: 540px;">
+				<tr ng-repeat="item in currentDNData">
+					<td title={{item.key}}>{{item.key}}</td>
+					<td title={{item.value}}>
+						{{item.value}}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+

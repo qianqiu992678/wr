@@ -1,0 +1,71 @@
+<div class="diagram-SJYZT c2noFilter">
+	<ul class="SJYZT-NAV">
+		<li>
+			<a class="hot-word" ui-sref='main.diagram.SJYZT.allData'>所有数据></a>
+		</li>
+		<li>
+			<!--ui-sref='main.diagram.SJYZT.yaoxin({classname:classname})'--> 
+			<a class="hot-word" 
+				ng-if="$state.includes('**.yaoxin.**')">
+				数据类型>
+			</a>
+		</li>
+		<!--<li>
+			<a class="hot-word" ui-sref='main.diagram.SJYZT.fenzu' 
+				ng-if="$state.includes('**.fenzu.**')">分组></a>
+		</li>-->
+	</ul>
+	<div ui-view></div>
+	<!--table表格-->
+	<!--<div class="yx-table margin-bottom10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td>遥测名称</td>
+					<td>当前值</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in currentData.YaoCe">
+					<td>{{item.name}}</td>
+					<td>{{item.value}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>-->
+	<!--table表格-->
+	<!--<div class="yx-table margin-bottom10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td>遥信名称</td>
+					<td>当前状态</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in currentData.YaoXin">
+					<td>{{item.name}}</td>
+					<td>{{item.value}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>-->
+	<!--table表格-->
+	<!--<div class="yx-table margin-bottom10">
+		<table class="yx-tableInfo">
+			<thead>
+				<tr>
+					<td>遥脉名称</td>
+					<td>当前状态</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in currentData.YaoMai">
+					<td>{{item.name}}</td>
+					<td>{{item.value}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>-->
+
+</div>

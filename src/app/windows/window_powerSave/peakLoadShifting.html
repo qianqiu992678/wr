@@ -1,0 +1,123 @@
+<div class="yx-appContainer peakLoadShifting">
+	<div class="timeConfig">
+		<ul>
+			<li>
+				<span>峰：</span>
+				<ul class=" margin-bottom10">
+					<li>
+						<input class="width100" type="text" value="08:30"/>——
+						<input class="width100" type="text"  value="11:30"/>
+						<button class="yxBtn yxBtn-Active" type="button">
+	                    	删除
+		                </button>
+					</li>
+					<li>
+						<input class="width100" type="text" value="18:00"/>——
+						<input class="width100" type="text"  value="23:00"/>
+						<button class="yxBtn yxBtn-Active" type="button">
+	                    	删除
+		                </button>
+					</li>
+					
+				</ul>
+				<button class="yxBtn yxBtn-Active" type="button">
+                    	添加
+                </button>
+			</li>
+			<li>
+				<span>谷：</span>
+				<ul class=" margin-bottom10">
+					<li>
+						<input class="width100" type="text" value="23:00" />——
+						<input class="width100" type="text" value="07:00" />
+						<button class="yxBtn yxBtn-Active" type="button">
+	                    	删除
+		                </button>
+					</li>
+				</ul>
+				<button class="yxBtn yxBtn-Active" type="button">
+                    	添加
+                </button>
+			</li>
+			<li>
+				<span>平：</span>
+				<ul class=" margin-bottom10">
+					<li>
+						<input class="width100" type="text" value="07:00" />——
+						<input class="width100" type="text" value="08:30" />
+						<button class="yxBtn yxBtn-Active" type="button">
+	                    	删除
+		                </button>
+					</li>
+					<li>
+						<input class="width100" type="text" value="11:30" />——
+						<input class="width100" type="text" value="18:00" />
+						<button class="yxBtn yxBtn-Active" type="button">
+	                    	删除
+		                </button>
+					</li>
+				</ul>
+				<button class="yxBtn yxBtn-Active" type="button">
+                    	添加
+                </button>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<div class="table1 margin-bottom10 margin-top10">
+		<!--table表格-->
+		<div class="yx-table margin-top10" style="width: 65%;float:left">
+			<table class="yx-tableInfo">
+				<thead>
+					<tr>
+						<td title="日期">日期</td>
+						<td title="储能时段">储能时段</td>
+						<td title="储能量">储能量</td>
+						<td title="耗能时段">耗能时段</td>
+						<td title="耗能量">耗能量</td>
+						<td title="累计电费">累计电费</td>
+						<td title="节约电费">节约电费</td>
+					</tr>
+				</thead>
+				<tbody style="max-height: 200px;">
+					<tr ng-repeat="item in peakLoadShifting">
+						<td title={{item.date}}>{{item.date}}</td>
+						<td title={{item.stime}}>{{item.stime}}</td>
+						<td title={{item.storage}}>{{item.storage}}</td>
+						<td title={{item.ctime}}>{{item.ctime}}</td>
+						<td title={{item.consume}}>{{item.consume}}</td>
+						<td title={{item.spend}}>{{item.spend}}</td>
+						<td title={{item.save}}>{{item.save}}</td>
+					</tr>
+				</tbody>
+			</table>
+			<div ng-hide="peakLoadShifting.length>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>
+		</div>
+		<!--table表格-->
+		<div class="yx-table margin-top10" style="width: 35%;float:left">
+			<table class="yx-tableInfo">
+				<thead>
+					<tr>
+						<td title="状态">状态</td>
+						<td title="剩余(%)">剩余(%)</td>
+						<td title="充放电次数">充放电次数</td>
+						<td title="剩余充放电次数">剩余充放电次数</td>
+					</tr>
+				</thead>
+				<tbody style="max-height: 200px;">
+					<tr>
+						<td title="放电">放电</td>
+						<td title="56%">56</td>
+						<td title="420">420</td>
+						<td title={{2000-420}}>{{2000-420}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div id="chartBox" style="height: 280px;">
+		
+	</div>
+</div>
+

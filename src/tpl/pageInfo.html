@@ -1,0 +1,23 @@
+			<!-- 底部分页 -->
+            <footer class="yxPaging">
+                <div class="row" ng-show="pageInfo.size>0">
+                    <div class="col-sm-3" >
+                        <small class="text-muted inline">当前显示{{pageInfo.size}}条 共{{pageInfo.total}}条</small>
+                    </div>
+
+                    <div ng-show="pageInfo.size" class="col-sm-9 text-right text-center-xs"
+                         paging
+                         hide-if-empty=true
+                         ul-class="pagination pagination-sm m-t-none m-b-none"
+                         page="pageInfo.pageNum"
+                         page-size="pageInfo.row"
+                         total="pageInfo.total"
+                         show-prev-next="true"
+                         scroll-top="false"
+                         paging-action="pagination(page)">
+                    </div>
+                </div>
+            </footer>
+            <!-- 无数据提醒 -->
+            <!--<div ng-hide="pageInfo.size>0" class="m-md alert alert-warning text-center text-lg">暂无数据</div>-->
+			<!-- <div ng-show="pageInfo.rspMsg && !(pageInfo.rspMsg=='交易成功')" class="m-md alert alert-warning text-center text-lg">没有查询到符合条件的数据</div>-->

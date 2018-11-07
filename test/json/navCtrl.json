@@ -1,0 +1,249 @@
+{
+	"menus": [
+		{
+			"menuName": "手启动录波",
+			"iconcls": "xxpicon icon-04",
+			"request": "main.menu1",
+			"permission": "",
+			"leaf": 1,
+			"isShow": false,
+			"command": "luboStartModal",
+			"menuBeans": null
+		}, {
+			"menuName": "告警与故障录波",
+			"iconcls": "xxpicon icon-04",
+			"request": null,
+			"permission": "alarmRecord",
+			"leaf": 0,
+			"isShow": false,
+			"menuBeans": [
+				{
+					"menuName": "告警管理",
+					"iconcls": "xxpicon icon-04",
+					"request": "main.alarmRecord.alarmManage",
+					"permission": "alarmManage",
+					"leaf": 1,
+					"command": null,
+					"menuBeans": null
+				}, {
+					"menuName": "录波管理",
+					"iconcls": "xxpicon icon-01",
+					"request": "main.alarmRecord.recordManage",
+					"permission": "recordManage",
+					"leaf": 0,
+					"command": null,
+					"menuBeans": null
+				}, {
+					"menuName": "长录波历史数据",
+					"iconcls": "xxpicon icon-04",
+					"request": "main.alarmRecord.LSSJCX",
+					"permission": "LSSJCX",
+					"leaf": 1,
+					"command": null,
+					"menuBeans": null
+				}
+			]
+		}, {
+			"menuName": "电能质量管理",
+			"iconcls": "xxpicon icon-04",
+			"request": null,
+			"permission": "power",
+			"leaf": 0,
+			"isShow": false,
+			"menuBeans": [
+				{
+					"menuName": "电能质量数据",
+					"iconcls": "xxpicon icon-01",
+					"request": "main.power.DNZLZHCX.DNZLCurrent",
+					"permission": "DNZLCurrent",
+					"leaf": 0,
+					"command": null,
+					"menuBeans": null
+				}, {
+					"menuName": "电能质量历史数据",
+					"iconcls": "xxpicon icon-01",
+					"request": "main.power.DNZLZHCX.DNZLLog",
+					"permission": "DNZLLog",
+					"leaf": 0,
+					"command": null,
+					"menuBeans": null
+				}
+			]
+		}, {
+			"menuName": "系统监测管理",
+			"iconcls": "xxpicon icon-04",
+			"request": null,
+			"permission": "diagram",
+			"leaf": 0,
+			"isShow": false,
+			"command": null,
+			"menuBeans": [
+				{
+					"menuName": "电气模型",
+					"iconcls": "xxpicon icon-04",
+					"request": "main.diagram.DQMX",
+					"permission": "DQMX",
+					"leaf": 1,
+					"command": null,
+					"menuBeans": null
+				}, {
+					"menuName": "数据与状态",
+					"iconcls": "xxpicon icon-04",
+					"request": "main.diagram.SJYZT.allData",
+					"permission": "SJYZT",
+					"leaf": 1,
+					"command": null,
+					"menuBeans": null
+				}
+			]
+		},  {
+			"menuName": "操作记录",
+			"iconcls": "xxpicon icon-04",
+			"request": "main.operateLogS",
+			"permission": "operateLogS",
+			"leaf": 1,
+			"isShow": false,
+			"menuBeans": null
+		}, {
+			"menuName": "定值管理",
+			"iconcls": "xxpicon icon-01",
+			"request": "main.menu2",
+			"permission": "dzManage",
+			"leaf": 0,
+			"isShow": false,
+			"menuBeans": [
+				{
+					"menuName": "电压监测点列表",
+					"iconcls": "xxpicon icon-04",
+					"request": "main.dzManage.dz_volList",
+					"permission": "dz_volList",
+					"leaf": 1,
+					"command": null,
+					"menuBeans": null
+				}, {
+					"menuName": "电流监测点列表",
+					"iconcls": "xxpicon icon-01",
+					"request": "main.dzManage.dz_curList",
+					"permission": "dz_curList",
+					"leaf": 0,
+					"command": null,
+					"menuBeans": null
+				}, {
+					"menuName": "电压独立点",
+					"iconcls": "xxpicon icon-01",
+					"request": "main.dzManage.dz_uindependentList",
+					"permission": "dz_uindependentList",
+					"command": null,
+					"leaf": 0,
+					"menuBeans": null
+				}, {
+					"menuName": "电流独立点",
+					"iconcls": "xxpicon icon-01",
+					"request": "main.dzManage.dz_cindependentList",
+					"permission": "dz_cindependentList",
+					"command": null,
+					"leaf": 0,
+					"menuBeans": null
+				}, {
+					"menuName": "开关量列表",
+					"iconcls": "xxpicon icon-01",
+					"request": "main.dzManage.dz_switchList",
+					"permission": "dz_switchList",
+					"command": null,
+					"leaf": 0,
+					"menuBeans": null
+				}, {
+					"menuName": "定值更新",
+					"iconcls": "xxpicon icon-01",
+					"request": "",
+					"permission": "",
+					"command": "dzUpdateConfirmFun",
+					"leaf": 0,
+					"menuBeans": null
+				}
+			]
+		}, {
+			"menuName": "系统管理",
+			"iconcls": "xxpicon icon-01",
+			"request": "main.menu2",
+			"permission": "system",
+			"leaf": 0,
+			"isShow": false,
+			"menuBeans": [
+				{
+					"menuName": "工具文件下载",
+					"iconcls": "xxpicon icon-04",
+					"request": "main.system.sysSetting",
+					"permission": "sysSetting",
+					"leaf": 1,
+					"command": null,
+					"menuBeans": null
+				}, {
+					"menuName": "文件管理",
+					"iconcls": "xxpicon icon-04",
+					"request": "main.system.fileManage",
+					"permission": "fileManage",
+					"leaf": 1,
+					"command": null,
+					"menuBeans": null
+				}, {
+					"menuName": "用户切换",
+					"iconcls": "xxpicon icon-01",
+					"request": "main.menu2",
+					"permission": "menu2",
+					"leaf": 0,
+					"command": "systemLoginModal",
+					"menuBeans": null
+				}, {
+					"menuName": "退出登录",
+					"iconcls": "xxpicon icon-01",
+					"request": "main.menu2",
+					"permission": "menu2",
+					"leaf": 0,
+					"command": "systemLogoutModal",
+					"menuBeans": null
+				}, {
+					"menuName": "显示录波告警栏",
+					"iconcls": "xxpicon icon-01",
+					"request": "",
+					"permission": "",
+					"leaf": 0,
+					"command": "showCenter3",
+					"menuBeans": null
+				}, {
+					"menuName": "显示操作记录栏",
+					"iconcls": "xxpicon icon-01",
+					"request": "",
+					"permission": "",
+					"leaf": 0,
+					"command": "showRightArea",
+					"menuBeans": null
+				}, {
+					"menuName": "系统刷新时间",
+					"iconcls": "xxpicon icon-01",
+					"request": "",
+					"permission": "",
+					"leaf": 0,
+					"command": "refreshTimeModal",
+					"menuBeans": null
+				}, {
+					"menuName": "刷新数据",
+					"iconcls": "xxpicon icon-01",
+					"request": "",
+					"permission": "",
+					"leaf": 0,
+					"command": "dataRefresh",
+					"menuBeans": null
+				}, {
+					"menuName": "菜单栏锁定",
+					"iconcls": "xxpicon icon-01",
+					"request": "",
+					"permission": "",
+					"leaf": 0,
+					"command": "leftAreaLock",
+					"menuBeans": null
+				}
+			]
+		}
+	]
+}
